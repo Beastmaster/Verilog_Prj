@@ -1,0 +1,37 @@
+|series
+clk => wrsigbuf.CLK
+clk => wrsigrise.CLK
+clk => send.CLK
+clk => cnt[7].CLK
+clk => cnt[6].CLK
+clk => cnt[5].CLK
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clk => cnt[0].CLK
+clk => tx~reg0.CLK
+clk => idle~reg0.CLK
+clk => presult.CLK
+datain[0] => Selector6.IN16
+datain[0] => Selector4.IN21
+datain[1] => Selector4.IN20
+datain[1] => presult~0.IN1
+datain[2] => Selector4.IN19
+datain[2] => presult~1.IN1
+datain[3] => Selector4.IN18
+datain[3] => presult~2.IN1
+datain[4] => Selector4.IN17
+datain[4] => presult~3.IN1
+datain[5] => Selector4.IN16
+datain[5] => presult~4.IN1
+datain[6] => Selector4.IN15
+datain[6] => presult~5.IN1
+datain[7] => Selector4.IN14
+datain[7] => presult~6.IN1
+wrsig => wrsigbuf.DATAIN
+wrsig => wrsigrise~0.IN1
+idle <= idle~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tx <= tx~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

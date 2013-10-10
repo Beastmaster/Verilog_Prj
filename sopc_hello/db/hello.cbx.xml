@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="hello">
+		<CBX_INST_ENTRY INSTANCE_NAME="|hello|onchip_RAM:the_onchip_RAM|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_ulb1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|hello|onchip_ROM:the_onchip_ROM|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_6ib1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|hello|cpu_0:the_cpu_0|cpu_0_bht_module:cpu_0_bht|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_hsf1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|hello|cpu_0:the_cpu_0|cpu_0_dc_data_module:cpu_0_dc_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_bcf1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|hello|cpu_0:the_cpu_0|cpu_0_dc_tag_module:cpu_0_dc_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_7ef1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|hello|cpu_0:the_cpu_0|cpu_0_dc_victim_module:cpu_0_dc_victim|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_i2d1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|hello|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_im:the_cpu_0_nios2_oci_im|cpu_0_traceram_lpm_dram_bdp_component_module:cpu_0_traceram_lpm_dram_bdp_component|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_n802.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|hello|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem|cpu_0_ociram_lpm_dram_bdp_component_module:cpu_0_ociram_lpm_dram_bdp_component|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_l872.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|hello|cpu_0:the_cpu_0|cpu_0_register_bank_a_module:cpu_0_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_haf1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|hello|cpu_0:the_cpu_0|cpu_0_mult_cell:the_cpu_0_mult_cell|altmult_add:the_altmult_add_part_1" CBX_FILE_NAME="mult_add_dfr2.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|hello|cpu_0:the_cpu_0|cpu_0_ic_data_module:cpu_0_ic_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_3id1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|hello|cpu_0:the_cpu_0|cpu_0_ic_tag_module:cpu_0_ic_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_i8g1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|hello|cpu_0:the_cpu_0|cpu_0_mult_cell:the_cpu_0_mult_cell|altmult_add:the_altmult_add_part_2" CBX_FILE_NAME="mult_add_ffr2.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|hello|cpu_0:the_cpu_0|cpu_0_register_bank_b_module:cpu_0_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_iaf1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

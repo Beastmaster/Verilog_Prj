@@ -1,0 +1,7 @@
+Thu Aug 22 1:37:14 ?????? 2013
+Trace back: invalid command name "Wave::ViewDecl"
+    while executing
+"Wave::ViewDecl .main_pane.wave.interior.cs.body.pw.wf.tree"
+    (menu invoke)
+  2: ::tkerror {invalid command name "Wave::ViewDecl"}
+  1: ::bgerror {invalid command name "Wave::ViewDecl"}

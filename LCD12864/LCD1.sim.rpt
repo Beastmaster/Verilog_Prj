@@ -1,0 +1,227 @@
+Simulator report for LCD1
+Fri Aug 02 11:46:43 2013
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 35 nodes     ;
+; Simulation Coverage         ;      87.93 % ;
+; Total Number of Transitions ; 15144        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; MAX II       ;
+; Device                      ; EPM570T144C5 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; LCD1_t.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      87.93 % ;
+; Total nodes checked                                 ; 35           ;
+; Total output ports checked                          ; 58           ;
+; Total output ports with complete 1/0-value coverage ; 51           ;
+; Total output ports with no 1/0-value coverage       ; 7            ;
+; Total output ports with no 1-value coverage         ; 7            ;
+; Total output ports with no 0-value coverage         ; 7            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                             ;
++-----------------------+------------------------------+------------------+
+; Node Name             ; Output Port Name             ; Output Port Type ;
++-----------------------+------------------------------+------------------+
+; |LCD1|SID~reg0        ; |LCD1|SID~reg0               ; regout           ;
+; |LCD1|div:DIV|cnt[2]  ; |LCD1|div:DIV|cnt[2]         ; regout           ;
+; |LCD1|div:DIV|cnt[0]  ; |LCD1|div:DIV|cnt[0]         ; regout           ;
+; |LCD1|div:DIV|cnt[3]  ; |LCD1|div:DIV|cnt[3]         ; regout           ;
+; |LCD1|div:DIV|cnt[1]  ; |LCD1|div:DIV|Equal0~0       ; combout          ;
+; |LCD1|div:DIV|cnt[1]  ; |LCD1|div:DIV|cnt[1]         ; regout           ;
+; |LCD1|div:DIV|cnt[5]  ; |LCD1|div:DIV|cnt[5]         ; regout           ;
+; |LCD1|div:DIV|cnt[6]  ; |LCD1|div:DIV|cnt[6]         ; regout           ;
+; |LCD1|div:DIV|cnt[4]  ; |LCD1|div:DIV|Equal0~1       ; combout          ;
+; |LCD1|div:DIV|cnt[4]  ; |LCD1|div:DIV|cnt[4]         ; regout           ;
+; |LCD1|state[1]        ; |LCD1|state[1]               ; regout           ;
+; |LCD1|state[2]        ; |LCD1|state[2]               ; regout           ;
+; |LCD1|state[3]        ; |LCD1|state[3]               ; regout           ;
+; |LCD1|state[0]        ; |LCD1|WideOr0~0              ; combout          ;
+; |LCD1|state[0]        ; |LCD1|state[0]               ; regout           ;
+; |LCD1|WideOr0~1       ; |LCD1|WideOr0~1              ; combout          ;
+; |LCD1|state[4]        ; |LCD1|state[4]               ; regout           ;
+; |LCD1|div:DIV|Add0~0  ; |LCD1|div:DIV|Add0~0         ; combout          ;
+; |LCD1|div:DIV|Add0~0  ; |LCD1|div:DIV|Add0~1         ; cout0            ;
+; |LCD1|div:DIV|Add0~0  ; |LCD1|div:DIV|Add0~1COUT1_25 ; cout1            ;
+; |LCD1|div:DIV|Add0~2  ; |LCD1|div:DIV|Add0~2         ; combout          ;
+; |LCD1|div:DIV|Add0~2  ; |LCD1|div:DIV|Add0~3         ; cout0            ;
+; |LCD1|div:DIV|Add0~2  ; |LCD1|div:DIV|Add0~3COUT1_21 ; cout1            ;
+; |LCD1|div:DIV|Add0~4  ; |LCD1|div:DIV|Add0~4         ; combout          ;
+; |LCD1|div:DIV|Add0~4  ; |LCD1|div:DIV|Add0~5         ; cout0            ;
+; |LCD1|div:DIV|Add0~4  ; |LCD1|div:DIV|Add0~5COUT1_23 ; cout1            ;
+; |LCD1|div:DIV|Add0~6  ; |LCD1|div:DIV|Add0~6         ; combout          ;
+; |LCD1|div:DIV|Add0~6  ; |LCD1|div:DIV|Add0~7         ; cout             ;
+; |LCD1|div:DIV|Add0~8  ; |LCD1|div:DIV|Add0~8         ; combout          ;
+; |LCD1|div:DIV|Add0~8  ; |LCD1|div:DIV|Add0~9         ; cout0            ;
+; |LCD1|div:DIV|Add0~10 ; |LCD1|div:DIV|Add0~10        ; combout          ;
+; |LCD1|div:DIV|Add0~12 ; |LCD1|div:DIV|Add0~12        ; combout          ;
+; |LCD1|div:DIV|Add0~12 ; |LCD1|div:DIV|Add0~13        ; cout0            ;
+; |LCD1|Add0~0          ; |LCD1|Add0~0                 ; combout          ;
+; |LCD1|Add0~0          ; |LCD1|Add0~1                 ; cout0            ;
+; |LCD1|Add0~0          ; |LCD1|Add0~1COUT1_18         ; cout1            ;
+; |LCD1|Add0~2          ; |LCD1|Add0~2                 ; combout          ;
+; |LCD1|Add0~2          ; |LCD1|Add0~3                 ; cout0            ;
+; |LCD1|Add0~2          ; |LCD1|Add0~3COUT1_20         ; cout1            ;
+; |LCD1|state[5]        ; |LCD1|Equal0~0               ; combout          ;
+; |LCD1|state[5]        ; |LCD1|state[5]               ; regout           ;
+; |LCD1|Add0~4          ; |LCD1|Add0~4                 ; combout          ;
+; |LCD1|Add0~4          ; |LCD1|Add0~5                 ; cout             ;
+; |LCD1|Add0~6          ; |LCD1|Add0~6                 ; combout          ;
+; |LCD1|Add0~6          ; |LCD1|Add0~7COUT1_22         ; cout1            ;
+; |LCD1|Add0~8          ; |LCD1|Add0~8                 ; combout          ;
+; |LCD1|Add0~8          ; |LCD1|Add0~9COUT1_24         ; cout1            ;
+; |LCD1|Add0~10         ; |LCD1|Add0~10                ; combout          ;
+; |LCD1|clk             ; |LCD1|clk~corein             ; combout          ;
+; |LCD1|SCLK            ; |LCD1|SCLK                   ; padio            ;
+; |LCD1|SID             ; |LCD1|SID                    ; padio            ;
++-----------------------+------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                 ;
++-----------------------+-------------------------------+------------------+
+; Node Name             ; Output Port Name              ; Output Port Type ;
++-----------------------+-------------------------------+------------------+
+; |LCD1|div:DIV|Add0~8  ; |LCD1|div:DIV|Add0~9COUT1_29  ; cout1            ;
+; |LCD1|div:DIV|Add0~12 ; |LCD1|div:DIV|Add0~13COUT1_27 ; cout1            ;
+; |LCD1|Add0~6          ; |LCD1|Add0~7                  ; cout0            ;
+; |LCD1|Add0~8          ; |LCD1|Add0~9                  ; cout0            ;
+; |LCD1|nCR             ; |LCD1|nCR~corein              ; combout          ;
+; |LCD1|CS              ; |LCD1|CS                      ; padio            ;
+; |LCD1|PSB             ; |LCD1|PSB                     ; padio            ;
++-----------------------+-------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                 ;
++-----------------------+-------------------------------+------------------+
+; Node Name             ; Output Port Name              ; Output Port Type ;
++-----------------------+-------------------------------+------------------+
+; |LCD1|div:DIV|Add0~8  ; |LCD1|div:DIV|Add0~9COUT1_29  ; cout1            ;
+; |LCD1|div:DIV|Add0~12 ; |LCD1|div:DIV|Add0~13COUT1_27 ; cout1            ;
+; |LCD1|Add0~6          ; |LCD1|Add0~7                  ; cout0            ;
+; |LCD1|Add0~8          ; |LCD1|Add0~9                  ; cout0            ;
+; |LCD1|nCR             ; |LCD1|nCR~corein              ; combout          ;
+; |LCD1|CS              ; |LCD1|CS                      ; padio            ;
+; |LCD1|PSB             ; |LCD1|PSB                     ; padio            ;
++-----------------------+-------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Aug 02 11:46:42 2013
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off LCD1 -c LCD1
+Info: Using vector source file "D:/WORKPLACE/VerilogPRJ/LCD12864/LCD1_t.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      87.93 %
+Info: Number of transitions in simulation is 15144
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 146 megabytes
+    Info: Processing ended: Fri Aug 02 11:46:43 2013
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

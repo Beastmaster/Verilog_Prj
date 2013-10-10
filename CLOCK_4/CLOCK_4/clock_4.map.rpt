@@ -1,0 +1,407 @@
+Analysis & Synthesis report for clock_4
+Sat Aug 10 01:41:33 2013
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. User-Specified and Inferred Latches
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: key:K1
+ 12. Parameter Settings for User Entity Instance: key:K2
+ 13. Port Connectivity Checks: "Freq_div100:F4"
+ 14. Analysis & Synthesis Messages
+ 15. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++------------------------------------+----------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sat Aug 10 01:41:33 2013        ;
+; Quartus II Version                 ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
+; Revision Name                      ; clock_4                                      ;
+; Top-level Entity Name              ; clock_4                                      ;
+; Family                             ; Cyclone III                                  ;
+; Total logic elements               ; 501                                          ;
+;     Total combinational functions  ; 501                                          ;
+;     Dedicated logic registers      ; 260                                          ;
+; Total registers                    ; 260                                          ;
+; Total pins                         ; 39                                           ;
+; Total virtual pins                 ; 0                                            ;
+; Total memory bits                  ; 0                                            ;
+; Embedded Multiplier 9-bit elements ; 0                                            ;
+; Total PLLs                         ; 0                                            ;
++------------------------------------+----------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                          ;
++--------------------------------------------------------------+--------------------+--------------------+
+; Option                                                       ; Setting            ; Default Value      ;
++--------------------------------------------------------------+--------------------+--------------------+
+; Device                                                       ; EP3C16F484C6       ;                    ;
+; Top-level entity name                                        ; clock_4            ; clock_4            ;
+; Family name                                                  ; Cyclone III        ; Stratix II         ;
+; Use Generated Physical Constraints File                      ; Off                ;                    ;
+; Use smart compilation                                        ; Off                ; Off                ;
+; Restructure Multiplexers                                     ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                          ; Off                ; Off                ;
+; Preserve fewer node names                                    ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                    ; Off                ; Off                ;
+; Verilog Version                                              ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                 ; VHDL93             ; VHDL93             ;
+; State Machine Processing                                     ; Auto               ; Auto               ;
+; Safe State Machine                                           ; Off                ; Off                ;
+; Extract Verilog State Machines                               ; On                 ; On                 ;
+; Extract VHDL State Machines                                  ; On                 ; On                 ;
+; Ignore Verilog initial constructs                            ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                   ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops               ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                      ; On                 ; On                 ;
+; Parallel Synthesis                                           ; Off                ; Off                ;
+; DSP Block Balancing                                          ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                           ; On                 ; On                 ;
+; Power-Up Don't Care                                          ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                 ; Off                ; Off                ;
+; Remove Duplicate Registers                                   ; On                 ; On                 ;
+; Ignore CARRY Buffers                                         ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                       ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                    ; Off                ; Off                ;
+; Ignore LCELL Buffers                                         ; Off                ; Off                ;
+; Ignore SOFT Buffers                                          ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                               ; Off                ; Off                ;
+; Optimization Technique                                       ; Balanced           ; Balanced           ;
+; Carry Chain Length                                           ; 70                 ; 70                 ;
+; Auto Carry Chains                                            ; On                 ; On                 ;
+; Auto Open-Drain Pins                                         ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                        ; Off                ; Off                ;
+; Auto ROM Replacement                                         ; On                 ; On                 ;
+; Auto RAM Replacement                                         ; On                 ; On                 ;
+; Auto DSP Block Replacement                                   ; On                 ; On                 ;
+; Auto Shift Register Replacement                              ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                ; On                 ; On                 ;
+; Strict RAM Replacement                                       ; Off                ; Off                ;
+; Allow Synchronous Control Signals                            ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                       ; Off                ; Off                ;
+; Auto RAM Block Balancing                                     ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                            ; Off                ; Off                ;
+; Auto Resource Sharing                                        ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                           ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                           ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing          ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives            ; Off                ; Off                ;
+; Timing-Driven Synthesis                                      ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report           ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                           ; Off                ; Off                ;
+; Synchronization Register Chain Length                        ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                 ; Normal compilation ; Normal compilation ;
+; HDL message level                                            ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages              ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report     ; 100                ; 100                ;
+; Number of Inverted Registers Reported in Synthesis Report    ; 100                ; 100                ;
+; Clock MUX Protection                                         ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                  ; Off                ; Off                ;
+; Block Design Naming                                          ; Auto               ; Auto               ;
+; SDC constraint protection                                    ; Off                ; Off                ;
+; Synthesis Effort                                             ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                           ; Medium             ; Medium             ;
++--------------------------------------------------------------+--------------------+--------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                            ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                        ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------+
+; clock_4.v                        ; yes             ; User Verilog HDL File  ; D:/WORKPLACE/VerilogPRJ/CLOCK_4/CLOCK_4/clock_4.v   ;
+; counter.v                        ; yes             ; User Verilog HDL File  ; D:/WORKPLACE/VerilogPRJ/CLOCK_4/CLOCK_4/counter.v   ;
+; display.v                        ; yes             ; User Verilog HDL File  ; D:/WORKPLACE/VerilogPRJ/CLOCK_4/CLOCK_4/display.v   ;
+; stopwatch.v                      ; yes             ; User Verilog HDL File  ; D:/WORKPLACE/VerilogPRJ/CLOCK_4/CLOCK_4/stopwatch.v ;
+; div_Freq.v                       ; yes             ; User Verilog HDL File  ; D:/WORKPLACE/VerilogPRJ/CLOCK_4/CLOCK_4/div_Freq.v  ;
+; Radio.v                          ; yes             ; User Verilog HDL File  ; D:/WORKPLACE/VerilogPRJ/CLOCK_4/CLOCK_4/Radio.v     ;
+; ALARM.v                          ; yes             ; User Verilog HDL File  ; D:/WORKPLACE/VerilogPRJ/CLOCK_4/CLOCK_4/ALARM.v     ;
+; key.v                            ; yes             ; User Verilog HDL File  ; D:/WORKPLACE/VerilogPRJ/CLOCK_4/CLOCK_4/key.v       ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 501       ;
+;                                             ;           ;
+; Total combinational functions               ; 501       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 195       ;
+;     -- 3 input functions                    ; 70        ;
+;     -- <=2 input functions                  ; 236       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 309       ;
+;     -- arithmetic mode                      ; 192       ;
+;                                             ;           ;
+; Total registers                             ; 260       ;
+;     -- Dedicated logic registers            ; 260       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 39        ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 193       ;
+; Total fan-out                               ; 2286      ;
+; Average fan-out                             ; 2.72      ;
++---------------------------------------------+-----------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                     ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                             ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+--------------+
+; |clock_4                   ; 501 (66)          ; 260 (0)      ; 0           ; 0            ; 0       ; 0         ; 39   ; 0            ; |clock_4                                        ; work         ;
+;    |Alarm:A0|              ; 37 (13)           ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|Alarm:A0                               ; work         ;
+;       |counter24:C3|       ; 14 (14)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|Alarm:A0|counter24:C3                  ; work         ;
+;       |counter60:C2|       ; 10 (1)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|Alarm:A0|counter60:C2                  ; work         ;
+;          |counter10:U1|    ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|Alarm:A0|counter60:C2|counter10:U1     ; work         ;
+;          |counter6:U2|     ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|Alarm:A0|counter60:C2|counter6:U2      ; work         ;
+;    |Freq_div10:F3|         ; 52 (52)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|Freq_div10:F3                          ; work         ;
+;    |Freq_div1:F1|          ; 56 (56)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|Freq_div1:F1                           ; work         ;
+;    |Freq_div1k:F5|         ; 51 (51)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|Freq_div1k:F5                          ; work         ;
+;    |Radio:R0|              ; 17 (17)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|Radio:R0                               ; work         ;
+;    |counter12:C4|          ; 13 (13)           ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|counter12:C4                           ; work         ;
+;    |counter24:C3|          ; 14 (14)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|counter24:C3                           ; work         ;
+;    |counter60:C1|          ; 10 (1)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|counter60:C1                           ; work         ;
+;       |counter10:U1|       ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|counter60:C1|counter10:U1              ; work         ;
+;       |counter6:U2|        ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|counter60:C1|counter6:U2               ; work         ;
+;    |counter60:C2|          ; 11 (1)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|counter60:C2                           ; work         ;
+;       |counter10:U1|       ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|counter60:C2|counter10:U1              ; work         ;
+;       |counter6:U2|        ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|counter60:C2|counter6:U2               ; work         ;
+;    |display:SEG1|          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|display:SEG1                           ; work         ;
+;    |display:SEG2|          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|display:SEG2                           ; work         ;
+;    |display:SEG3|          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|display:SEG3                           ; work         ;
+;    |display:SEG4|          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|display:SEG4                           ; work         ;
+;    |key:K1|                ; 62 (62)           ; 47 (47)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|key:K1                                 ; work         ;
+;    |key:K2|                ; 62 (62)           ; 47 (47)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|key:K2                                 ; work         ;
+;    |stopwatch:S0|          ; 22 (3)            ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|stopwatch:S0                           ; work         ;
+;       |counter10:C1|       ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|stopwatch:S0|counter10:C1              ; work         ;
+;       |counter10:C2|       ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|stopwatch:S0|counter10:C2              ; work         ;
+;       |counter60:C3|       ; 10 (1)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|stopwatch:S0|counter60:C3              ; work         ;
+;          |counter10:U1|    ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|stopwatch:S0|counter60:C3|counter10:U1 ; work         ;
+;          |counter6:U2|     ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |clock_4|stopwatch:S0|counter60:C3|counter6:U2  ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; adjMin_0                                           ; WideOr0             ; yes                    ;
+; adjHr_0                                            ; WideOr0             ; yes                    ;
+; Number of user-specified and inferred latches = 2  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++--------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                       ;
++---------------------------------------+----------------------------------+
+; Register name                         ; Reason for Removal               ;
++---------------------------------------+----------------------------------+
+; counter12:C4|CntL[0]                  ; Merged with counter24:C3|CntL[0] ;
+; Total Number of Removed Registers = 1 ;                                  ;
++---------------------------------------+----------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 260   ;
+; Number of registers using Synchronous Clear  ; 92    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 166   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |clock_4|counter24:C3|CntL[3]          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |clock_4|counter12:C4|CntL[2]          ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |clock_4|Alarm:A0|counter24:C3|CntL[3] ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; No         ; |clock_4|Mux0                          ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |clock_4|Mux8                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: key:K1        ;
++----------------+-------------------------+-----------------+
+; Parameter Name ; Value                   ; Type            ;
++----------------+-------------------------+-----------------+
+; SAMPLE_TIME    ; 00001111010000100100000 ; Unsigned Binary ;
++----------------+-------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: key:K2        ;
++----------------+-------------------------+-----------------+
+; Parameter Name ; Value                   ; Type            ;
++----------------+-------------------------+-----------------+
+; SAMPLE_TIME    ; 00001111010000100100000 ; Unsigned Binary ;
++----------------+-------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Freq_div100:F4"                                                                       ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; _100Hz ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sat Aug 10 01:41:28 2013
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off clock_4 -c clock_4
+Info: Found 1 design units, including 1 entities, in source file clock_4.v
+    Info: Found entity 1: clock_4
+Info: Found 6 design units, including 6 entities, in source file counter.v
+    Info: Found entity 1: counter6
+    Info: Found entity 2: counter10
+    Info: Found entity 3: counter60
+    Info: Found entity 4: counter60_2
+    Info: Found entity 5: counter24
+    Info: Found entity 6: counter12
+Info: Found 1 design units, including 1 entities, in source file display.v
+    Info: Found entity 1: display
+Info: Found 1 design units, including 1 entities, in source file stopwatch.v
+    Info: Found entity 1: stopwatch
+Info: Found 5 design units, including 5 entities, in source file div_Freq.v
+    Info: Found entity 1: Freq_div1
+    Info: Found entity 2: Freq_div500
+    Info: Found entity 3: Freq_div10
+    Info: Found entity 4: Freq_div100
+    Info: Found entity 5: Freq_div1k
+Warning (10229): Verilog HDL Expression warning at Radio.v(19): truncated literal to match 5 bits
+Warning (10229): Verilog HDL Expression warning at Radio.v(20): truncated literal to match 5 bits
+Info: Found 1 design units, including 1 entities, in source file Radio.v
+    Info: Found entity 1: Radio
+Info: Found 1 design units, including 1 entities, in source file ALARM.v
+    Info: Found entity 1: Alarm
+Info: Found 1 design units, including 1 entities, in source file key.v
+    Info: Found entity 1: key
+Info: Elaborating entity "clock_4" for the top level hierarchy
+Warning (10235): Verilog HDL Always Construct warning at clock_4.v(78): variable "adjMin" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at clock_4.v(79): variable "adjHr" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at clock_4.v(80): variable "Sec" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at clock_4.v(81): variable "Sec" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at clock_4.v(82): variable "Min" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at clock_4.v(83): variable "Min" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at clock_4.v(88): variable "adjMin" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at clock_4.v(89): variable "adjHr" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at clock_4.v(90): variable "Min" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at clock_4.v(91): variable "Min" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at clock_4.v(92): variable "Hr" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at clock_4.v(93): variable "Hr" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at clock_4.v(98): variable "adjMin" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at clock_4.v(99): variable "adjHr" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at clock_4.v(100): variable "Min" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at clock_4.v(101): variable "Min" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at clock_4.v(102): variable "Hr_12" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at clock_4.v(103): variable "Hr_12" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at clock_4.v(109): variable "SimSec" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at clock_4.v(110): variable "SimSec" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at clock_4.v(111): variable "SecS" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at clock_4.v(112): variable "SecS" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at clock_4.v(116): variable "Min_Set" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at clock_4.v(117): variable "Min_Set" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at clock_4.v(118): variable "Hr_Set" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at clock_4.v(119): variable "Hr_Set" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10240): Verilog HDL Always Construct warning at clock_4.v(73): inferring latch(es) for variable "adjMin_0", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at clock_4.v(73): inferring latch(es) for variable "adjHr_0", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "adjHr_0" at clock_4.v(73)
+Info (10041): Inferred latch for "adjMin_0" at clock_4.v(73)
+Info: Elaborating entity "key" for hierarchy "key:K1"
+Info: Elaborating entity "Freq_div1" for hierarchy "Freq_div1:F1"
+Info: Elaborating entity "Freq_div500" for hierarchy "Freq_div500:F2"
+Info: Elaborating entity "Freq_div10" for hierarchy "Freq_div10:F3"
+Info: Elaborating entity "Freq_div100" for hierarchy "Freq_div100:F4"
+Info: Elaborating entity "Freq_div1k" for hierarchy "Freq_div1k:F5"
+Info: Elaborating entity "counter60" for hierarchy "counter60:C1"
+Info: Elaborating entity "counter10" for hierarchy "counter60:C1|counter10:U1"
+Info: Elaborating entity "counter6" for hierarchy "counter60:C1|counter6:U2"
+Info: Elaborating entity "counter24" for hierarchy "counter24:C3"
+Info: Elaborating entity "counter12" for hierarchy "counter12:C4"
+Info: Elaborating entity "Radio" for hierarchy "Radio:R0"
+Info: Elaborating entity "Alarm" for hierarchy "Alarm:A0"
+Info: Elaborating entity "stopwatch" for hierarchy "stopwatch:S0"
+Info: Elaborating entity "display" for hierarchy "display:SEG1"
+Warning: Clock multiplexers are found and protected
+    Warning: Found clock multiplexer HrCP
+    Warning: Found clock multiplexer MinCP
+Info: Generated suppressed messages file D:/WORKPLACE/VerilogPRJ/CLOCK_4/CLOCK_4/clock_4.map.smsg
+Info: Implemented 540 device resources after synthesis - the final resource count might be different
+    Info: Implemented 9 input pins
+    Info: Implemented 30 output pins
+    Info: Implemented 501 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 33 warnings
+    Info: Peak virtual memory: 205 megabytes
+    Info: Processing ended: Sat Aug 10 01:41:33 2013
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:03
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in D:/WORKPLACE/VerilogPRJ/CLOCK_4/CLOCK_4/clock_4.map.smsg.
+
+

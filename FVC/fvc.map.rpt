@@ -1,0 +1,276 @@
+Analysis & Synthesis report for fvc
+Thu Aug 22 00:12:43 2013
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. User-Specified and Inferred Latches
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: dac_clk:U1
+ 10. Port Connectivity Checks: "catch_edge:U0"
+ 11. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                               ;
++-----------------------------+----------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Thu Aug 22 00:12:43 2013        ;
+; Quartus II Version          ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
+; Revision Name               ; fvc                                          ;
+; Top-level Entity Name       ; fvc                                          ;
+; Family                      ; MAX II                                       ;
+; Total logic elements        ; 38                                           ;
+; Total pins                  ; 16                                           ;
+; Total virtual pins          ; 0                                            ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                                ;
++-----------------------------+----------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                          ;
++--------------------------------------------------------------+--------------------+--------------------+
+; Option                                                       ; Setting            ; Default Value      ;
++--------------------------------------------------------------+--------------------+--------------------+
+; Device                                                       ; EPM570T144C5       ;                    ;
+; Top-level entity name                                        ; fvc                ; fvc                ;
+; Family name                                                  ; MAX II             ; Stratix II         ;
+; Use Generated Physical Constraints File                      ; Off                ;                    ;
+; Use smart compilation                                        ; Off                ; Off                ;
+; Restructure Multiplexers                                     ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                          ; Off                ; Off                ;
+; Preserve fewer node names                                    ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                    ; Off                ; Off                ;
+; Verilog Version                                              ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                 ; VHDL93             ; VHDL93             ;
+; State Machine Processing                                     ; Auto               ; Auto               ;
+; Safe State Machine                                           ; Off                ; Off                ;
+; Extract Verilog State Machines                               ; On                 ; On                 ;
+; Extract VHDL State Machines                                  ; On                 ; On                 ;
+; Ignore Verilog initial constructs                            ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                   ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops               ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                      ; On                 ; On                 ;
+; Parallel Synthesis                                           ; Off                ; Off                ;
+; NOT Gate Push-Back                                           ; On                 ; On                 ;
+; Power-Up Don't Care                                          ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                 ; Off                ; Off                ;
+; Remove Duplicate Registers                                   ; On                 ; On                 ;
+; Ignore CARRY Buffers                                         ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                       ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                    ; Off                ; Off                ;
+; Ignore LCELL Buffers                                         ; Off                ; Off                ;
+; Ignore SOFT Buffers                                          ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                               ; Off                ; Off                ;
+; Optimization Technique                                       ; Balanced           ; Balanced           ;
+; Carry Chain Length                                           ; 70                 ; 70                 ;
+; Auto Carry Chains                                            ; On                 ; On                 ;
+; Auto Open-Drain Pins                                         ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                        ; Off                ; Off                ;
+; Auto Shift Register Replacement                              ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                ; On                 ; On                 ;
+; Allow Synchronous Control Signals                            ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                       ; Off                ; Off                ;
+; Auto Resource Sharing                                        ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing          ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives            ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report           ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                           ; Off                ; Off                ;
+; Synchronization Register Chain Length                        ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                 ; Normal compilation ; Normal compilation ;
+; HDL message level                                            ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages              ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report     ; 100                ; 100                ;
+; Number of Inverted Registers Reported in Synthesis Report    ; 100                ; 100                ;
+; Clock MUX Protection                                         ; On                 ; On                 ;
+; Block Design Naming                                          ; Auto               ; Auto               ;
+; Synthesis Effort                                             ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                           ; Medium             ; Medium             ;
++--------------------------------------------------------------+--------------------+--------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                              ;
++----------------------------------+-----------------+------------------------+---------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path          ;
++----------------------------------+-----------------+------------------------+---------------------------------------+
+; fvc.v                            ; yes             ; User Verilog HDL File  ; D:/WORKPLACE/VerilogPRJ/FVC/fvc.v     ;
+; dac_clk.v                        ; yes             ; User Verilog HDL File  ; D:/WORKPLACE/VerilogPRJ/FVC/dac_clk.v ;
++----------------------------------+-----------------+------------------------+---------------------------------------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 38    ;
+;     -- Combinational with no register       ; 20    ;
+;     -- Register only                        ; 3     ;
+;     -- Combinational with a register        ; 15    ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 1     ;
+;     -- 3 input functions                    ; 15    ;
+;     -- 2 input functions                    ; 17    ;
+;     -- 1 input functions                    ; 2     ;
+;     -- 0 input functions                    ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 24    ;
+;     -- arithmetic mode                      ; 14    ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 0     ;
+;     -- asynchronous clear/load mode         ; 18    ;
+;                                             ;       ;
+; Total registers                             ; 18    ;
+; Total logic cells in carry chains           ; 16    ;
+; I/O pins                                    ; 16    ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 18    ;
+; Total fan-out                               ; 137   ;
+; Average fan-out                             ; 2.54  ;
++---------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                  ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
+; |fvc                       ; 38 (26)     ; 18           ; 0          ; 16   ; 0            ; 20 (14)      ; 3 (0)             ; 15 (12)          ; 16 (11)         ; 0 (0)      ; |fvc                ; work         ;
+;    |dac_clk:U1|            ; 12 (12)     ; 6            ; 0          ; 0    ; 0            ; 6 (6)        ; 3 (3)             ; 3 (3)            ; 5 (5)           ; 0 (0)      ; |fvc|dac_clk:U1     ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; dac[0]$latch                                        ; dac[11]~0           ; yes                    ;
+; dac[1]$latch                                        ; dac[11]~0           ; yes                    ;
+; dac[2]$latch                                        ; dac[11]~0           ; yes                    ;
+; dac[3]$latch                                        ; dac[11]~0           ; yes                    ;
+; dac[4]$latch                                        ; dac[11]~0           ; yes                    ;
+; dac[5]$latch                                        ; dac[11]~0           ; yes                    ;
+; dac[6]$latch                                        ; dac[11]~0           ; yes                    ;
+; dac[7]$latch                                        ; dac[11]~0           ; yes                    ;
+; dac[8]$latch                                        ; dac[11]~0           ; yes                    ;
+; dac[9]$latch                                        ; dac[11]~0           ; yes                    ;
+; dac[10]$latch                                       ; dac[11]~0           ; yes                    ;
+; dac[11]$latch                                       ; dac[11]~0           ; yes                    ;
+; Number of user-specified and inferred latches = 12  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 18    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 18    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dac_clk:U1 ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; cycle          ; 5     ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "catch_edge:U0"                                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; out  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Aug 22 00:12:42 2013
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fvc -c fvc
+Info: Found 2 design units, including 2 entities, in source file fvc.v
+    Info: Found entity 1: fvc
+    Info: Found entity 2: catch_edge
+Info: Found 1 design units, including 1 entities, in source file dac_clk.v
+    Info: Found entity 1: dac_clk
+Info: Found 1 design units, including 1 entities, in source file latch.v
+    Info: Found entity 1: latch1
+Info: Found 1 design units, including 1 entities, in source file en.v
+    Info: Found entity 1: en
+Info: Elaborating entity "fvc" for the top level hierarchy
+Warning (10240): Verilog HDL Always Construct warning at fvc.v(15): inferring latch(es) for variable "dac", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "dac[0]" at fvc.v(15)
+Info (10041): Inferred latch for "dac[1]" at fvc.v(15)
+Info (10041): Inferred latch for "dac[2]" at fvc.v(15)
+Info (10041): Inferred latch for "dac[3]" at fvc.v(15)
+Info (10041): Inferred latch for "dac[4]" at fvc.v(15)
+Info (10041): Inferred latch for "dac[5]" at fvc.v(15)
+Info (10041): Inferred latch for "dac[6]" at fvc.v(15)
+Info (10041): Inferred latch for "dac[7]" at fvc.v(15)
+Info (10041): Inferred latch for "dac[8]" at fvc.v(15)
+Info (10041): Inferred latch for "dac[9]" at fvc.v(15)
+Info (10041): Inferred latch for "dac[10]" at fvc.v(15)
+Info (10041): Inferred latch for "dac[11]" at fvc.v(15)
+Info: Elaborating entity "catch_edge" for hierarchy "catch_edge:U0"
+Info: Elaborating entity "dac_clk" for hierarchy "dac_clk:U1"
+Info: Implemented 54 device resources after synthesis - the final resource count might be different
+    Info: Implemented 3 input pins
+    Info: Implemented 13 output pins
+    Info: Implemented 38 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 203 megabytes
+    Info: Processing ended: Thu Aug 22 00:12:44 2013
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

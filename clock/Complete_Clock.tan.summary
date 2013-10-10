@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 49.772 ns
+From           : top_clock:U1|counter24:UT3|CntL[2]
+To             : ALARM
+From Clock     : CP
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 11.329 ns
+From           : Mode
+To             : BCD2[0]
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CP'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 45.26 MHz ( period = 22.093 ns )
+From           : top_clock:U1|counter24:UT3|CntH[3]
+To             : top_clock:U1|counter24:UT3|CntL[0]
+From Clock     : CP
+To Clock       : CP
+Failed Paths   : 0
+
+Type           : Clock Hold: 'CP'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : top_clock:U1|counter24:UT3|CntH[3]
+To             : top_clock:U1|counter24:UT3|CntH[3]
+From Clock     : CP
+To Clock       : CP
+Failed Paths   : 79
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 79
+
+--------------------------------------------------------------------------------------
+

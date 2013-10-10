@@ -1,0 +1,40 @@
+|LEDdisp
+CP => SG1~reg0.CLK
+CP => SG2~reg0.CLK
+CP => SG3~reg0.CLK
+CP => SG4~reg0.CLK
+CP => Seg_in[3].CLK
+CP => Seg_in[2].CLK
+CP => Seg_in[1].CLK
+CP => Seg_in[0].CLK
+CP => Count[1].CLK
+CP => Count[0].CLK
+BCD1[0] => Mux3.IN0
+BCD1[1] => Mux2.IN0
+BCD1[2] => Mux1.IN0
+BCD1[3] => Mux0.IN0
+BCD2[0] => Mux3.IN1
+BCD2[1] => Mux2.IN1
+BCD2[2] => Mux1.IN1
+BCD2[3] => Mux0.IN1
+BCD3[0] => Mux3.IN2
+BCD3[1] => Mux2.IN2
+BCD3[2] => Mux1.IN2
+BCD3[3] => Mux0.IN2
+BCD4[0] => Mux3.IN3
+BCD4[1] => Mux2.IN3
+BCD4[2] => Mux1.IN3
+BCD4[3] => Mux0.IN3
+Segout[0] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+Segout[1] <= <GND>
+Segout[2] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+Segout[3] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+Segout[4] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+Segout[5] <= Segout~0.DB_MAX_OUTPUT_PORT_TYPE
+Segout[6] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+SG1 <= SG1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+SG2 <= SG2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+SG3 <= SG3~reg0.DB_MAX_OUTPUT_PORT_TYPE
+SG4 <= SG4~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

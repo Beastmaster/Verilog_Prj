@@ -1,0 +1,368 @@
+# Reading D:/Altera/modelsim_ase/tcl/vsim/pref.tcl 
+# do adder_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\Altera\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\Altera\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/WORKPLACE/VerilogPRJ/adder {D:/WORKPLACE/VerilogPRJ/adder/adder.v}
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# 
+# vlog -vlog01compat -work work +incdir+D:/WORKPLACE/VerilogPRJ/adder/simulation/modelsim {D:/WORKPLACE/VerilogPRJ/adder/simulation/modelsim/adder.vt}
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module adder_vlg_tst
+# ** Error: D:/WORKPLACE/VerilogPRJ/adder/simulation/modelsim/adder.vt(53): near "forever": syntax error, unexpected "forever"
+# ** Error: D:/Altera/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./adder_run_msim_rtl_verilog.do line 10
+# D:/Altera/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+D:/WORKPLACE/VerilogPRJ/adder/simulation/modelsim {D:/WORKPLACE/VerilogPRJ/adder/simulation/modelsim/adder.vt}"
+vsim -do adder_run_msim_rtl_verilog.do -l msim_transcript -gui gate_work.adder
+# vsim -do adder_run_msim_rtl_verilog.do -l msim_transcript -gui gate_work.adder 
+# Loading gate_work.adder
+# ** Error: (vsim-3033) adder.vo(151): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(169): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(187): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(205): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(223): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(241): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(258): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(277): Instantiation of 'dffeas' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(296): Instantiation of 'dffeas' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(315): Instantiation of 'dffeas' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(334): Instantiation of 'dffeas' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(353): Instantiation of 'dffeas' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(370): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(389): Instantiation of 'dffeas' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(406): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(423): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(433): Instantiation of 'cycloneiii_io_ibuf' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(446): Instantiation of 'cycloneiii_io_obuf' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(459): Instantiation of 'cycloneiii_io_obuf' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(469): Instantiation of 'cycloneiii_io_ibuf' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(482): Instantiation of 'cycloneiii_clkctrl' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(492): Instantiation of 'cycloneiii_io_ibuf' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(502): Instantiation of 'cycloneiii_io_ibuf' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(512): Instantiation of 'cycloneiii_io_ibuf' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(522): Instantiation of 'cycloneiii_io_ibuf' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(539): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(549): Instantiation of 'cycloneiii_io_ibuf' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(562): Instantiation of 'cycloneiii_clkctrl' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(572): Instantiation of 'cycloneiii_io_ibuf' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(590): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(609): Instantiation of 'dffeas' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(627): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(645): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(663): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(681): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(698): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(717): Instantiation of 'dffeas' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(735): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(753): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(772): Instantiation of 'dffeas' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(790): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(808): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(827): Instantiation of 'dffeas' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(845): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(864): Instantiation of 'dffeas' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(882): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(901): Instantiation of 'dffeas' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(919): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(938): Instantiation of 'dffeas' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(956): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(975): Instantiation of 'dffeas' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(994): Instantiation of 'dffeas' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1011): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1030): Instantiation of 'dffeas' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1047): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1064): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1083): Instantiation of 'dffeas' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1102): Instantiation of 'dffeas' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1119): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1136): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1153): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1172): Instantiation of 'dffeas' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1190): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1209): Instantiation of 'dffeas' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1228): Instantiation of 'dffeas' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1245): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1262): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1281): Instantiation of 'dffeas' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1298): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1315): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1334): Instantiation of 'dffeas' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1351): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1370): Instantiation of 'dffeas' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1387): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1404): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1421): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1440): Instantiation of 'dffeas' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1450): Instantiation of 'cycloneiii_io_ibuf' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1460): Instantiation of 'cycloneiii_io_ibuf' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1470): Instantiation of 'cycloneiii_io_ibuf' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1487): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1504): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1521): Instantiation of 'cycloneiii_lcell_comb' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# ** Error: (vsim-3033) adder.vo(1540): Instantiation of 'dffeas' failed. The design unit was not found.
+#         Region: /adder
+#         Searched libraries:
+#             D:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim\gate_work
+# Error loading design

@@ -1,0 +1,8 @@
+D:/WORKPLACE/VerilogPRJ/FVC/dac_clk.v {1 {vlog -work FVC -nocovercells D:/WORKPLACE/VerilogPRJ/FVC/dac_clk.v
+Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+-- Compiling module dac_clk
+
+Top level modules:
+	dac_clk
+
+} {} {}}

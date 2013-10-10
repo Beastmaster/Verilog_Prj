@@ -1,0 +1,20 @@
+|ads805
+clk => CP~reg0.CLK
+clk => cnt[5].CLK
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clk => cnt[0].CLK
+nCR => CP~reg0.ACLR
+nCR => cnt[5].ACLR
+nCR => cnt[4].ACLR
+nCR => cnt[3].ACLR
+nCR => cnt[2].ACLR
+nCR => cnt[1].ACLR
+nCR => cnt[0].ACLR
+CP <= CP~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dir[0] <= <GND>
+dir[1] <= <GND>
+
+

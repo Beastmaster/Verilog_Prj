@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <systemtable filter="All">
+  <columns>
+   <connections preferredWidth="127" />
+   <irq preferredWidth="34" /></columns></systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="137" />
+   <clocksource preferredWidth="136" />
+   <frequency preferredWidth="117" /></columns></clocktable>
+ <window width="900" height="606" x="60" y="110" />
+ <library
+   expandedCategories="Bridges and Adapters,Bridges and Adapters/Memory Mapped" /></preferences>

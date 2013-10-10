@@ -1,0 +1,106 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 5.319 ns
+From           : Mode[1]
+To             : _seg3[3]
+From Clock     : --
+To Clock       : CP
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 56.651 ns
+From           : top_clock:TOP|counter24:UT3|CntL[3]
+To             : Buzzer
+From Clock     : CP
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 9.656 ns
+From           : CtrlBell
+To             : Buzzer
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 14.014 ns
+From           : AdjMin
+To             : Bell:B1|counter60:SU1|counter6:U1|Q[3]
+From Clock     : --
+To Clock       : CP
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CP'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 14.94 MHz ( period = 66.914 ns )
+From           : top_clock:TOP|counter60:UT2|counter6:U1|Q[0]
+To             : _seg2[0]
+From Clock     : CP
+To Clock       : CP
+Failed Paths   : 0
+
+Type           : Clock Setup: 'AdjMin'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 73.34 MHz ( period = 13.635 ns )
+From           : top_clock:TOP|counter24:UT3|CntL[0]
+To             : top_clock:TOP|counter24:UT3|CntH[3]
+From Clock     : AdjMin
+To Clock       : AdjMin
+Failed Paths   : 0
+
+Type           : Clock Setup: 'AdjHr'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 157.31 MHz ( period = 6.357 ns )
+From           : top_clock:TOP|counter24:UT3|CntL[0]
+To             : top_clock:TOP|counter24:UT3|CntH[3]
+From Clock     : AdjHr
+To Clock       : AdjHr
+Failed Paths   : 0
+
+Type           : Clock Hold: 'CP'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : top_clock:TOP|counter24:UT3|CntH[3]
+To             : top_clock:TOP|counter24:UT3|CntH[3]
+From Clock     : CP
+To Clock       : CP
+Failed Paths   : 85
+
+Type           : Clock Hold: 'AdjMin'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : top_clock:TOP|counter24:UT3|CntH[3]
+To             : top_clock:TOP|counter24:UT3|CntH[3]
+From Clock     : AdjMin
+To Clock       : AdjMin
+Failed Paths   : 60
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 145
+
+--------------------------------------------------------------------------------------
+

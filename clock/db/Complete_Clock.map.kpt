@@ -1,0 +1,130 @@
+<kpt_db name="Complete_Clock.map" kpt_version="1.1">
+  <key_points_set type="reference" hier_sep="/">
+    <key_point id="1" type="register">
+      <name>U1/UT1/U1/Q[1]</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_ELIM_STAT_">SA0</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="2" type="register">
+      <name>U0/DU2/Q[0]</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_ELIM_STAT_">SA0</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="3" type="register">
+      <name>U0/DU0/Q[0]</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_ELIM_STAT_">SA0</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="4" type="register">
+      <name>U1/UT1/U0/Q[2]</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_ELIM_STAT_">SA0</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="5" type="register">
+      <name>U1/UT1/U0/Q[0]</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_ELIM_STAT_">SA0</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="6" type="register">
+      <name>U0/DU0/Q[2]</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_ELIM_STAT_">SA0</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="7" type="register">
+      <name>U1/UT1/U1/Q[3]</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_ELIM_STAT_">SA0</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="8" type="register">
+      <name>U0/DU1/Q[3]</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_ELIM_STAT_">SA0</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="9" type="register">
+      <name>U0/DU1/Q[1]</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_ELIM_STAT_">SA0</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="10" type="register">
+      <name>U0/DU2/Q[1]</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_ELIM_STAT_">SA0</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="11" type="register">
+      <name>U1/UT1/U1/Q[2]</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_ELIM_STAT_">SA0</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="12" type="register">
+      <name>U1/UT1/U1/Q[0]</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_ELIM_STAT_">SA0</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="13" type="register">
+      <name>U1/UT1/U0/Q[1]</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_ELIM_STAT_">SA0</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="14" type="register">
+      <name>U0/DU0/Q[3]</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_ELIM_STAT_">SA0</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="15" type="register">
+      <name>U0/DU1/Q[0]</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_ELIM_STAT_">SA0</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="16" type="register">
+      <name>U1/UT1/U0/Q[3]</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_ELIM_STAT_">SA0</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="17" type="register">
+      <name>U0/DU0/Q[1]</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_ELIM_STAT_">SA0</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="18" type="register">
+      <name>U0/DU2/Q[2]</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_ELIM_STAT_">SA0</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="19" type="register">
+      <name>U0/DU2/Q[3]</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_ELIM_STAT_">SA0</attribute>
+      </attributes_list>
+    </key_point>
+    <key_point id="20" type="register">
+      <name>U0/DU1/Q[2]</name>
+      <attributes_list>
+        <attribute name="_KPT_INT_ELIM_STAT_">SA0</attribute>
+      </attributes_list>
+    </key_point>
+  </key_points_set>
+  <key_points_set type="transition" hier_sep="|">
+  </key_points_set>
+  <key_points_set type="transformed" hier_sep="|">
+  </key_points_set>
+  <transformations_set hier_sep="|">
+  </transformations_set>
+</kpt_db>

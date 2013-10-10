@@ -1,0 +1,135 @@
+# Reading D:/Altera/modelsim_ase/tcl/vsim/pref.tcl 
+# do fvc_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\Altera\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\Altera\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/WORKPLACE/VerilogPRJ/FVC {D:/WORKPLACE/VerilogPRJ/FVC/fvc.v}
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module fvc
+# -- Compiling module catch_edge
+# 
+# Top level modules:
+# 	fvc
+# vlog -vlog01compat -work work +incdir+D:/WORKPLACE/VerilogPRJ/FVC {D:/WORKPLACE/VerilogPRJ/FVC/dac_clk.v}
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module dac_clk
+# 
+# Top level modules:
+# 	dac_clk
+# 
+# vlog -vlog01compat -work work +incdir+D:/WORKPLACE/VerilogPRJ/FVC/simulation/modelsim {D:/WORKPLACE/VerilogPRJ/FVC/simulation/modelsim/fvc.vt}
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module fvc_tst
+# 
+# Top level modules:
+# 	fvc_tst
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L maxii_ver -L rtl_work -L work -voptargs="+acc" fvc_test
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L maxii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps fvc_test 
+# ** Error: (vsim-3170) Could not find 'D:\WORKPLACE\VerilogPRJ\FVC\simulation\modelsim\rtl_work.fvc_test'.
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./fvc_run_msim_rtl_verilog.do PAUSED at line 13
+vsim work.fvc_tst
+# vsim work.fvc_tst 
+# Loading work.fvc_tst
+# Loading work.fvc
+# ** Warning: (vsim-3009) [TSCALE] - Module 'fvc' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /fvc_tst/i1
+# Loading work.catch_edge
+# ** Warning: (vsim-3009) [TSCALE] - Module 'catch_edge' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /fvc_tst/i1/U0
+# Loading work.dac_clk
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dac_clk' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /fvc_tst/i1/U1
+vsim work.fvc_tst
+# vsim work.fvc_tst 
+# Loading work.fvc_tst
+# Loading work.fvc
+# ** Warning: (vsim-3009) [TSCALE] - Module 'fvc' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /fvc_tst/i1
+# Loading work.catch_edge
+# ** Warning: (vsim-3009) [TSCALE] - Module 'catch_edge' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /fvc_tst/i1/U0
+# Loading work.dac_clk
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dac_clk' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /fvc_tst/i1/U1
+vsim work.fvc_tst
+# vsim work.fvc_tst 
+# Loading work.fvc_tst
+# Loading work.fvc
+# ** Warning: (vsim-3009) [TSCALE] - Module 'fvc' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /fvc_tst/i1
+# Loading work.catch_edge
+# ** Warning: (vsim-3009) [TSCALE] - Module 'catch_edge' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /fvc_tst/i1/U0
+# Loading work.dac_clk
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dac_clk' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /fvc_tst/i1/U1
+vlog -reportprogress 300 -work work D:/WORKPLACE/VerilogPRJ/FVC/simulation/modelsim/fvc.vt
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module fvc_tst
+# 
+# Top level modules:
+# 	fvc_tst
+vsim work.fvc_tst
+# vsim work.fvc_tst 
+# Loading work.fvc_tst
+# Loading work.fvc
+# ** Warning: (vsim-3009) [TSCALE] - Module 'fvc' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /fvc_tst/i1
+# Loading work.catch_edge
+# ** Warning: (vsim-3009) [TSCALE] - Module 'catch_edge' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /fvc_tst/i1/U0
+# Loading work.dac_clk
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dac_clk' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /fvc_tst/i1/U1
+run
+# Running testbench
+# Cannot determine language of D:/WORKPLACE/VerilogPRJ/FVC/simulation/modelsim/rtl_work/fvc_tst/verilog.prw
+vlog -reportprogress 300 -work work D:/WORKPLACE/VerilogPRJ/FVC/simulation/modelsim/fvc.vt
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module fvc_tst
+# 
+# Top level modules:
+# 	fvc_tst
+vlog -reportprogress 300 -work work D:/WORKPLACE/VerilogPRJ/FVC/simulation/modelsim/fvc.vt
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module fvc_tst
+# 
+# Top level modules:
+# 	fvc_tst
+vlog -reportprogress 300 -work work D:/WORKPLACE/VerilogPRJ/FVC/simulation/modelsim/fvc.vt
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module fvc_tst
+# 
+# Top level modules:
+# 	fvc_tst
+run 1us
+run 1s
+# Invalid time value: 1s
+run 500us
+# Break key hit 
+# Break key hit 
+quit -sim
+vsim work.fvc_tst
+# vsim work.fvc_tst 
+# Loading work.fvc_tst
+# Loading work.fvc
+# ** Warning: (vsim-3009) [TSCALE] - Module 'fvc' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /fvc_tst/i1
+# Loading work.catch_edge
+# ** Warning: (vsim-3009) [TSCALE] - Module 'catch_edge' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /fvc_tst/i1/U0
+# Loading work.dac_clk
+# ** Warning: (vsim-3009) [TSCALE] - Module 'dac_clk' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /fvc_tst/i1/U1
+quit -sim

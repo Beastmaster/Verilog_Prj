@@ -1,0 +1,115 @@
+|ad9235
+clk => clk~0.IN1
+nCR => nCR~0.IN1
+code[0] => read_code~23.DATAB
+code[1] => read_code~22.DATAB
+code[2] => read_code~21.DATAB
+code[3] => read_code~20.DATAB
+code[4] => read_code~19.DATAB
+code[5] => read_code~18.DATAB
+code[6] => read_code~17.DATAB
+code[7] => read_code~16.DATAB
+code[8] => read_code~15.DATAB
+code[9] => read_code~14.DATAB
+code[10] => read_code~13.DATAB
+code[11] => read_code~12.DATAB
+ctrl_clk <= ctrl_clk~reg0.DB_MAX_OUTPUT_PORT_TYPE
+BCD1[0] <= bcd_1:BCD.port2
+BCD1[1] <= bcd_1:BCD.port2
+BCD1[2] <= bcd_1:BCD.port2
+BCD2[0] <= bcd_1:BCD.port3
+BCD2[1] <= bcd_1:BCD.port3
+BCD2[2] <= bcd_1:BCD.port3
+BCD2[3] <= bcd_1:BCD.port3
+BCD2[4] <= bcd_1:BCD.port3
+BCD2[5] <= bcd_1:BCD.port3
+BCD2[6] <= bcd_1:BCD.port3
+
+
+|ad9235|bcd_1:BCD
+in[0] => Mux3.IN7
+in[1] => Mux2.IN7
+in[2] => Mux1.IN7
+in[3] => Mux0.IN7
+in[4] => Mux3.IN6
+in[5] => Mux2.IN6
+in[6] => Mux1.IN6
+in[7] => Mux0.IN6
+in[8] => Mux3.IN5
+in[9] => Mux2.IN5
+in[10] => Mux1.IN5
+in[11] => Mux0.IN5
+CP => CP~0.IN1
+BCD1[0] <= cnt1[0].DB_MAX_OUTPUT_PORT_TYPE
+BCD1[1] <= cnt1[1].DB_MAX_OUTPUT_PORT_TYPE
+BCD1[2] <= cnt1[2].DB_MAX_OUTPUT_PORT_TYPE
+BCD2[0] <= bcd:U1.port1
+BCD2[1] <= bcd:U1.port1
+BCD2[2] <= bcd:U1.port1
+BCD2[3] <= bcd:U1.port1
+BCD2[4] <= bcd:U1.port1
+BCD2[5] <= bcd:U1.port1
+BCD2[6] <= bcd:U1.port1
+nCR => nCR~0.IN1
+
+
+|ad9235|bcd_1:BCD|divide1:U2
+CP => cnt[19].CLK
+CP => cnt[18].CLK
+CP => cnt[17].CLK
+CP => cnt[16].CLK
+CP => cnt[15].CLK
+CP => cnt[14].CLK
+CP => cnt[13].CLK
+CP => cnt[12].CLK
+CP => cnt[11].CLK
+CP => cnt[10].CLK
+CP => cnt[9].CLK
+CP => cnt[8].CLK
+CP => cnt[7].CLK
+CP => cnt[6].CLK
+CP => cnt[5].CLK
+CP => cnt[4].CLK
+CP => cnt[3].CLK
+CP => cnt[2].CLK
+CP => cnt[1].CLK
+CP => cnt[0].CLK
+CP => OUT~reg0.CLK
+OUT <= OUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nCR => cnt[19].ACLR
+nCR => cnt[18].ACLR
+nCR => cnt[17].ACLR
+nCR => cnt[16].ACLR
+nCR => cnt[15].ACLR
+nCR => cnt[14].ACLR
+nCR => cnt[13].ACLR
+nCR => cnt[12].ACLR
+nCR => cnt[11].ACLR
+nCR => cnt[10].ACLR
+nCR => cnt[9].ACLR
+nCR => cnt[8].ACLR
+nCR => cnt[7].ACLR
+nCR => cnt[6].ACLR
+nCR => cnt[5].ACLR
+nCR => cnt[4].ACLR
+nCR => cnt[3].ACLR
+nCR => cnt[2].ACLR
+nCR => cnt[1].ACLR
+nCR => cnt[0].ACLR
+nCR => OUT~reg0.ACLR
+
+
+|ad9235|bcd_1:BCD|bcd:U1
+bcd2[0] => Decoder0.IN3
+bcd2[1] => Decoder0.IN2
+bcd2[2] => Decoder0.IN1
+bcd2[3] => Decoder0.IN0
+BCD2[0] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+BCD2[1] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+BCD2[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+BCD2[3] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+BCD2[4] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+BCD2[5] <= BCD2~1.DB_MAX_OUTPUT_PORT_TYPE
+BCD2[6] <= BCD2~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

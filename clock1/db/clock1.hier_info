@@ -1,0 +1,632 @@
+|clock1
+seg1[0] <= display:D1.port1
+seg1[1] <= display:D1.port1
+seg1[2] <= display:D1.port1
+seg1[3] <= display:D1.port1
+seg1[4] <= display:D1.port1
+seg1[5] <= display:D1.port1
+seg1[6] <= display:D1.port1
+seg1[7] <= display:D1.port1
+seg2[0] <= display:D2.port1
+seg2[1] <= display:D2.port1
+seg2[2] <= display:D2.port1
+seg2[3] <= display:D2.port1
+seg2[4] <= display:D2.port1
+seg2[5] <= display:D2.port1
+seg2[6] <= display:D2.port1
+seg2[7] <= display:D2.port1
+seg3[0] <= display:D3.port1
+seg3[1] <= display:D3.port1
+seg3[2] <= display:D3.port1
+seg3[3] <= display:D3.port1
+seg3[4] <= display:D3.port1
+seg3[5] <= display:D3.port1
+seg3[6] <= display:D3.port1
+seg3[7] <= display:D3.port1
+seg4[0] <= display:D4.port1
+seg4[1] <= display:D4.port1
+seg4[2] <= display:D4.port1
+seg4[3] <= display:D4.port1
+seg4[4] <= display:D4.port1
+seg4[5] <= display:D4.port1
+seg4[6] <= display:D4.port1
+seg4[7] <= display:D4.port1
+AdjHr => AdjHr~0.IN2
+AdjMin => AdjMin~0.IN2
+Mode[0] => ~NO_FANOUT~
+Mode[1] => ~NO_FANOUT~
+Mode[2] => ~NO_FANOUT~
+Mode[3] => ~NO_FANOUT~
+nCR => nCR~0.IN3
+CP => CP~0.IN1
+CtrlBell => CtrlBell~0.IN1
+Buzzer <= Buzzer~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clock1|div_1kHz:KHZ
+CP => _1kHz~reg0.CLK
+CP => cnt[31].CLK
+CP => cnt[30].CLK
+CP => cnt[29].CLK
+CP => cnt[28].CLK
+CP => cnt[27].CLK
+CP => cnt[26].CLK
+CP => cnt[25].CLK
+CP => cnt[24].CLK
+CP => cnt[23].CLK
+CP => cnt[22].CLK
+CP => cnt[21].CLK
+CP => cnt[20].CLK
+CP => cnt[19].CLK
+CP => cnt[18].CLK
+CP => cnt[17].CLK
+CP => cnt[16].CLK
+CP => cnt[15].CLK
+CP => cnt[14].CLK
+CP => cnt[13].CLK
+CP => cnt[12].CLK
+CP => cnt[11].CLK
+CP => cnt[10].CLK
+CP => cnt[9].CLK
+CP => cnt[8].CLK
+CP => cnt[7].CLK
+CP => cnt[6].CLK
+CP => cnt[5].CLK
+CP => cnt[4].CLK
+CP => cnt[3].CLK
+CP => cnt[2].CLK
+CP => cnt[1].CLK
+CP => cnt[0].CLK
+nCR => _1kHz~reg0.ACLR
+nCR => cnt[31].ACLR
+nCR => cnt[30].ACLR
+nCR => cnt[29].ACLR
+nCR => cnt[28].ACLR
+nCR => cnt[27].ACLR
+nCR => cnt[26].ACLR
+nCR => cnt[25].ACLR
+nCR => cnt[24].ACLR
+nCR => cnt[23].ACLR
+nCR => cnt[22].ACLR
+nCR => cnt[21].ACLR
+nCR => cnt[20].ACLR
+nCR => cnt[19].ACLR
+nCR => cnt[18].ACLR
+nCR => cnt[17].ACLR
+nCR => cnt[16].ACLR
+nCR => cnt[15].ACLR
+nCR => cnt[14].ACLR
+nCR => cnt[13].ACLR
+nCR => cnt[12].ACLR
+nCR => cnt[11].ACLR
+nCR => cnt[10].ACLR
+nCR => cnt[9].ACLR
+nCR => cnt[8].ACLR
+nCR => cnt[7].ACLR
+nCR => cnt[6].ACLR
+nCR => cnt[5].ACLR
+nCR => cnt[4].ACLR
+nCR => cnt[3].ACLR
+nCR => cnt[2].ACLR
+nCR => cnt[1].ACLR
+nCR => cnt[0].ACLR
+_1kHz <= _1kHz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clock1|Divided_Frequency:DIV1
+_1HzOut <= _1HzOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+_500HzOut <= <GND>
+nCR => _1HzOut~reg0.ACLR
+nCR => cnt1[31].ACLR
+nCR => cnt1[30].ACLR
+nCR => cnt1[29].ACLR
+nCR => cnt1[28].ACLR
+nCR => cnt1[27].ACLR
+nCR => cnt1[26].ACLR
+nCR => cnt1[25].ACLR
+nCR => cnt1[24].ACLR
+nCR => cnt1[23].ACLR
+nCR => cnt1[22].ACLR
+nCR => cnt1[21].ACLR
+nCR => cnt1[20].ACLR
+nCR => cnt1[19].ACLR
+nCR => cnt1[18].ACLR
+nCR => cnt1[17].ACLR
+nCR => cnt1[16].ACLR
+nCR => cnt1[15].ACLR
+nCR => cnt1[14].ACLR
+nCR => cnt1[13].ACLR
+nCR => cnt1[12].ACLR
+nCR => cnt1[11].ACLR
+nCR => cnt1[10].ACLR
+nCR => cnt1[9].ACLR
+nCR => cnt1[8].ACLR
+nCR => cnt1[7].ACLR
+nCR => cnt1[6].ACLR
+nCR => cnt1[5].ACLR
+nCR => cnt1[4].ACLR
+nCR => cnt1[3].ACLR
+nCR => cnt1[2].ACLR
+nCR => cnt1[1].ACLR
+nCR => cnt1[0].ACLR
+nCR => cnt2[3].ACLR
+nCR => cnt2[2].ACLR
+nCR => cnt2[1].ACLR
+nCR => cnt2[0].ACLR
+_1kHzIn => _1HzOut~reg0.CLK
+_1kHzIn => cnt1[31].CLK
+_1kHzIn => cnt1[30].CLK
+_1kHzIn => cnt1[29].CLK
+_1kHzIn => cnt1[28].CLK
+_1kHzIn => cnt1[27].CLK
+_1kHzIn => cnt1[26].CLK
+_1kHzIn => cnt1[25].CLK
+_1kHzIn => cnt1[24].CLK
+_1kHzIn => cnt1[23].CLK
+_1kHzIn => cnt1[22].CLK
+_1kHzIn => cnt1[21].CLK
+_1kHzIn => cnt1[20].CLK
+_1kHzIn => cnt1[19].CLK
+_1kHzIn => cnt1[18].CLK
+_1kHzIn => cnt1[17].CLK
+_1kHzIn => cnt1[16].CLK
+_1kHzIn => cnt1[15].CLK
+_1kHzIn => cnt1[14].CLK
+_1kHzIn => cnt1[13].CLK
+_1kHzIn => cnt1[12].CLK
+_1kHzIn => cnt1[11].CLK
+_1kHzIn => cnt1[10].CLK
+_1kHzIn => cnt1[9].CLK
+_1kHzIn => cnt1[8].CLK
+_1kHzIn => cnt1[7].CLK
+_1kHzIn => cnt1[6].CLK
+_1kHzIn => cnt1[5].CLK
+_1kHzIn => cnt1[4].CLK
+_1kHzIn => cnt1[3].CLK
+_1kHzIn => cnt1[2].CLK
+_1kHzIn => cnt1[1].CLK
+_1kHzIn => cnt1[0].CLK
+_1kHzIn => cnt2[3].CLK
+_1kHzIn => cnt2[2].CLK
+_1kHzIn => cnt2[1].CLK
+_1kHzIn => cnt2[0].CLK
+
+
+|clock1|top_clock:TOP
+Hour[0] <= counter24:UT3.port1
+Hour[1] <= counter24:UT3.port1
+Hour[2] <= counter24:UT3.port1
+Hour[3] <= counter24:UT3.port1
+Hour[4] <= counter24:UT3.port0
+Hour[5] <= counter24:UT3.port0
+Hour[6] <= counter24:UT3.port0
+Hour[7] <= counter24:UT3.port0
+Minute[0] <= counter60:UT2.port0
+Minute[1] <= counter60:UT2.port0
+Minute[2] <= counter60:UT2.port0
+Minute[3] <= counter60:UT2.port0
+Minute[4] <= counter60:UT2.port0
+Minute[5] <= counter60:UT2.port0
+Minute[6] <= counter60:UT2.port0
+Minute[7] <= counter60:UT2.port0
+Second[0] <= counter60:UT1.port0
+Second[1] <= counter60:UT1.port0
+Second[2] <= counter60:UT1.port0
+Second[3] <= counter60:UT1.port0
+Second[4] <= counter60:UT1.port0
+Second[5] <= counter60:UT1.port0
+Second[6] <= counter60:UT1.port0
+Second[7] <= counter60:UT1.port0
+_1Hz => _1Hz~0.IN1
+nCR => nCR~0.IN3
+AdjMinKey => MinCP.OUTPUTSELECT
+AdjHrKey => HrCP.OUTPUTSELECT
+
+
+|clock1|top_clock:TOP|counter60:UT1
+Cnt[0] <= counter10:U0.port0
+Cnt[1] <= counter10:U0.port0
+Cnt[2] <= counter10:U0.port0
+Cnt[3] <= counter10:U0.port0
+Cnt[4] <= counter6:U1.port0
+Cnt[5] <= counter6:U1.port0
+Cnt[6] <= counter6:U1.port0
+Cnt[7] <= counter6:U1.port0
+nCR => nCR~0.IN2
+EN => EN~0.IN2
+CP => CP~0.IN1
+
+
+|clock1|top_clock:TOP|counter60:UT1|counter10:U0
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nCR => Q[3]~reg0.ACLR
+nCR => Q[2]~reg0.ACLR
+nCR => Q[1]~reg0.ACLR
+nCR => Q[0]~reg0.ACLR
+EN => Q[0]~reg0.ENA
+EN => Q[3]~reg0.ENA
+EN => Q[2]~reg0.ENA
+EN => Q[1]~reg0.ENA
+CP => Q[3]~reg0.CLK
+CP => Q[2]~reg0.CLK
+CP => Q[1]~reg0.CLK
+CP => Q[0]~reg0.CLK
+
+
+|clock1|top_clock:TOP|counter60:UT1|counter6:U1
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nCR => Q[3]~reg0.ACLR
+nCR => Q[2]~reg0.ACLR
+nCR => Q[1]~reg0.ACLR
+nCR => Q[0]~reg0.ACLR
+EN => Q[0]~reg0.ENA
+EN => Q[3]~reg0.ENA
+EN => Q[2]~reg0.ENA
+EN => Q[1]~reg0.ENA
+CP => Q[3]~reg0.CLK
+CP => Q[2]~reg0.CLK
+CP => Q[1]~reg0.CLK
+CP => Q[0]~reg0.CLK
+
+
+|clock1|top_clock:TOP|counter60:UT2
+Cnt[0] <= counter10:U0.port0
+Cnt[1] <= counter10:U0.port0
+Cnt[2] <= counter10:U0.port0
+Cnt[3] <= counter10:U0.port0
+Cnt[4] <= counter6:U1.port0
+Cnt[5] <= counter6:U1.port0
+Cnt[6] <= counter6:U1.port0
+Cnt[7] <= counter6:U1.port0
+nCR => nCR~0.IN2
+EN => EN~0.IN2
+CP => CP~0.IN1
+
+
+|clock1|top_clock:TOP|counter60:UT2|counter10:U0
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nCR => Q[3]~reg0.ACLR
+nCR => Q[2]~reg0.ACLR
+nCR => Q[1]~reg0.ACLR
+nCR => Q[0]~reg0.ACLR
+EN => Q[0]~reg0.ENA
+EN => Q[3]~reg0.ENA
+EN => Q[2]~reg0.ENA
+EN => Q[1]~reg0.ENA
+CP => Q[3]~reg0.CLK
+CP => Q[2]~reg0.CLK
+CP => Q[1]~reg0.CLK
+CP => Q[0]~reg0.CLK
+
+
+|clock1|top_clock:TOP|counter60:UT2|counter6:U1
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nCR => Q[3]~reg0.ACLR
+nCR => Q[2]~reg0.ACLR
+nCR => Q[1]~reg0.ACLR
+nCR => Q[0]~reg0.ACLR
+EN => Q[0]~reg0.ENA
+EN => Q[3]~reg0.ENA
+EN => Q[2]~reg0.ENA
+EN => Q[1]~reg0.ENA
+CP => Q[3]~reg0.CLK
+CP => Q[2]~reg0.CLK
+CP => Q[1]~reg0.CLK
+CP => Q[0]~reg0.CLK
+
+
+|clock1|top_clock:TOP|counter24:UT3
+CntH[0] <= CntH[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CntH[1] <= CntH[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CntH[2] <= CntH[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CntH[3] <= CntH[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CntL[0] <= CntL[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CntL[1] <= CntL[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CntL[2] <= CntL[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CntL[3] <= CntL[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nCR => CntH[3]~reg0.ACLR
+nCR => CntH[2]~reg0.ACLR
+nCR => CntH[1]~reg0.ACLR
+nCR => CntH[0]~reg0.ACLR
+nCR => CntL[3]~reg0.ACLR
+nCR => CntL[2]~reg0.ACLR
+nCR => CntL[1]~reg0.ACLR
+nCR => CntL[0]~reg0.ACLR
+EN => CntL[0]~reg0.ENA
+EN => CntH[3]~reg0.ENA
+EN => CntH[2]~reg0.ENA
+EN => CntH[1]~reg0.ENA
+EN => CntH[0]~reg0.ENA
+EN => CntL[3]~reg0.ENA
+EN => CntL[2]~reg0.ENA
+EN => CntL[1]~reg0.ENA
+CP => CntH[3]~reg0.CLK
+CP => CntH[2]~reg0.CLK
+CP => CntH[1]~reg0.CLK
+CP => CntH[0]~reg0.CLK
+CP => CntL[3]~reg0.CLK
+CP => CntL[2]~reg0.CLK
+CP => CntL[1]~reg0.CLK
+CP => CntL[0]~reg0.CLK
+
+
+|clock1|Radio:U_R
+ALARM_Radio1 <= ALARM_Radio1~0.DB_MAX_OUTPUT_PORT_TYPE
+Minute[0] => Equal0.IN0
+Minute[1] => Equal0.IN4
+Minute[2] => Equal0.IN5
+Minute[3] => Equal0.IN1
+Minute[4] => Equal0.IN2
+Minute[5] => Equal0.IN6
+Minute[6] => Equal0.IN3
+Minute[7] => Equal0.IN7
+Second[0] => Decoder0.IN7
+Second[1] => Decoder0.IN6
+Second[2] => Decoder0.IN5
+Second[3] => Decoder0.IN4
+Second[4] => Decoder0.IN3
+Second[5] => Decoder0.IN2
+Second[6] => Decoder0.IN1
+Second[7] => Decoder0.IN0
+_1kHzIn => Selector0.IN4
+_500Hz => Selector0.IN5
+
+
+|clock1|Bell:B1
+ALARM_Clock <= ALARM_Clock~4.DB_MAX_OUTPUT_PORT_TYPE
+Set_Hr[0] <= counter24:SU2.port1
+Set_Hr[1] <= counter24:SU2.port1
+Set_Hr[2] <= counter24:SU2.port1
+Set_Hr[3] <= counter24:SU2.port1
+Set_Hr[4] <= Set_Hr[4]~3.DB_MAX_OUTPUT_PORT_TYPE
+Set_Hr[5] <= Set_Hr[5]~2.DB_MAX_OUTPUT_PORT_TYPE
+Set_Hr[6] <= Set_Hr[6]~1.DB_MAX_OUTPUT_PORT_TYPE
+Set_Hr[7] <= Set_Hr[7]~0.DB_MAX_OUTPUT_PORT_TYPE
+Set_Min[0] <= Set_Min[0]~7.DB_MAX_OUTPUT_PORT_TYPE
+Set_Min[1] <= Set_Min[1]~6.DB_MAX_OUTPUT_PORT_TYPE
+Set_Min[2] <= Set_Min[2]~5.DB_MAX_OUTPUT_PORT_TYPE
+Set_Min[3] <= Set_Min[3]~4.DB_MAX_OUTPUT_PORT_TYPE
+Set_Min[4] <= Set_Min[4]~3.DB_MAX_OUTPUT_PORT_TYPE
+Set_Min[5] <= Set_Min[5]~2.DB_MAX_OUTPUT_PORT_TYPE
+Set_Min[6] <= Set_Min[6]~1.DB_MAX_OUTPUT_PORT_TYPE
+Set_Min[7] <= Set_Min[7]~0.DB_MAX_OUTPUT_PORT_TYPE
+Hour[0] => Hour[0]~7.IN1
+Hour[1] => Hour[1]~6.IN1
+Hour[2] => Hour[2]~5.IN1
+Hour[3] => Hour[3]~4.IN1
+Hour[4] => Hour[4]~3.IN1
+Hour[5] => Hour[5]~2.IN1
+Hour[6] => Hour[6]~1.IN1
+Hour[7] => Hour[7]~0.IN1
+Minute[0] => Minute[0]~7.IN1
+Minute[1] => Minute[1]~6.IN1
+Minute[2] => Minute[2]~5.IN1
+Minute[3] => Minute[3]~4.IN1
+Minute[4] => Minute[4]~3.IN1
+Minute[5] => Minute[5]~2.IN1
+Minute[6] => Minute[6]~1.IN1
+Minute[7] => Minute[7]~0.IN1
+Second[0] => ALARM_Clock~0.IN1
+Second[0] => ALARM_Clock~1.IN0
+Second[1] => ~NO_FANOUT~
+Second[2] => ~NO_FANOUT~
+Second[3] => ~NO_FANOUT~
+Second[4] => ~NO_FANOUT~
+Second[5] => ~NO_FANOUT~
+Second[6] => ~NO_FANOUT~
+Second[7] => ~NO_FANOUT~
+SetHrkey => SetHrkey~0.IN1
+SetMinkey => SetMinkey~0.IN1
+_1kHzIn => ALARM_Clock~1.IN1
+_500Hz => ALARM_Clock~0.IN0
+_1Hz => _1Hz~0.IN2
+CtrlBell => ALARM_Clock~4.OUTPUTSELECT
+
+
+|clock1|Bell:B1|counter60:SU1
+Cnt[0] <= counter10:U0.port0
+Cnt[1] <= counter10:U0.port0
+Cnt[2] <= counter10:U0.port0
+Cnt[3] <= counter10:U0.port0
+Cnt[4] <= counter6:U1.port0
+Cnt[5] <= counter6:U1.port0
+Cnt[6] <= counter6:U1.port0
+Cnt[7] <= counter6:U1.port0
+nCR => nCR~0.IN2
+EN => EN~0.IN2
+CP => CP~0.IN1
+
+
+|clock1|Bell:B1|counter60:SU1|counter10:U0
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nCR => Q[3]~reg0.ACLR
+nCR => Q[2]~reg0.ACLR
+nCR => Q[1]~reg0.ACLR
+nCR => Q[0]~reg0.ACLR
+EN => Q[0]~reg0.ENA
+EN => Q[3]~reg0.ENA
+EN => Q[2]~reg0.ENA
+EN => Q[1]~reg0.ENA
+CP => Q[3]~reg0.CLK
+CP => Q[2]~reg0.CLK
+CP => Q[1]~reg0.CLK
+CP => Q[0]~reg0.CLK
+
+
+|clock1|Bell:B1|counter60:SU1|counter6:U1
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nCR => Q[3]~reg0.ACLR
+nCR => Q[2]~reg0.ACLR
+nCR => Q[1]~reg0.ACLR
+nCR => Q[0]~reg0.ACLR
+EN => Q[0]~reg0.ENA
+EN => Q[3]~reg0.ENA
+EN => Q[2]~reg0.ENA
+EN => Q[1]~reg0.ENA
+CP => Q[3]~reg0.CLK
+CP => Q[2]~reg0.CLK
+CP => Q[1]~reg0.CLK
+CP => Q[0]~reg0.CLK
+
+
+|clock1|Bell:B1|counter24:SU2
+CntH[0] <= CntH[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CntH[1] <= CntH[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CntH[2] <= CntH[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CntH[3] <= CntH[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CntL[0] <= CntL[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CntL[1] <= CntL[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CntL[2] <= CntL[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CntL[3] <= CntL[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nCR => CntH[3]~reg0.ACLR
+nCR => CntH[2]~reg0.ACLR
+nCR => CntH[1]~reg0.ACLR
+nCR => CntH[0]~reg0.ACLR
+nCR => CntL[3]~reg0.ACLR
+nCR => CntL[2]~reg0.ACLR
+nCR => CntL[1]~reg0.ACLR
+nCR => CntL[0]~reg0.ACLR
+EN => CntL[0]~reg0.ENA
+EN => CntH[3]~reg0.ENA
+EN => CntH[2]~reg0.ENA
+EN => CntH[1]~reg0.ENA
+EN => CntH[0]~reg0.ENA
+EN => CntL[3]~reg0.ENA
+EN => CntL[2]~reg0.ENA
+EN => CntL[1]~reg0.ENA
+CP => CntH[3]~reg0.CLK
+CP => CntH[2]~reg0.CLK
+CP => CntH[1]~reg0.CLK
+CP => CntH[0]~reg0.CLK
+CP => CntL[3]~reg0.CLK
+CP => CntL[2]~reg0.CLK
+CP => CntL[1]~reg0.CLK
+CP => CntL[0]~reg0.CLK
+
+
+|clock1|Bell:B1|_4comparator:SU4
+EQU <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => Equal0.IN3
+A[1] => Equal0.IN2
+A[2] => Equal0.IN1
+A[3] => Equal0.IN0
+B[0] => Equal0.IN7
+B[1] => Equal0.IN6
+B[2] => Equal0.IN5
+B[3] => Equal0.IN4
+
+
+|clock1|Bell:B1|_4comparator:SU5
+EQU <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => Equal0.IN3
+A[1] => Equal0.IN2
+A[2] => Equal0.IN1
+A[3] => Equal0.IN0
+B[0] => Equal0.IN7
+B[1] => Equal0.IN6
+B[2] => Equal0.IN5
+B[3] => Equal0.IN4
+
+
+|clock1|Bell:B1|_4comparator:SU6
+EQU <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => Equal0.IN3
+A[1] => Equal0.IN2
+A[2] => Equal0.IN1
+A[3] => Equal0.IN0
+B[0] => Equal0.IN7
+B[1] => Equal0.IN6
+B[2] => Equal0.IN5
+B[3] => Equal0.IN4
+
+
+|clock1|Bell:B1|_4comparator:SU7
+EQU <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => Equal0.IN3
+A[1] => Equal0.IN2
+A[2] => Equal0.IN1
+A[3] => Equal0.IN0
+B[0] => Equal0.IN7
+B[1] => Equal0.IN6
+B[2] => Equal0.IN5
+B[3] => Equal0.IN4
+
+
+|clock1|display:D1
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= out~1.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= <VCC>
+
+
+|clock1|display:D2
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= out~1.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= <VCC>
+
+
+|clock1|display:D3
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= out~1.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= <VCC>
+
+
+|clock1|display:D4
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= out~1.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= <VCC>
+
+

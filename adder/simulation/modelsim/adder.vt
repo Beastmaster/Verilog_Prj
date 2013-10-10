@@ -1,0 +1,76 @@
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "08/03/2013 08:53:29"
+                                                                                
+// Verilog Test Bench template for design : adder
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ps/ 1 ps
+module adder_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg clk;
+reg [7:0] datain;
+reg nCR;
+reg sdt;
+// wires                                               
+wire cs;
+wire dataout;
+
+// assign statements (if any)                          
+adder i1 (
+// port map - connection between master ports and signals/registers   
+	.clk(clk),
+	.cs(cs),
+	.datain(datain),
+	
+	.dataout(dataout),
+	.nCR(nCR),
+	.sdt(sdt)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+  clk<=0;
+  datain<=8'b0;
+  nCR<=1;
+  cs<=0;
+  dataout<=0;
+  sdt<=1;                                              
+// --> end                                             
+$display("Running testbench");                       
+end  
+
+forever
+#10 clk<=~clk;
+          
+initial
+begin          
+	#100 nCR=0;
+	#100 nCR=1;
+end
+
+
+
+                                        
+always    
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin                          
+                                                       
+@eachvec;                                              
+// --> end                                             
+end                                                    
+endmodule
+

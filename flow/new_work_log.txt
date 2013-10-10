@@ -1,0 +1,173 @@
+Altera SOPC Builder Version 9.00 Build 235
+Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.
+
+
+# 2013.08.05 00:35:37 (*) mk_custom_sdk starting
+# 2013.08.05 00:35:37 (*) Reading project D:/WORKPLACE/VerilogPRJ/flow/new_work.ptf.
+
+# 2013.08.05 00:35:37 (*) Finding all CPUs
+# 2013.08.05 00:35:37 (*) Finding all available components
+# 2013.08.05 00:35:37 (*) Reading D:/WORKPLACE/VerilogPRJ/flow/.sopc_builder/install.ptf
+
+# 2013.08.05 00:35:37 (*) Found 67 components
+
+# 2013.08.05 00:35:38 (*) Finding all peripherals
+
+# 2013.08.05 00:35:38 (*) Finding software components
+
+# 2013.08.05 00:35:39 (*) (Legacy SDK Generation Skipped)
+# 2013.08.05 00:35:39 (*) (All TCL Script Generation Skipped)
+# 2013.08.05 00:35:39 (*) (No Libraries Built)
+# 2013.08.05 00:35:39 (*) (Contents Generation Skipped)
+# 2013.08.05 00:35:39 (*) mk_custom_sdk finishing
+
+# 2013.08.05 00:35:39 (*) Starting generation for system: new_work.
+
+.
+.
+.
+.
+.
+.
+.
+..........
+
+# 2013.08.05 00:35:42 (*) Running Generator Program for cpu_0
+
+# 2013.08.05 00:35:43 (*)   IP functional simulation model enabled: Uncheck System Generation Simulation box for faster generation if HDL Simulation not required.
+# 2013.08.05 00:35:46 (*)   Checking for plaintext license.
+# 2013.08.05 00:35:47 (*)   Plaintext license not found.
+# 2013.08.05 00:35:47 (*)   Checking for encrypted license (non-evaluation).
+# 2013.08.05 00:35:48 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+# 2013.08.05 00:35:48 (*)   Getting CPU configuration settings
+
+# 2013.08.05 00:35:48 (*)   Elaborating CPU configuration settings
+# 2013.08.05 00:35:48 (*)   Creating all objects for CPU
+# 2013.08.05 00:35:48 (*)     Testbench
+# 2013.08.05 00:35:48 (*)     Instruction decoding
+# 2013.08.05 00:35:48 (*)       Instruction fields
+# 2013.08.05 00:35:49 (*)       Instruction decodes
+# 2013.08.05 00:35:50 (*)       Signals for RTL simulation waveforms
+# 2013.08.05 00:35:50 (*)       Instruction controls
+# 2013.08.05 00:35:50 (*)     Pipeline frontend
+# 2013.08.05 00:35:51 (*)     Pipeline backend
+
+# 2013.08.05 00:35:56 (*)   Generating HDL from CPU objects
+# 2013.08.05 00:36:00 (*)   Creating encrypted HDL
+# 2013.08.05 00:36:03 (*)   Creating IP functional simulation model
+
+# 2013.08.05 00:36:20 (*) Running Generator Program for sysid_0
+
+# 2013.08.05 00:36:21 (*) Running Generator Program for jtag_uart_0
+
+# 2013.08.05 00:36:23 (*) Running Generator Program for sdram_0
+
+# 2013.08.05 00:36:25 (*) Running Generator Program for pio_0
+
+# 2013.08.05 00:36:26 (*) Running Generator Program for cfi_flash_0
+
+# 2013.08.05 00:36:27 (*) Running Generator Program for new_work_clock_0
+
+# 2013.08.05 00:36:29 (*) Running Generator Program for new_work_clock_1
+
+# 2013.08.05 00:36:30 (*) Running Generator Program for new_work_clock_2
+
+# 2013.08.05 00:36:32 (*) Running Generator Program for new_work_clock_3
+
+# 2013.08.05 00:36:34 (*) Running Generator Program for new_work_clock_4
+
+# 2013.08.05 00:36:35 (*) Running Generator Program for new_work_clock_5
+
+# 2013.08.05 00:36:37 (*) Running Generator Program for new_work_clock_6
+
+# 2013.08.05 00:36:38 (*) Running Generator Program for new_work_burst_0
+
+# 2013.08.05 00:36:40 (*) Running Generator Program for new_work_burst_1
+
+# 2013.08.05 00:36:42 (*) Running Generator Program for new_work_burst_2
+
+# 2013.08.05 00:36:43 (*) Running Generator Program for new_work_burst_3
+
+.
+
+
+# 2013.08.05 00:36:45 (*) Running Test Generator Program for sdram_0
+
+# 2013.08.05 00:36:46 (*) Making arbitration and system (top) modules.
+
+# 2013.08.05 00:37:01 (*) Generating Quartus symbol for top level: new_work
+
+# 2013.08.05 00:37:01 (*) Generating Symbol D:/WORKPLACE/VerilogPRJ/flow/new_work.bsf
+
+# 2013.08.05 00:37:01 (*) Creating command-line system-generation script: D:/WORKPLACE/VerilogPRJ/flow/new_work_generation_script
+
+# 2013.08.05 00:37:01 (*) Running setup for HDL simulator: modelsim
+
+
+Building ModelSim Project
+
+Reading D:/Altera/modelsim_ase/tcl/vsim/pref.tcl 
+
+Reading D:/WORKPLACE/VerilogPRJ/flow/new_work_sim/modelsim.tcl 
+d:/altera/quartus//sopc_builder
+d:/altera/quartus//bin/perl
+Sopc_Builder Directory: d:/altera/quartus//sopc_builder 
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+@@ 
+@@ setup_sim.do 
+@@ 
+@@ Defined aliases: 
+@@ 
+@@ s -- Load all design (HDL) files. 
+@@ re-vlog/re-vcom and re-vsim the design. 
+@@ 
+@@ c -- Re-compile memory contents. 
+@@ Builds C- and assembly-language programs 
+@@ (and associated simulation data-files 
+@@ such as UART simulation strings) for 
+@@ refreshing memory contents. 
+@@ Does NOT re-generate hardware (HDL) files 
+@@ ONLY WORKS WITH LEGACY SDK (Not the Nios IDE) 
+@@ 
+@@ w -- Sets-up waveforms for this design 
+
+@@ Each SOPC-Builder component may have 
+@@ signals 'marked' for display during 
+@@ simulation. This command opens a wave- 
+@@ window containing all such signals. 
+@@ 
+@@ l -- Sets-up list waveforms for this design 
+@@ Each SOPC-Builder component may have 
+@@ signals 'marked' for listing during 
+@@ simulation. This command opens a list- 
+@@ window containing all such signals. 
+@@ 
+@@ jtag_uart_0_log -- display interactive output window for jtag_uart_0 
+@@ 
+@@ h -- print this message 
+@@ 
+@@ 
+
+
+# 6.5b
+
+
+# do create_new_work_project.do 
+
+# Loading project new_work_sim
+
+2
+0
+
+# 2013.08.05 00:37:11 (*) Completed generation for system: new_work.
+# 2013.08.05 00:37:11 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:
+  SOPC Builder database : D:/WORKPLACE/VerilogPRJ/flow/new_work.ptf 
+  System HDL Model : D:/WORKPLACE/VerilogPRJ/flow/new_work.v 
+  System Generation Script : D:/WORKPLACE/VerilogPRJ/flow/new_work_generation_script 
+  HDL Simulation Directory : D:/WORKPLACE/VerilogPRJ/flow/new_work_sim 
+
+# 2013.08.05 00:37:11 (*) SUCCESS: SYSTEM GENERATION COMPLETED.
+
+
+Press 'Exit' to exit.

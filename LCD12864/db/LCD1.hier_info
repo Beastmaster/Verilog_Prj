@@ -1,0 +1,26 @@
+|LCD1
+clk => clk~0.IN1
+nCR => state[5].ACLR
+nCR => state[4].ACLR
+nCR => state[3].ACLR
+nCR => state[2].ACLR
+nCR => state[1].ACLR
+nCR => state[0].ACLR
+CS <= <VCC>
+SCLK <= div:DIV.port1
+SID <= SID~reg0.DB_MAX_OUTPUT_PORT_TYPE
+PSB <= <GND>
+
+
+|LCD1|div:DIV
+clk => cnt[6].CLK
+clk => cnt[5].CLK
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clk => cnt[0].CLK
+clk => CP~reg0.CLK
+CP <= CP~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

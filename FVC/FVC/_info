@@ -1,0 +1,53 @@
+m255
+K3
+13
+cModel Technology
+dD:\Altera\modelsim_ase\examples
+vcatch_edge
+IegY2MoA<N_E2[FWnAQaI53
+VVgZeDUe9EX9Blk<N<Una_3
+Z0 dD:\WORKPLACE\VerilogPRJ\FVC
+Z1 w1377101561
+Z2 8D:/WORKPLACE/VerilogPRJ/FVC/fvc.v
+Z3 FD:/WORKPLACE/VerilogPRJ/FVC/fvc.v
+L0 35
+Z4 OV;L;6.5b;42
+r1
+31
+Z5 !s102 -nocovercells
+Z6 o-work FVC -nocovercells -O0
+!s100 IT[<DjBU:b=k=:_kf@e[X0
+!s85 0
+!s101 -O0
+vdac_clk
+!s100 882XQQFd8dY3ROWng<ZR>2
+IVa0l>27b3>^TgBV<oP9b73
+Vz]lnHk`:F<gT:;bg3X=kH3
+Z7 dD:\WORKPLACE\VerilogPRJ\FVC
+w1377074747
+8D:/WORKPLACE/VerilogPRJ/FVC/dac_clk.v
+FD:/WORKPLACE/VerilogPRJ/FVC/dac_clk.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s101 -O0
+R5
+R6
+vfvc
+I=g[MoT]MC>Bg0MLFDd<R?3
+V^6>Eo49ePg5GfDASkMV]`2
+R7
+R1
+R2
+R3
+L0 1
+R4
+r1
+31
+R5
+R6
+!s100 QjV@;_iGMf:DBe28_lfIA3
+!s85 0
+!s101 -O0

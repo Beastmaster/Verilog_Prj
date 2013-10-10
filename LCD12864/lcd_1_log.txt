@@ -1,0 +1,87 @@
+Altera SOPC Builder Version 9.00 Build 235
+Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.
+
+
+# 2013.08.07 02:21:36 (*) mk_custom_sdk starting
+# 2013.08.07 02:21:36 (*) Reading project D:/WORKPLACE/VerilogPRJ/LCD12864/lcd_1.ptf.
+
+# 2013.08.07 02:21:36 (*) Finding all CPUs
+# 2013.08.07 02:21:36 (*) Finding all available components
+# 2013.08.07 02:21:36 (*) Reading D:/WORKPLACE/VerilogPRJ/LCD12864/.sopc_builder/install.ptf
+
+# 2013.08.07 02:21:36 (*) Found 67 components
+
+# 2013.08.07 02:21:37 (*) Finding all peripherals
+
+# 2013.08.07 02:21:37 (*) Finding software components
+
+# 2013.08.07 02:21:38 (*) (Legacy SDK Generation Skipped)
+# 2013.08.07 02:21:38 (*) (All TCL Script Generation Skipped)
+# 2013.08.07 02:21:38 (*) (No Libraries Built)
+# 2013.08.07 02:21:38 (*) (Contents Generation Skipped)
+# 2013.08.07 02:21:38 (*) mk_custom_sdk finishing
+# 2013.08.07 02:21:38 (*) Starting generation for system: lcd_1.
+
+.
+.
+.
+.
+.
+.
+
+# 2013.08.07 02:21:40 (*) Running Generator Program for cpu_0
+
+# 2013.08.07 02:21:42 (*)   Checking for plaintext license.
+# 2013.08.07 02:21:43 (*)   Plaintext license not found.
+# 2013.08.07 02:21:43 (*)   Checking for encrypted license (non-evaluation).
+# 2013.08.07 02:21:44 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+# 2013.08.07 02:21:44 (*)   Getting CPU configuration settings
+# 2013.08.07 02:21:44 (*)   Elaborating CPU configuration settings
+# 2013.08.07 02:21:44 (*)   Creating all objects for CPU
+
+# 2013.08.07 02:21:44 (*)     Testbench
+# 2013.08.07 02:21:44 (*)     Instruction decoding
+# 2013.08.07 02:21:44 (*)       Instruction fields
+# 2013.08.07 02:21:44 (*)       Instruction decodes
+# 2013.08.07 02:21:45 (*)       Signals for RTL simulation waveforms
+# 2013.08.07 02:21:46 (*)       Instruction controls
+# 2013.08.07 02:21:46 (*)     Pipeline frontend
+# 2013.08.07 02:21:46 (*)     Pipeline backend
+# 2013.08.07 02:21:50 (*)   Generating HDL from CPU objects
+# 2013.08.07 02:21:54 (*)   Creating encrypted HDL
+
+# 2013.08.07 02:21:57 (*) Running Generator Program for sysid_0
+
+# 2013.08.07 02:21:58 (*) Running Generator Program for jtag_uart_0
+
+# 2013.08.07 02:21:59 (*) Running Generator Program for sdram_0
+
+# 2013.08.07 02:22:00 (*) Running Generator Program for cfi_flash_0
+
+# 2013.08.07 02:22:01 (*) Running Generator Program for pio_0
+
+.
+
+# 2013.08.07 02:22:02 (*) Running Test Generator Program for sdram_0
+
+# 2013.08.07 02:22:03 (*) Making arbitration and system (top) modules.
+
+# 2013.08.07 02:22:08 (*) Generating Quartus symbol for top level: lcd_1
+
+# 2013.08.07 02:22:08 (*) Generating Symbol D:/WORKPLACE/VerilogPRJ/LCD12864/lcd_1.bsf
+
+# 2013.08.07 02:22:08 (*) Creating command-line system-generation script: D:/WORKPLACE/VerilogPRJ/LCD12864/lcd_1_generation_script
+
+# 2013.08.07 02:22:08 (*) Running setup for HDL simulator: modelsim
+
+
+# 2013.08.07 02:22:09 (*) Completed generation for system: lcd_1.
+# 2013.08.07 02:22:09 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:
+  SOPC Builder database : D:/WORKPLACE/VerilogPRJ/LCD12864/lcd_1.ptf 
+  System HDL Model : D:/WORKPLACE/VerilogPRJ/LCD12864/lcd_1.v 
+  System Generation Script : D:/WORKPLACE/VerilogPRJ/LCD12864/lcd_1_generation_script 
+
+# 2013.08.07 02:22:09 (*) SUCCESS: SYSTEM GENERATION COMPLETED.
+
+
+Press 'Exit' to exit.

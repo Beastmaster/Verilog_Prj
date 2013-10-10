@@ -1,0 +1,5 @@
+
+State Machine - |ad9235|cnt_r
+Name cnt_r.1111101000 
+cnt_r.0000000000 0 
+cnt_r.1111101000 1 

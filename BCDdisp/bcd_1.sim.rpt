@@ -1,0 +1,418 @@
+Simulator report for bcd_1
+Thu May 30 16:25:36 2013
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 93 nodes     ;
+; Simulation Coverage         ;      31.13 % ;
+; Total Number of Transitions ; 12522        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; MAX II       ;
+; Device                      ; EPM570T144C5 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      31.13 % ;
+; Total nodes checked                                 ; 93           ;
+; Total output ports checked                          ; 151          ;
+; Total output ports with complete 1/0-value coverage ; 47           ;
+; Total output ports with no 1/0-value coverage       ; 104          ;
+; Total output ports with no 1-value coverage         ; 104          ;
+; Total output ports with no 0-value coverage         ; 104          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-----------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                       ;
++----------------------------+-----------------------------------+------------------+
+; Node Name                  ; Output Port Name                  ; Output Port Type ;
++----------------------------+-----------------------------------+------------------+
+; |bcd_1|cnt2[2]             ; |bcd_1|cnt2[2]                    ; regout           ;
+; |bcd_1|cnt2[3]             ; |bcd_1|cnt2[3]                    ; regout           ;
+; |bcd_1|bcd:U1|WideOr4~0    ; |bcd_1|bcd:U1|WideOr4~0           ; combout          ;
+; |bcd_1|bcd:U1|WideOr3~0    ; |bcd_1|bcd:U1|WideOr3~0           ; combout          ;
+; |bcd_1|bcd:U1|WideOr2~0    ; |bcd_1|bcd:U1|WideOr2~0           ; combout          ;
+; |bcd_1|bcd:U1|WideOr1~0    ; |bcd_1|bcd:U1|WideOr1~0           ; combout          ;
+; |bcd_1|bcd:U1|WideOr0~0    ; |bcd_1|bcd:U1|WideOr0~0           ; combout          ;
+; |bcd_1|bcd:U1|BCD2~2       ; |bcd_1|bcd:U1|BCD2~2              ; combout          ;
+; |bcd_1|bcd:U1|BCD2~3       ; |bcd_1|bcd:U1|BCD2~3              ; combout          ;
+; |bcd_1|divide1:U2|OUT      ; |bcd_1|divide1:U2|OUT             ; regout           ;
+; |bcd_1|divide1:U2|cnt[6]   ; |bcd_1|divide1:U2|cnt[6]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[5]   ; |bcd_1|divide1:U2|cnt[5]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[4]   ; |bcd_1|divide1:U2|cnt[4]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[7]   ; |bcd_1|divide1:U2|Equal0~7        ; combout          ;
+; |bcd_1|divide1:U2|cnt[7]   ; |bcd_1|divide1:U2|cnt[7]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[2]   ; |bcd_1|divide1:U2|cnt[2]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[3]   ; |bcd_1|divide1:U2|cnt[3]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[1]   ; |bcd_1|divide1:U2|cnt[1]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[0]   ; |bcd_1|divide1:U2|Equal0~8        ; combout          ;
+; |bcd_1|divide1:U2|cnt[0]   ; |bcd_1|divide1:U2|cnt[0]          ; regout           ;
+; |bcd_1|divide1:U2|Equal0~9 ; |bcd_1|divide1:U2|Equal0~9        ; combout          ;
+; |bcd_1|divide1:U2|Add0~48  ; |bcd_1|divide1:U2|Add0~48         ; combout          ;
+; |bcd_1|divide1:U2|Add0~50  ; |bcd_1|divide1:U2|Add0~50         ; combout          ;
+; |bcd_1|divide1:U2|Add0~50  ; |bcd_1|divide1:U2|Add0~51         ; cout0            ;
+; |bcd_1|divide1:U2|Add0~52  ; |bcd_1|divide1:U2|Add0~52         ; combout          ;
+; |bcd_1|divide1:U2|Add0~52  ; |bcd_1|divide1:U2|Add0~53         ; cout             ;
+; |bcd_1|divide1:U2|Add0~54  ; |bcd_1|divide1:U2|Add0~54         ; combout          ;
+; |bcd_1|divide1:U2|Add0~54  ; |bcd_1|divide1:U2|Add0~55COUT1_96 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~56  ; |bcd_1|divide1:U2|Add0~56         ; combout          ;
+; |bcd_1|divide1:U2|Add0~56  ; |bcd_1|divide1:U2|Add0~57COUT1_92 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~58  ; |bcd_1|divide1:U2|Add0~58         ; combout          ;
+; |bcd_1|divide1:U2|Add0~58  ; |bcd_1|divide1:U2|Add0~59         ; cout             ;
+; |bcd_1|divide1:U2|Add0~60  ; |bcd_1|divide1:U2|Add0~60         ; combout          ;
+; |bcd_1|divide1:U2|Add0~60  ; |bcd_1|divide1:U2|Add0~61COUT1_94 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~62  ; |bcd_1|divide1:U2|Add0~62         ; combout          ;
+; |bcd_1|divide1:U2|Add0~62  ; |bcd_1|divide1:U2|Add0~63COUT1_90 ; cout1            ;
+; |bcd_1|CP                  ; |bcd_1|CP~corein                  ; combout          ;
+; |bcd_1|BCD1[0]             ; |bcd_1|BCD1[0]                    ; padio            ;
+; |bcd_1|BCD1[1]             ; |bcd_1|BCD1[1]                    ; padio            ;
+; |bcd_1|BCD1[2]             ; |bcd_1|BCD1[2]                    ; padio            ;
+; |bcd_1|BCD2[0]             ; |bcd_1|BCD2[0]                    ; padio            ;
+; |bcd_1|BCD2[1]             ; |bcd_1|BCD2[1]                    ; padio            ;
+; |bcd_1|BCD2[2]             ; |bcd_1|BCD2[2]                    ; padio            ;
+; |bcd_1|BCD2[3]             ; |bcd_1|BCD2[3]                    ; padio            ;
+; |bcd_1|BCD2[4]             ; |bcd_1|BCD2[4]                    ; padio            ;
+; |bcd_1|BCD2[5]             ; |bcd_1|BCD2[5]                    ; padio            ;
+; |bcd_1|BCD2[6]             ; |bcd_1|BCD2[6]                    ; padio            ;
++----------------------------+-----------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                           ;
++----------------------------+------------------------------------+------------------+
+; Node Name                  ; Output Port Name                   ; Output Port Type ;
++----------------------------+------------------------------------+------------------+
+; |bcd_1|divide1:U2|cnt[30]  ; |bcd_1|divide1:U2|cnt[30]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[29]  ; |bcd_1|divide1:U2|cnt[29]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[28]  ; |bcd_1|divide1:U2|cnt[28]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[31]  ; |bcd_1|divide1:U2|Equal0~0         ; combout          ;
+; |bcd_1|divide1:U2|cnt[31]  ; |bcd_1|divide1:U2|cnt[31]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[26]  ; |bcd_1|divide1:U2|cnt[26]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[25]  ; |bcd_1|divide1:U2|cnt[25]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[24]  ; |bcd_1|divide1:U2|cnt[24]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[27]  ; |bcd_1|divide1:U2|Equal0~1         ; combout          ;
+; |bcd_1|divide1:U2|cnt[27]  ; |bcd_1|divide1:U2|cnt[27]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[22]  ; |bcd_1|divide1:U2|cnt[22]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[21]  ; |bcd_1|divide1:U2|cnt[21]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[20]  ; |bcd_1|divide1:U2|cnt[20]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[23]  ; |bcd_1|divide1:U2|Equal0~2         ; combout          ;
+; |bcd_1|divide1:U2|cnt[23]  ; |bcd_1|divide1:U2|cnt[23]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[18]  ; |bcd_1|divide1:U2|cnt[18]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[17]  ; |bcd_1|divide1:U2|cnt[17]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[16]  ; |bcd_1|divide1:U2|cnt[16]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[19]  ; |bcd_1|divide1:U2|Equal0~3         ; combout          ;
+; |bcd_1|divide1:U2|cnt[19]  ; |bcd_1|divide1:U2|cnt[19]          ; regout           ;
+; |bcd_1|divide1:U2|Equal0~4 ; |bcd_1|divide1:U2|Equal0~4         ; combout          ;
+; |bcd_1|divide1:U2|cnt[14]  ; |bcd_1|divide1:U2|cnt[14]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[13]  ; |bcd_1|divide1:U2|cnt[13]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[12]  ; |bcd_1|divide1:U2|cnt[12]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[15]  ; |bcd_1|divide1:U2|Equal0~5         ; combout          ;
+; |bcd_1|divide1:U2|cnt[15]  ; |bcd_1|divide1:U2|cnt[15]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[10]  ; |bcd_1|divide1:U2|cnt[10]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[9]   ; |bcd_1|divide1:U2|cnt[9]           ; regout           ;
+; |bcd_1|divide1:U2|cnt[8]   ; |bcd_1|divide1:U2|cnt[8]           ; regout           ;
+; |bcd_1|divide1:U2|cnt[11]  ; |bcd_1|divide1:U2|Equal0~6         ; combout          ;
+; |bcd_1|divide1:U2|cnt[11]  ; |bcd_1|divide1:U2|cnt[11]          ; regout           ;
+; |bcd_1|divide1:U2|Add0~0   ; |bcd_1|divide1:U2|Add0~0           ; combout          ;
+; |bcd_1|divide1:U2|Add0~2   ; |bcd_1|divide1:U2|Add0~2           ; combout          ;
+; |bcd_1|divide1:U2|Add0~2   ; |bcd_1|divide1:U2|Add0~3           ; cout             ;
+; |bcd_1|divide1:U2|Add0~4   ; |bcd_1|divide1:U2|Add0~4           ; combout          ;
+; |bcd_1|divide1:U2|Add0~4   ; |bcd_1|divide1:U2|Add0~5           ; cout0            ;
+; |bcd_1|divide1:U2|Add0~4   ; |bcd_1|divide1:U2|Add0~5COUT1_136  ; cout1            ;
+; |bcd_1|divide1:U2|Add0~6   ; |bcd_1|divide1:U2|Add0~6           ; combout          ;
+; |bcd_1|divide1:U2|Add0~6   ; |bcd_1|divide1:U2|Add0~7           ; cout0            ;
+; |bcd_1|divide1:U2|Add0~6   ; |bcd_1|divide1:U2|Add0~7COUT1_134  ; cout1            ;
+; |bcd_1|divide1:U2|Add0~8   ; |bcd_1|divide1:U2|Add0~8           ; combout          ;
+; |bcd_1|divide1:U2|Add0~8   ; |bcd_1|divide1:U2|Add0~9           ; cout0            ;
+; |bcd_1|divide1:U2|Add0~8   ; |bcd_1|divide1:U2|Add0~9COUT1_132  ; cout1            ;
+; |bcd_1|divide1:U2|Add0~10  ; |bcd_1|divide1:U2|Add0~10          ; combout          ;
+; |bcd_1|divide1:U2|Add0~10  ; |bcd_1|divide1:U2|Add0~11          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~10  ; |bcd_1|divide1:U2|Add0~11COUT1_130 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~12  ; |bcd_1|divide1:U2|Add0~12          ; combout          ;
+; |bcd_1|divide1:U2|Add0~12  ; |bcd_1|divide1:U2|Add0~13          ; cout             ;
+; |bcd_1|divide1:U2|Add0~14  ; |bcd_1|divide1:U2|Add0~14          ; combout          ;
+; |bcd_1|divide1:U2|Add0~14  ; |bcd_1|divide1:U2|Add0~15          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~14  ; |bcd_1|divide1:U2|Add0~15COUT1_128 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~16  ; |bcd_1|divide1:U2|Add0~16          ; combout          ;
+; |bcd_1|divide1:U2|Add0~16  ; |bcd_1|divide1:U2|Add0~17          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~16  ; |bcd_1|divide1:U2|Add0~17COUT1_126 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~18  ; |bcd_1|divide1:U2|Add0~18          ; combout          ;
+; |bcd_1|divide1:U2|Add0~18  ; |bcd_1|divide1:U2|Add0~19          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~18  ; |bcd_1|divide1:U2|Add0~19COUT1_124 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~20  ; |bcd_1|divide1:U2|Add0~20          ; combout          ;
+; |bcd_1|divide1:U2|Add0~20  ; |bcd_1|divide1:U2|Add0~21          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~20  ; |bcd_1|divide1:U2|Add0~21COUT1_122 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~22  ; |bcd_1|divide1:U2|Add0~22          ; combout          ;
+; |bcd_1|divide1:U2|Add0~22  ; |bcd_1|divide1:U2|Add0~23          ; cout             ;
+; |bcd_1|divide1:U2|Add0~24  ; |bcd_1|divide1:U2|Add0~24          ; combout          ;
+; |bcd_1|divide1:U2|Add0~24  ; |bcd_1|divide1:U2|Add0~25          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~24  ; |bcd_1|divide1:U2|Add0~25COUT1_120 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~26  ; |bcd_1|divide1:U2|Add0~26          ; combout          ;
+; |bcd_1|divide1:U2|Add0~26  ; |bcd_1|divide1:U2|Add0~27          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~26  ; |bcd_1|divide1:U2|Add0~27COUT1_118 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~28  ; |bcd_1|divide1:U2|Add0~28          ; combout          ;
+; |bcd_1|divide1:U2|Add0~28  ; |bcd_1|divide1:U2|Add0~29          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~28  ; |bcd_1|divide1:U2|Add0~29COUT1_116 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~30  ; |bcd_1|divide1:U2|Add0~30          ; combout          ;
+; |bcd_1|divide1:U2|Add0~30  ; |bcd_1|divide1:U2|Add0~31          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~30  ; |bcd_1|divide1:U2|Add0~31COUT1_114 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~32  ; |bcd_1|divide1:U2|Add0~32          ; combout          ;
+; |bcd_1|divide1:U2|Add0~32  ; |bcd_1|divide1:U2|Add0~33          ; cout             ;
+; |bcd_1|divide1:U2|Add0~34  ; |bcd_1|divide1:U2|Add0~34          ; combout          ;
+; |bcd_1|divide1:U2|Add0~34  ; |bcd_1|divide1:U2|Add0~35          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~34  ; |bcd_1|divide1:U2|Add0~35COUT1_112 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~36  ; |bcd_1|divide1:U2|Add0~36          ; combout          ;
+; |bcd_1|divide1:U2|Add0~36  ; |bcd_1|divide1:U2|Add0~37          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~36  ; |bcd_1|divide1:U2|Add0~37COUT1_110 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~38  ; |bcd_1|divide1:U2|Add0~38          ; combout          ;
+; |bcd_1|divide1:U2|Add0~38  ; |bcd_1|divide1:U2|Add0~39          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~38  ; |bcd_1|divide1:U2|Add0~39COUT1_108 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~40  ; |bcd_1|divide1:U2|Add0~40          ; combout          ;
+; |bcd_1|divide1:U2|Add0~40  ; |bcd_1|divide1:U2|Add0~41          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~40  ; |bcd_1|divide1:U2|Add0~41COUT1_106 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~42  ; |bcd_1|divide1:U2|Add0~42          ; combout          ;
+; |bcd_1|divide1:U2|Add0~42  ; |bcd_1|divide1:U2|Add0~43          ; cout             ;
+; |bcd_1|divide1:U2|Add0~44  ; |bcd_1|divide1:U2|Add0~44          ; combout          ;
+; |bcd_1|divide1:U2|Add0~44  ; |bcd_1|divide1:U2|Add0~45          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~44  ; |bcd_1|divide1:U2|Add0~45COUT1_104 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~46  ; |bcd_1|divide1:U2|Add0~46          ; combout          ;
+; |bcd_1|divide1:U2|Add0~46  ; |bcd_1|divide1:U2|Add0~47          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~46  ; |bcd_1|divide1:U2|Add0~47COUT1_102 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~48  ; |bcd_1|divide1:U2|Add0~49          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~48  ; |bcd_1|divide1:U2|Add0~49COUT1_100 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~50  ; |bcd_1|divide1:U2|Add0~51COUT1_98  ; cout1            ;
+; |bcd_1|divide1:U2|Add0~54  ; |bcd_1|divide1:U2|Add0~55          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~56  ; |bcd_1|divide1:U2|Add0~57          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~60  ; |bcd_1|divide1:U2|Add0~61          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~62  ; |bcd_1|divide1:U2|Add0~63          ; cout0            ;
+; |bcd_1|nCR                 ; |bcd_1|nCR~corein                  ; combout          ;
++----------------------------+------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                           ;
++----------------------------+------------------------------------+------------------+
+; Node Name                  ; Output Port Name                   ; Output Port Type ;
++----------------------------+------------------------------------+------------------+
+; |bcd_1|divide1:U2|cnt[30]  ; |bcd_1|divide1:U2|cnt[30]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[29]  ; |bcd_1|divide1:U2|cnt[29]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[28]  ; |bcd_1|divide1:U2|cnt[28]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[31]  ; |bcd_1|divide1:U2|Equal0~0         ; combout          ;
+; |bcd_1|divide1:U2|cnt[31]  ; |bcd_1|divide1:U2|cnt[31]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[26]  ; |bcd_1|divide1:U2|cnt[26]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[25]  ; |bcd_1|divide1:U2|cnt[25]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[24]  ; |bcd_1|divide1:U2|cnt[24]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[27]  ; |bcd_1|divide1:U2|Equal0~1         ; combout          ;
+; |bcd_1|divide1:U2|cnt[27]  ; |bcd_1|divide1:U2|cnt[27]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[22]  ; |bcd_1|divide1:U2|cnt[22]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[21]  ; |bcd_1|divide1:U2|cnt[21]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[20]  ; |bcd_1|divide1:U2|cnt[20]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[23]  ; |bcd_1|divide1:U2|Equal0~2         ; combout          ;
+; |bcd_1|divide1:U2|cnt[23]  ; |bcd_1|divide1:U2|cnt[23]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[18]  ; |bcd_1|divide1:U2|cnt[18]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[17]  ; |bcd_1|divide1:U2|cnt[17]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[16]  ; |bcd_1|divide1:U2|cnt[16]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[19]  ; |bcd_1|divide1:U2|Equal0~3         ; combout          ;
+; |bcd_1|divide1:U2|cnt[19]  ; |bcd_1|divide1:U2|cnt[19]          ; regout           ;
+; |bcd_1|divide1:U2|Equal0~4 ; |bcd_1|divide1:U2|Equal0~4         ; combout          ;
+; |bcd_1|divide1:U2|cnt[14]  ; |bcd_1|divide1:U2|cnt[14]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[13]  ; |bcd_1|divide1:U2|cnt[13]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[12]  ; |bcd_1|divide1:U2|cnt[12]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[15]  ; |bcd_1|divide1:U2|Equal0~5         ; combout          ;
+; |bcd_1|divide1:U2|cnt[15]  ; |bcd_1|divide1:U2|cnt[15]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[10]  ; |bcd_1|divide1:U2|cnt[10]          ; regout           ;
+; |bcd_1|divide1:U2|cnt[9]   ; |bcd_1|divide1:U2|cnt[9]           ; regout           ;
+; |bcd_1|divide1:U2|cnt[8]   ; |bcd_1|divide1:U2|cnt[8]           ; regout           ;
+; |bcd_1|divide1:U2|cnt[11]  ; |bcd_1|divide1:U2|Equal0~6         ; combout          ;
+; |bcd_1|divide1:U2|cnt[11]  ; |bcd_1|divide1:U2|cnt[11]          ; regout           ;
+; |bcd_1|divide1:U2|Add0~0   ; |bcd_1|divide1:U2|Add0~0           ; combout          ;
+; |bcd_1|divide1:U2|Add0~2   ; |bcd_1|divide1:U2|Add0~2           ; combout          ;
+; |bcd_1|divide1:U2|Add0~2   ; |bcd_1|divide1:U2|Add0~3           ; cout             ;
+; |bcd_1|divide1:U2|Add0~4   ; |bcd_1|divide1:U2|Add0~4           ; combout          ;
+; |bcd_1|divide1:U2|Add0~4   ; |bcd_1|divide1:U2|Add0~5           ; cout0            ;
+; |bcd_1|divide1:U2|Add0~4   ; |bcd_1|divide1:U2|Add0~5COUT1_136  ; cout1            ;
+; |bcd_1|divide1:U2|Add0~6   ; |bcd_1|divide1:U2|Add0~6           ; combout          ;
+; |bcd_1|divide1:U2|Add0~6   ; |bcd_1|divide1:U2|Add0~7           ; cout0            ;
+; |bcd_1|divide1:U2|Add0~6   ; |bcd_1|divide1:U2|Add0~7COUT1_134  ; cout1            ;
+; |bcd_1|divide1:U2|Add0~8   ; |bcd_1|divide1:U2|Add0~8           ; combout          ;
+; |bcd_1|divide1:U2|Add0~8   ; |bcd_1|divide1:U2|Add0~9           ; cout0            ;
+; |bcd_1|divide1:U2|Add0~8   ; |bcd_1|divide1:U2|Add0~9COUT1_132  ; cout1            ;
+; |bcd_1|divide1:U2|Add0~10  ; |bcd_1|divide1:U2|Add0~10          ; combout          ;
+; |bcd_1|divide1:U2|Add0~10  ; |bcd_1|divide1:U2|Add0~11          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~10  ; |bcd_1|divide1:U2|Add0~11COUT1_130 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~12  ; |bcd_1|divide1:U2|Add0~12          ; combout          ;
+; |bcd_1|divide1:U2|Add0~12  ; |bcd_1|divide1:U2|Add0~13          ; cout             ;
+; |bcd_1|divide1:U2|Add0~14  ; |bcd_1|divide1:U2|Add0~14          ; combout          ;
+; |bcd_1|divide1:U2|Add0~14  ; |bcd_1|divide1:U2|Add0~15          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~14  ; |bcd_1|divide1:U2|Add0~15COUT1_128 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~16  ; |bcd_1|divide1:U2|Add0~16          ; combout          ;
+; |bcd_1|divide1:U2|Add0~16  ; |bcd_1|divide1:U2|Add0~17          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~16  ; |bcd_1|divide1:U2|Add0~17COUT1_126 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~18  ; |bcd_1|divide1:U2|Add0~18          ; combout          ;
+; |bcd_1|divide1:U2|Add0~18  ; |bcd_1|divide1:U2|Add0~19          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~18  ; |bcd_1|divide1:U2|Add0~19COUT1_124 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~20  ; |bcd_1|divide1:U2|Add0~20          ; combout          ;
+; |bcd_1|divide1:U2|Add0~20  ; |bcd_1|divide1:U2|Add0~21          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~20  ; |bcd_1|divide1:U2|Add0~21COUT1_122 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~22  ; |bcd_1|divide1:U2|Add0~22          ; combout          ;
+; |bcd_1|divide1:U2|Add0~22  ; |bcd_1|divide1:U2|Add0~23          ; cout             ;
+; |bcd_1|divide1:U2|Add0~24  ; |bcd_1|divide1:U2|Add0~24          ; combout          ;
+; |bcd_1|divide1:U2|Add0~24  ; |bcd_1|divide1:U2|Add0~25          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~24  ; |bcd_1|divide1:U2|Add0~25COUT1_120 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~26  ; |bcd_1|divide1:U2|Add0~26          ; combout          ;
+; |bcd_1|divide1:U2|Add0~26  ; |bcd_1|divide1:U2|Add0~27          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~26  ; |bcd_1|divide1:U2|Add0~27COUT1_118 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~28  ; |bcd_1|divide1:U2|Add0~28          ; combout          ;
+; |bcd_1|divide1:U2|Add0~28  ; |bcd_1|divide1:U2|Add0~29          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~28  ; |bcd_1|divide1:U2|Add0~29COUT1_116 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~30  ; |bcd_1|divide1:U2|Add0~30          ; combout          ;
+; |bcd_1|divide1:U2|Add0~30  ; |bcd_1|divide1:U2|Add0~31          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~30  ; |bcd_1|divide1:U2|Add0~31COUT1_114 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~32  ; |bcd_1|divide1:U2|Add0~32          ; combout          ;
+; |bcd_1|divide1:U2|Add0~32  ; |bcd_1|divide1:U2|Add0~33          ; cout             ;
+; |bcd_1|divide1:U2|Add0~34  ; |bcd_1|divide1:U2|Add0~34          ; combout          ;
+; |bcd_1|divide1:U2|Add0~34  ; |bcd_1|divide1:U2|Add0~35          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~34  ; |bcd_1|divide1:U2|Add0~35COUT1_112 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~36  ; |bcd_1|divide1:U2|Add0~36          ; combout          ;
+; |bcd_1|divide1:U2|Add0~36  ; |bcd_1|divide1:U2|Add0~37          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~36  ; |bcd_1|divide1:U2|Add0~37COUT1_110 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~38  ; |bcd_1|divide1:U2|Add0~38          ; combout          ;
+; |bcd_1|divide1:U2|Add0~38  ; |bcd_1|divide1:U2|Add0~39          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~38  ; |bcd_1|divide1:U2|Add0~39COUT1_108 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~40  ; |bcd_1|divide1:U2|Add0~40          ; combout          ;
+; |bcd_1|divide1:U2|Add0~40  ; |bcd_1|divide1:U2|Add0~41          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~40  ; |bcd_1|divide1:U2|Add0~41COUT1_106 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~42  ; |bcd_1|divide1:U2|Add0~42          ; combout          ;
+; |bcd_1|divide1:U2|Add0~42  ; |bcd_1|divide1:U2|Add0~43          ; cout             ;
+; |bcd_1|divide1:U2|Add0~44  ; |bcd_1|divide1:U2|Add0~44          ; combout          ;
+; |bcd_1|divide1:U2|Add0~44  ; |bcd_1|divide1:U2|Add0~45          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~44  ; |bcd_1|divide1:U2|Add0~45COUT1_104 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~46  ; |bcd_1|divide1:U2|Add0~46          ; combout          ;
+; |bcd_1|divide1:U2|Add0~46  ; |bcd_1|divide1:U2|Add0~47          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~46  ; |bcd_1|divide1:U2|Add0~47COUT1_102 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~48  ; |bcd_1|divide1:U2|Add0~49          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~48  ; |bcd_1|divide1:U2|Add0~49COUT1_100 ; cout1            ;
+; |bcd_1|divide1:U2|Add0~50  ; |bcd_1|divide1:U2|Add0~51COUT1_98  ; cout1            ;
+; |bcd_1|divide1:U2|Add0~54  ; |bcd_1|divide1:U2|Add0~55          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~56  ; |bcd_1|divide1:U2|Add0~57          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~60  ; |bcd_1|divide1:U2|Add0~61          ; cout0            ;
+; |bcd_1|divide1:U2|Add0~62  ; |bcd_1|divide1:U2|Add0~63          ; cout0            ;
+; |bcd_1|nCR                 ; |bcd_1|nCR~corein                  ; combout          ;
++----------------------------+------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu May 30 16:25:35 2013
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off bcd_1 -c bcd_1
+Info: Using vector source file "D:/WORKPLACE/VerilogPRJ/BCDdisp/bcd_1.vwf"
+Info: Inverted registers were found during simulation
+    Info: Register: |bcd_1|cnt2[0]
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      31.13 %
+Info: Number of transitions in simulation is 12522
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 147 megabytes
+    Info: Processing ended: Thu May 30 16:25:36 2013
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

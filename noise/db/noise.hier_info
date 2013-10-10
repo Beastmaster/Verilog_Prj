@@ -1,0 +1,7 @@
+|noise
+clk => cnt[1].CLK
+clk => cnt[0].CLK
+out <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+dir <= <GND>
+
+

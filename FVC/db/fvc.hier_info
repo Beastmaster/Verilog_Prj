@@ -1,0 +1,44 @@
+|fvc
+clk => clk~0.IN2
+nCR => nCR~0.IN2
+signal => signal~0.IN1
+dac[0] <= dac[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dac[1] <= dac[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dac[2] <= dac[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dac[3] <= dac[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dac[4] <= dac[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dac[5] <= dac[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dac[6] <= dac[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dac[7] <= dac[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dac[8] <= dac[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dac[9] <= dac[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dac[10] <= dac[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dac[11] <= dac[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dac_CP <= dac_clk:U1.port1
+
+
+|fvc|catch_edge:U0
+clk => reg1.CLK
+clk => reg2.CLK
+nCR => reg1.ACLR
+nCR => reg2.ACLR
+in => reg1.DATAIN
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fvc|dac_clk:U1
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clk => cnt[0].CLK
+clk => CP~reg0.CLK
+CP <= CP~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nCR => cnt[4].ACLR
+nCR => cnt[3].ACLR
+nCR => cnt[2].ACLR
+nCR => cnt[1].ACLR
+nCR => cnt[0].ACLR
+nCR => CP~reg0.ACLR
+
+

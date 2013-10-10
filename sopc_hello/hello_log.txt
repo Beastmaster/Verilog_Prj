@@ -1,0 +1,81 @@
+Altera SOPC Builder Version 9.00 Build 235
+Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.
+
+
+# 2013.08.10 01:47:30 (*) mk_custom_sdk starting
+# 2013.08.10 01:47:30 (*) Reading project D:/WORKPLACE/VerilogPRJ/sopc_hello/hello.ptf.
+
+# 2013.08.10 01:47:30 (*) Finding all CPUs
+# 2013.08.10 01:47:30 (*) Finding all available components
+# 2013.08.10 01:47:30 (*) Reading D:/WORKPLACE/VerilogPRJ/sopc_hello/.sopc_builder/install.ptf
+
+# 2013.08.10 01:47:30 (*) Found 67 components
+
+# 2013.08.10 01:47:32 (*) Finding all peripherals
+
+# 2013.08.10 01:47:32 (*) Finding software components
+
+# 2013.08.10 01:47:32 (*) (Legacy SDK Generation Skipped)
+
+# 2013.08.10 01:47:32 (*) (All TCL Script Generation Skipped)
+# 2013.08.10 01:47:32 (*) (No Libraries Built)
+# 2013.08.10 01:47:32 (*) (Contents Generation Skipped)
+# 2013.08.10 01:47:32 (*) mk_custom_sdk finishing
+
+# 2013.08.10 01:47:32 (*) Starting generation for system: hello.
+
+.
+..
+.
+.
+
+# 2013.08.10 01:47:34 (*) Running Generator Program for cpu_0
+
+# 2013.08.10 01:47:36 (*)   Checking for plaintext license.
+# 2013.08.10 01:47:37 (*)   Plaintext license not found.
+# 2013.08.10 01:47:37 (*)   Checking for encrypted license (non-evaluation).
+# 2013.08.10 01:47:37 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+# 2013.08.10 01:47:37 (*)   Getting CPU configuration settings
+# 2013.08.10 01:47:37 (*)   Elaborating CPU configuration settings
+# 2013.08.10 01:47:37 (*)   Creating all objects for CPU
+
+# 2013.08.10 01:47:37 (*)     Testbench
+# 2013.08.10 01:47:38 (*)     Instruction decoding
+# 2013.08.10 01:47:38 (*)       Instruction fields
+# 2013.08.10 01:47:38 (*)       Instruction decodes
+# 2013.08.10 01:47:40 (*)       Signals for RTL simulation waveforms
+# 2013.08.10 01:47:41 (*)       Instruction controls
+# 2013.08.10 01:47:41 (*)     Pipeline frontend
+# 2013.08.10 01:47:41 (*)     Pipeline backend
+# 2013.08.10 01:47:48 (*)   Generating HDL from CPU objects
+# 2013.08.10 01:47:55 (*)   Creating encrypted HDL
+
+# 2013.08.10 01:47:59 (*) Running Generator Program for onchip_RAM
+
+# 2013.08.10 01:48:00 (*) Running Generator Program for onchip_ROM
+
+# 2013.08.10 01:48:02 (*) Running Generator Program for pio_0
+
+# 2013.08.10 01:48:03 (*) Running Generator Program for sysid
+
+
+# 2013.08.10 01:48:03 (*) Making arbitration and system (top) modules.
+
+# 2013.08.10 01:48:10 (*) Generating Quartus symbol for top level: hello
+
+# 2013.08.10 01:48:10 (*) Symbol D:/WORKPLACE/VerilogPRJ/sopc_hello/hello.bsf already exists, no need to regenerate
+# 2013.08.10 01:48:10 (*) Creating command-line system-generation script: D:/WORKPLACE/VerilogPRJ/sopc_hello/hello_generation_script
+
+# 2013.08.10 01:48:10 (*) Running setup for HDL simulator: modelsim
+
+
+# 2013.08.10 01:48:10 (*) Completed generation for system: hello.
+# 2013.08.10 01:48:10 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:
+  SOPC Builder database : D:/WORKPLACE/VerilogPRJ/sopc_hello/hello.ptf 
+  System HDL Model : D:/WORKPLACE/VerilogPRJ/sopc_hello/hello.v 
+  System Generation Script : D:/WORKPLACE/VerilogPRJ/sopc_hello/hello_generation_script 
+
+# 2013.08.10 01:48:10 (*) SUCCESS: SYSTEM GENERATION COMPLETED.
+
+
+Press 'Exit' to exit.

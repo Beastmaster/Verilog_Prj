@@ -1,0 +1,64 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\WORKPLACE\VerilogPRJ\FVC\simulation\modelsim
+vcatch_edge
+IziaPKT=;<kQAG;nSnPcJG1
+VVgZeDUe9EX9Blk<N<Una_3
+Z1 w1377103351
+Z2 8D:/WORKPLACE/VerilogPRJ/FVC/fvc.v
+Z3 FD:/WORKPLACE/VerilogPRJ/FVC/fvc.v
+L0 32
+Z4 OV;L;6.5b;42
+r1
+31
+Z5 o-vlog01compat -work work -O0
+Z6 !s92 -vlog01compat -work work +incdir+D:/WORKPLACE/VerilogPRJ/FVC -O0
+!s100 m<_0=A?XG0cZMF;MQ2=az0
+!s85 0
+!s101 -O0
+vdac_clk
+IaeSV4IbUNIb1a69g[S83_2
+Vz]lnHk`:F<gT:;bg3X=kH3
+w1377074747
+8D:/WORKPLACE/VerilogPRJ/FVC/dac_clk.v
+FD:/WORKPLACE/VerilogPRJ/FVC/dac_clk.v
+L0 1
+R4
+r1
+31
+R5
+R6
+!s100 882XQQFd8dY3ROWng<ZR>2
+!s85 0
+!s101 -O0
+vfvc
+I:NEe;dmYL>g^G2aGXjcmK0
+V^6>Eo49ePg5GfDASkMV]`2
+R1
+R2
+R3
+L0 1
+R4
+r1
+31
+R5
+R6
+!s100 lKbb8=G[][0?O69<0WDdM3
+!s85 0
+!s101 -O0
+vfvc_tst
+!s100 cCXG]ozR9;5DI:6RoPmjc2
+IOJ^eczD5<5]EIKZzeMbM>3
+VILIb8>_1Ff^`@8S[<j8Cn1
+w1377106792
+8D:/WORKPLACE/VerilogPRJ/FVC/simulation/modelsim/fvc.vt
+FD:/WORKPLACE/VerilogPRJ/FVC/simulation/modelsim/fvc.vt
+L0 28
+R4
+r1
+!s85 0
+31
+!s101 -O0
+o-work work -O0

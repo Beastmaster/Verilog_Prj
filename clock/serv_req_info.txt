@@ -1,0 +1,36 @@
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x5ec4ba95: mfc90 + 0x5ba95
+	0x100062ac: GCL_AFC + 0x62ac (?OnWndMsg@AFC_NESTED_FRAME@@UAEHIIJPAJ@Z + 0x3c)
+	0x5ec4ba51: mfc90 + 0x5ba51
+	0x5ec4a645: mfc90 + 0x5a645
+	0x5ec4a8d1: mfc90 + 0x5a8d1
+	0x5ec485bc: mfc90 + 0x585bc
+	0x772c86ee: USER32 + 0x186ee (IsThreadDesktopComposited + 0x11e)
+	0x772c8875: USER32 + 0x18875 (IsThreadDesktopComposited + 0x2a5)
+	0x772c7630: USER32 + 0x17630 (IsRectEmpty + 0x11f)
+	0x772bcc70: USER32 + 0xcc70 (SendMessageA + 0x48)
+	0x00b1636b: GCL_CUI + 0x636b (?relay_mouse_message_to_view@CUI_TOOLTIP@@IAIXHVCPoint@@@Z + 0x4b)
+	0x5ec4ba51: mfc90 + 0x5ba51
+	0x5ec4a645: mfc90 + 0x5a645
+	0x5ec4a8d1: mfc90 + 0x5a8d1
+	0x5ec485bc: mfc90 + 0x585bc
+	0x772c86ee: USER32 + 0x186ee (IsThreadDesktopComposited + 0x11e)
+	0x772c8875: USER32 + 0x18875 (IsThreadDesktopComposited + 0x2a5)
+	0x772c7630: USER32 + 0x17630 (IsRectEmpty + 0x11f)
+	0x772bcc70: USER32 + 0xcc70 (SendMessageA + 0x48)
+	0x0c1b65ce: prj_ppl + 0x265ce (prj_ppl_dll_get_template_classes + 0xfdae)
+	0xffffffffffffffff:
+	</callstack>
+	<error>Current editor: STED, STED</error>
+	<date>Sat May 18 22:31:09 2013</date>
+	<version>Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition</version>
+	<full_error>Stack Overflow
+Current editor: STED, STED
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition </full_error>
+</internal_error>
+

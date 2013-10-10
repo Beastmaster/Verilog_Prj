@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CP'
+Slack : -2.733
+TNS   : -28.576
+
+Type  : Slow 1200mV 85C Model Setup 'cp:TIM|out'
+Slack : -1.987
+TNS   : -15.301
+
+Type  : Slow 1200mV 85C Model Setup 'top_clock:U1|counter60:UT1|counter10:U0|Q[0]'
+Slack : -1.919
+TNS   : -15.401
+
+Type  : Slow 1200mV 85C Model Setup 'Divided_Frequency:U0|counter10:DU2|Q[3]'
+Slack : -0.942
+TNS   : -2.670
+
+Type  : Slow 1200mV 85C Model Hold 'cp:TIM|out'
+Slack : -0.518
+TNS   : -0.970
+
+Type  : Slow 1200mV 85C Model Hold 'CP'
+Slack : -0.318
+TNS   : -0.318
+
+Type  : Slow 1200mV 85C Model Hold 'Divided_Frequency:U0|counter10:DU2|Q[3]'
+Slack : -0.270
+TNS   : -0.377
+
+Type  : Slow 1200mV 85C Model Hold 'top_clock:U1|counter60:UT1|counter10:U0|Q[0]'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'CP'
+Slack : -2.490
+TNS   : -24.443
+
+Type  : Slow 1200mV 0C Model Setup 'cp:TIM|out'
+Slack : -1.831
+TNS   : -13.633
+
+Type  : Slow 1200mV 0C Model Setup 'top_clock:U1|counter60:UT1|counter10:U0|Q[0]'
+Slack : -1.618
+TNS   : -12.986
+
+Type  : Slow 1200mV 0C Model Setup 'Divided_Frequency:U0|counter10:DU2|Q[3]'
+Slack : -0.763
+TNS   : -1.900
+
+Type  : Slow 1200mV 0C Model Hold 'cp:TIM|out'
+Slack : -0.499
+TNS   : -0.916
+
+Type  : Slow 1200mV 0C Model Hold 'Divided_Frequency:U0|counter10:DU2|Q[3]'
+Slack : -0.269
+TNS   : -0.397
+
+Type  : Slow 1200mV 0C Model Hold 'CP'
+Slack : -0.214
+TNS   : -0.214
+
+Type  : Slow 1200mV 0C Model Hold 'top_clock:U1|counter60:UT1|counter10:U0|Q[0]'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'CP'
+Slack : -0.499
+TNS   : -2.558
+
+Type  : Fast 1200mV 0C Model Setup 'top_clock:U1|counter60:UT1|counter10:U0|Q[0]'
+Slack : -0.264
+TNS   : -0.809
+
+Type  : Fast 1200mV 0C Model Setup 'cp:TIM|out'
+Slack : -0.248
+TNS   : -0.897
+
+Type  : Fast 1200mV 0C Model Setup 'Divided_Frequency:U0|counter10:DU2|Q[3]'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'cp:TIM|out'
+Slack : -0.330
+TNS   : -0.575
+
+Type  : Fast 1200mV 0C Model Hold 'CP'
+Slack : -0.214
+TNS   : -0.214
+
+Type  : Fast 1200mV 0C Model Hold 'Divided_Frequency:U0|counter10:DU2|Q[3]'
+Slack : -0.117
+TNS   : -0.150
+
+Type  : Fast 1200mV 0C Model Hold 'top_clock:U1|counter60:UT1|counter10:U0|Q[0]'
+Slack : 0.187
+TNS   : 0.000
+
+------------------------------------------------------------

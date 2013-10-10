@@ -1,0 +1,11 @@
+Fitter Status : Successful - Thu Aug 22 00:12:48 2013
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : fvc
+Top-level Entity Name : fvc
+Family : MAX II
+Device : EPM570T144C5
+Timing Models : Final
+Total logic elements : 37 / 570 ( 6 % )
+Total pins : 16 / 116 ( 14 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

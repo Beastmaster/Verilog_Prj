@@ -1,0 +1,85 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 302 142)
+	(text "ok" (rect 144 0 160 16)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 126 25 138)(font "Arial" ))
+	(port
+		(pt 0 40)
+		(input)
+		(text "dclk_in" (rect 0 0 38 14)(font "Arial" (font_size 8)))
+		(text "dclk_in" (rect 20 34 53 47)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 16 40)(line_width 1))
+	)
+	(port
+		(pt 0 56)
+		(input)
+		(text "ncso_in" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "ncso_in" (rect 20 50 56 63)(font "Arial" (font_size 8)))
+		(line (pt 0 56)(pt 16 56)(line_width 1))
+	)
+	(port
+		(pt 0 72)
+		(input)
+		(text "asdo_in" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "asdo_in" (rect 20 66 57 79)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 16 72)(line_width 1))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "noe_in" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "noe_in" (rect 20 82 53 95)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 16 88)(line_width 1))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "asmi_access_granted" (rect 0 0 126 14)(font "Arial" (font_size 8)))
+		(text "asmi_access_granted" (rect 20 98 120 111)(font "Arial" (font_size 8)))
+		(line (pt 0 104)(pt 16 104)(line_width 1))
+	)
+	(port
+		(pt 302 64)
+		(output)
+		(text "data0_out" (rect 0 0 56 14)(font "Arial" (font_size 8)))
+		(text "data0_out" (rect 235 58 283 71)(font "Arial" (font_size 8)))
+		(line (pt 302 64)(pt 286 64)(line_width 1))
+	)
+	(port
+		(pt 302 80)
+		(output)
+		(text "asmi_access_request" (rect 0 0 126 14)(font "Arial" (font_size 8)))
+		(text "asmi_access_request" (rect 176 74 274 87)(font "Arial" (font_size 8)))
+		(line (pt 302 80)(pt 286 80)(line_width 1))
+	)
+	(drawing
+		(line (pt 0 0)(pt 303 0)(line_width 1))
+		(line (pt 303 0)(pt 303 143)(line_width 1))
+		(line (pt 0 143)(pt 303 143)(line_width 1))
+		(line (pt 0 0)(pt 0 143)(line_width 1))
+		(line (pt 16 24)(pt 287 24)(line_width 1))
+		(line (pt 287 24)(pt 287 121)(line_width 1))
+		(line (pt 16 121)(pt 287 121)(line_width 1))
+		(line (pt 16 24)(pt 16 121)(line_width 1))
+	)
+)

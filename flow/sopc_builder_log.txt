@@ -1,0 +1,2 @@
+connection panel query out of bounds col=0 row=1 maxcol=-1 maxrow=-1
+connection panel query out of bounds col=0 row=1 maxcol=-1 maxrow=-1

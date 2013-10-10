@@ -1,0 +1,700 @@
+Simulator report for flow
+Sat Jun 01 20:54:28 2013
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 151 nodes    ;
+; Simulation Coverage         ;       8.63 % ;
+; Total Number of Transitions ; 1150         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; MAX II       ;
+; Device                      ; EPM570T144C5 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       8.63 % ;
+; Total nodes checked                                 ; 151          ;
+; Total output ports checked                          ; 278          ;
+; Total output ports with complete 1/0-value coverage ; 24           ;
+; Total output ports with no 1/0-value coverage       ; 252          ;
+; Total output ports with no 1-value coverage         ; 252          ;
+; Total output ports with no 0-value coverage         ; 254          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                  ;
++--------------------------+--------------------------------+------------------+
+; Node Name                ; Output Port Name               ; Output Port Type ;
++--------------------------+--------------------------------+------------------+
+; |flow|divide1:U|i[0]     ; |flow|divide1:U|i[0]           ; regout           ;
+; |flow|divide1:U|i[2]     ; |flow|divide1:U|i[2]           ; regout           ;
+; |flow|divide1:U|i[3]     ; |flow|divide1:U|i[3]           ; regout           ;
+; |flow|divide1:U|i[1]     ; |flow|divide1:U|Equal0~0       ; combout          ;
+; |flow|divide1:U|i[1]     ; |flow|divide1:U|i[1]           ; regout           ;
+; |flow|divide1:U|i[5]     ; |flow|divide1:U|i[5]           ; regout           ;
+; |flow|divide1:U|i[4]     ; |flow|divide1:U|Equal0~1       ; combout          ;
+; |flow|divide1:U|i[4]     ; |flow|divide1:U|i[4]           ; regout           ;
+; |flow|divide1:U|Equal0~4 ; |flow|divide1:U|Equal0~4       ; combout          ;
+; |flow|divide1:U|Add0~0   ; |flow|divide1:U|Add0~0         ; combout          ;
+; |flow|divide1:U|Add0~0   ; |flow|divide1:U|Add0~1         ; cout             ;
+; |flow|divide1:U|Add0~2   ; |flow|divide1:U|Add0~2         ; combout          ;
+; |flow|divide1:U|Add0~2   ; |flow|divide1:U|Add0~3COUT1_90 ; cout1            ;
+; |flow|divide1:U|Add0~4   ; |flow|divide1:U|Add0~4         ; combout          ;
+; |flow|divide1:U|Add0~4   ; |flow|divide1:U|Add0~5COUT1_92 ; cout1            ;
+; |flow|divide1:U|Add0~6   ; |flow|divide1:U|Add0~6         ; combout          ;
+; |flow|divide1:U|Add0~6   ; |flow|divide1:U|Add0~7COUT1_94 ; cout1            ;
+; |flow|divide1:U|Add0~8   ; |flow|divide1:U|Add0~8         ; combout          ;
+; |flow|divide1:U|Add0~8   ; |flow|divide1:U|Add0~9COUT1_96 ; cout1            ;
+; |flow|divide1:U|Add0~10  ; |flow|divide1:U|Add0~10        ; combout          ;
+; |flow|divide1:U|Add0~10  ; |flow|divide1:U|Add0~11        ; cout             ;
+; |flow|divide1:U|Add0~12  ; |flow|divide1:U|Add0~12        ; combout          ;
+; |flow|divide1:U|Add0~14  ; |flow|divide1:U|Add0~14        ; combout          ;
+; |flow|CP                 ; |flow|CP~corein                ; combout          ;
++--------------------------+--------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                       ;
++--------------------------+----------------------------------+------------------+
+; Node Name                ; Output Port Name                 ; Output Port Type ;
++--------------------------+----------------------------------+------------------+
+; |flow|out[0]~reg0        ; |flow|out[0]~reg0                ; regout           ;
+; |flow|out[1]~reg0        ; |flow|out[1]~reg0                ; regout           ;
+; |flow|out[2]~reg0        ; |flow|out[2]~reg0                ; regout           ;
+; |flow|out[3]~reg0        ; |flow|out[3]~reg0                ; regout           ;
+; |flow|out[4]~reg0        ; |flow|out[4]~reg0                ; regout           ;
+; |flow|out[5]~reg0        ; |flow|out[5]~reg0                ; regout           ;
+; |flow|out[6]~reg0        ; |flow|out[6]~reg0                ; regout           ;
+; |flow|out[7]~reg0        ; |flow|out[7]~reg0                ; regout           ;
+; |flow|divide1:U|out      ; |flow|divide1:U|out              ; regout           ;
+; |flow|cnt[0]             ; |flow|cnt[0]                     ; regout           ;
+; |flow|cnt[30]            ; |flow|cnt[30]                    ; regout           ;
+; |flow|cnt[29]            ; |flow|cnt[29]                    ; regout           ;
+; |flow|cnt[31]            ; |flow|Equal0~0                   ; combout          ;
+; |flow|cnt[31]            ; |flow|cnt[31]                    ; regout           ;
+; |flow|cnt[27]            ; |flow|cnt[27]                    ; regout           ;
+; |flow|cnt[26]            ; |flow|cnt[26]                    ; regout           ;
+; |flow|cnt[25]            ; |flow|cnt[25]                    ; regout           ;
+; |flow|cnt[28]            ; |flow|Equal0~1                   ; combout          ;
+; |flow|cnt[28]            ; |flow|cnt[28]                    ; regout           ;
+; |flow|cnt[23]            ; |flow|cnt[23]                    ; regout           ;
+; |flow|cnt[22]            ; |flow|cnt[22]                    ; regout           ;
+; |flow|cnt[21]            ; |flow|cnt[21]                    ; regout           ;
+; |flow|cnt[24]            ; |flow|Equal0~2                   ; combout          ;
+; |flow|cnt[24]            ; |flow|cnt[24]                    ; regout           ;
+; |flow|cnt[19]            ; |flow|cnt[19]                    ; regout           ;
+; |flow|cnt[18]            ; |flow|cnt[18]                    ; regout           ;
+; |flow|cnt[17]            ; |flow|cnt[17]                    ; regout           ;
+; |flow|cnt[20]            ; |flow|Equal0~3                   ; combout          ;
+; |flow|cnt[20]            ; |flow|cnt[20]                    ; regout           ;
+; |flow|Equal0~4           ; |flow|Equal0~4                   ; combout          ;
+; |flow|cnt[15]            ; |flow|cnt[15]                    ; regout           ;
+; |flow|cnt[16]            ; |flow|Equal0~5                   ; combout          ;
+; |flow|cnt[16]            ; |flow|cnt[16]                    ; regout           ;
+; |flow|cnt[11]            ; |flow|cnt[11]                    ; regout           ;
+; |flow|cnt[10]            ; |flow|cnt[10]                    ; regout           ;
+; |flow|cnt[9]             ; |flow|cnt[9]                     ; regout           ;
+; |flow|cnt[12]            ; |flow|Equal0~6                   ; combout          ;
+; |flow|cnt[12]            ; |flow|cnt[12]                    ; regout           ;
+; |flow|cnt[13]            ; |flow|cnt[13]                    ; regout           ;
+; |flow|cnt[14]            ; |flow|Equal0~7                   ; combout          ;
+; |flow|cnt[14]            ; |flow|cnt[14]                    ; regout           ;
+; |flow|cnt[6]             ; |flow|cnt[6]                     ; regout           ;
+; |flow|cnt[7]             ; |flow|cnt[7]                     ; regout           ;
+; |flow|cnt[5]             ; |flow|cnt[5]                     ; regout           ;
+; |flow|cnt[8]             ; |flow|Equal0~8                   ; combout          ;
+; |flow|cnt[8]             ; |flow|cnt[8]                     ; regout           ;
+; |flow|cnt[4]             ; |flow|cnt[4]                     ; regout           ;
+; |flow|cnt[2]             ; |flow|cnt[2]                     ; regout           ;
+; |flow|cnt[1]             ; |flow|cnt[1]                     ; regout           ;
+; |flow|cnt[3]             ; |flow|Equal0~9                   ; combout          ;
+; |flow|cnt[3]             ; |flow|cnt[3]                     ; regout           ;
+; |flow|Equal0~10          ; |flow|Equal0~10                  ; combout          ;
+; |flow|divide1:U|i[7]     ; |flow|divide1:U|i[7]             ; regout           ;
+; |flow|divide1:U|i[9]     ; |flow|divide1:U|i[9]             ; regout           ;
+; |flow|divide1:U|i[10]    ; |flow|divide1:U|i[10]            ; regout           ;
+; |flow|divide1:U|i[11]    ; |flow|divide1:U|i[11]            ; regout           ;
+; |flow|divide1:U|i[8]     ; |flow|divide1:U|Equal0~2         ; combout          ;
+; |flow|divide1:U|i[8]     ; |flow|divide1:U|i[8]             ; regout           ;
+; |flow|divide1:U|i[13]    ; |flow|divide1:U|i[13]            ; regout           ;
+; |flow|divide1:U|i[14]    ; |flow|divide1:U|i[14]            ; regout           ;
+; |flow|divide1:U|i[15]    ; |flow|divide1:U|i[15]            ; regout           ;
+; |flow|divide1:U|i[12]    ; |flow|divide1:U|Equal0~3         ; combout          ;
+; |flow|divide1:U|i[12]    ; |flow|divide1:U|i[12]            ; regout           ;
+; |flow|divide1:U|i[16]    ; |flow|divide1:U|i[16]            ; regout           ;
+; |flow|divide1:U|i[18]    ; |flow|divide1:U|i[18]            ; regout           ;
+; |flow|divide1:U|i[19]    ; |flow|divide1:U|i[19]            ; regout           ;
+; |flow|divide1:U|i[17]    ; |flow|divide1:U|Equal0~5         ; combout          ;
+; |flow|divide1:U|i[17]    ; |flow|divide1:U|i[17]            ; regout           ;
+; |flow|divide1:U|i[21]    ; |flow|divide1:U|i[21]            ; regout           ;
+; |flow|divide1:U|i[22]    ; |flow|divide1:U|i[22]            ; regout           ;
+; |flow|divide1:U|i[23]    ; |flow|divide1:U|i[23]            ; regout           ;
+; |flow|divide1:U|i[20]    ; |flow|divide1:U|Equal0~6         ; combout          ;
+; |flow|divide1:U|i[20]    ; |flow|divide1:U|i[20]            ; regout           ;
+; |flow|divide1:U|i[25]    ; |flow|divide1:U|i[25]            ; regout           ;
+; |flow|divide1:U|i[26]    ; |flow|divide1:U|i[26]            ; regout           ;
+; |flow|divide1:U|i[27]    ; |flow|divide1:U|i[27]            ; regout           ;
+; |flow|divide1:U|i[24]    ; |flow|divide1:U|Equal0~7         ; combout          ;
+; |flow|divide1:U|i[24]    ; |flow|divide1:U|i[24]            ; regout           ;
+; |flow|divide1:U|i[29]    ; |flow|divide1:U|i[29]            ; regout           ;
+; |flow|divide1:U|i[30]    ; |flow|divide1:U|i[30]            ; regout           ;
+; |flow|divide1:U|i[31]    ; |flow|divide1:U|i[31]            ; regout           ;
+; |flow|divide1:U|i[28]    ; |flow|divide1:U|Equal0~8         ; combout          ;
+; |flow|divide1:U|i[28]    ; |flow|divide1:U|i[28]            ; regout           ;
+; |flow|divide1:U|Equal0~9 ; |flow|divide1:U|Equal0~9         ; combout          ;
+; |flow|Add0~0             ; |flow|Add0~0                     ; combout          ;
+; |flow|Add0~0             ; |flow|Add0~1                     ; cout             ;
+; |flow|Add0~2             ; |flow|Add0~2                     ; combout          ;
+; |flow|Add0~4             ; |flow|Add0~4                     ; combout          ;
+; |flow|Add0~4             ; |flow|Add0~5                     ; cout             ;
+; |flow|Add0~6             ; |flow|Add0~6                     ; combout          ;
+; |flow|Add0~6             ; |flow|Add0~7                     ; cout0            ;
+; |flow|Add0~6             ; |flow|Add0~7COUT1_136            ; cout1            ;
+; |flow|Add0~8             ; |flow|Add0~8                     ; combout          ;
+; |flow|Add0~8             ; |flow|Add0~9                     ; cout0            ;
+; |flow|Add0~8             ; |flow|Add0~9COUT1_134            ; cout1            ;
+; |flow|Add0~10            ; |flow|Add0~10                    ; combout          ;
+; |flow|Add0~10            ; |flow|Add0~11                    ; cout0            ;
+; |flow|Add0~10            ; |flow|Add0~11COUT1_132           ; cout1            ;
+; |flow|Add0~12            ; |flow|Add0~12                    ; combout          ;
+; |flow|Add0~12            ; |flow|Add0~13                    ; cout0            ;
+; |flow|Add0~12            ; |flow|Add0~13COUT1_130           ; cout1            ;
+; |flow|Add0~14            ; |flow|Add0~14                    ; combout          ;
+; |flow|Add0~14            ; |flow|Add0~15                    ; cout             ;
+; |flow|Add0~16            ; |flow|Add0~16                    ; combout          ;
+; |flow|Add0~16            ; |flow|Add0~17                    ; cout0            ;
+; |flow|Add0~16            ; |flow|Add0~17COUT1_128           ; cout1            ;
+; |flow|Add0~18            ; |flow|Add0~18                    ; combout          ;
+; |flow|Add0~18            ; |flow|Add0~19                    ; cout0            ;
+; |flow|Add0~18            ; |flow|Add0~19COUT1_126           ; cout1            ;
+; |flow|Add0~20            ; |flow|Add0~20                    ; combout          ;
+; |flow|Add0~20            ; |flow|Add0~21                    ; cout0            ;
+; |flow|Add0~20            ; |flow|Add0~21COUT1_124           ; cout1            ;
+; |flow|Add0~22            ; |flow|Add0~22                    ; combout          ;
+; |flow|Add0~22            ; |flow|Add0~23                    ; cout0            ;
+; |flow|Add0~22            ; |flow|Add0~23COUT1_122           ; cout1            ;
+; |flow|Add0~24            ; |flow|Add0~24                    ; combout          ;
+; |flow|Add0~24            ; |flow|Add0~25                    ; cout             ;
+; |flow|Add0~26            ; |flow|Add0~26                    ; combout          ;
+; |flow|Add0~26            ; |flow|Add0~27                    ; cout0            ;
+; |flow|Add0~26            ; |flow|Add0~27COUT1_120           ; cout1            ;
+; |flow|Add0~28            ; |flow|Add0~28                    ; combout          ;
+; |flow|Add0~28            ; |flow|Add0~29                    ; cout0            ;
+; |flow|Add0~28            ; |flow|Add0~29COUT1_118           ; cout1            ;
+; |flow|Add0~30            ; |flow|Add0~30                    ; combout          ;
+; |flow|Add0~30            ; |flow|Add0~31                    ; cout0            ;
+; |flow|Add0~30            ; |flow|Add0~31COUT1_116           ; cout1            ;
+; |flow|Add0~32            ; |flow|Add0~32                    ; combout          ;
+; |flow|Add0~32            ; |flow|Add0~33                    ; cout0            ;
+; |flow|Add0~32            ; |flow|Add0~33COUT1_114           ; cout1            ;
+; |flow|Add0~34            ; |flow|Add0~34                    ; combout          ;
+; |flow|Add0~34            ; |flow|Add0~35                    ; cout             ;
+; |flow|Add0~36            ; |flow|Add0~36                    ; combout          ;
+; |flow|Add0~36            ; |flow|Add0~37                    ; cout0            ;
+; |flow|Add0~36            ; |flow|Add0~37COUT1_108           ; cout1            ;
+; |flow|Add0~38            ; |flow|Add0~38                    ; combout          ;
+; |flow|Add0~38            ; |flow|Add0~39                    ; cout0            ;
+; |flow|Add0~38            ; |flow|Add0~39COUT1_106           ; cout1            ;
+; |flow|Add0~40            ; |flow|Add0~40                    ; combout          ;
+; |flow|Add0~40            ; |flow|Add0~41                    ; cout             ;
+; |flow|Add0~42            ; |flow|Add0~42                    ; combout          ;
+; |flow|Add0~42            ; |flow|Add0~43                    ; cout0            ;
+; |flow|Add0~42            ; |flow|Add0~43COUT1_104           ; cout1            ;
+; |flow|Add0~44            ; |flow|Add0~44                    ; combout          ;
+; |flow|Add0~44            ; |flow|Add0~45                    ; cout0            ;
+; |flow|Add0~44            ; |flow|Add0~45COUT1_112           ; cout1            ;
+; |flow|Add0~46            ; |flow|Add0~46                    ; combout          ;
+; |flow|Add0~46            ; |flow|Add0~47                    ; cout0            ;
+; |flow|Add0~46            ; |flow|Add0~47COUT1_110           ; cout1            ;
+; |flow|Add0~48            ; |flow|Add0~48                    ; combout          ;
+; |flow|Add0~48            ; |flow|Add0~49                    ; cout0            ;
+; |flow|Add0~48            ; |flow|Add0~49COUT1_98            ; cout1            ;
+; |flow|Add0~50            ; |flow|Add0~50                    ; combout          ;
+; |flow|Add0~50            ; |flow|Add0~51                    ; cout0            ;
+; |flow|Add0~50            ; |flow|Add0~51COUT1_102           ; cout1            ;
+; |flow|Add0~52            ; |flow|Add0~52                    ; combout          ;
+; |flow|Add0~52            ; |flow|Add0~53                    ; cout0            ;
+; |flow|Add0~52            ; |flow|Add0~53COUT1_100           ; cout1            ;
+; |flow|Add0~54            ; |flow|Add0~54                    ; combout          ;
+; |flow|Add0~54            ; |flow|Add0~55                    ; cout             ;
+; |flow|Add0~56            ; |flow|Add0~56                    ; combout          ;
+; |flow|Add0~56            ; |flow|Add0~57                    ; cout0            ;
+; |flow|Add0~56            ; |flow|Add0~57COUT1_96            ; cout1            ;
+; |flow|Add0~58            ; |flow|Add0~58                    ; combout          ;
+; |flow|Add0~58            ; |flow|Add0~59                    ; cout0            ;
+; |flow|Add0~58            ; |flow|Add0~59COUT1_94            ; cout1            ;
+; |flow|Add0~60            ; |flow|Add0~60                    ; combout          ;
+; |flow|Add0~60            ; |flow|Add0~61                    ; cout0            ;
+; |flow|Add0~60            ; |flow|Add0~61COUT1_92            ; cout1            ;
+; |flow|Add0~62            ; |flow|Add0~62                    ; combout          ;
+; |flow|Add0~62            ; |flow|Add0~63                    ; cout0            ;
+; |flow|Add0~62            ; |flow|Add0~63COUT1_90            ; cout1            ;
+; |flow|divide1:U|Add0~2   ; |flow|divide1:U|Add0~3           ; cout0            ;
+; |flow|divide1:U|Add0~4   ; |flow|divide1:U|Add0~5           ; cout0            ;
+; |flow|divide1:U|Add0~6   ; |flow|divide1:U|Add0~7           ; cout0            ;
+; |flow|divide1:U|Add0~8   ; |flow|divide1:U|Add0~9           ; cout0            ;
+; |flow|divide1:U|Add0~12  ; |flow|divide1:U|Add0~13COUT1_98  ; cout1            ;
+; |flow|divide1:U|Add0~14  ; |flow|divide1:U|Add0~15          ; cout0            ;
+; |flow|divide1:U|Add0~14  ; |flow|divide1:U|Add0~15COUT1_100 ; cout1            ;
+; |flow|divide1:U|Add0~16  ; |flow|divide1:U|Add0~16          ; combout          ;
+; |flow|divide1:U|Add0~16  ; |flow|divide1:U|Add0~17          ; cout0            ;
+; |flow|divide1:U|Add0~16  ; |flow|divide1:U|Add0~17COUT1_102 ; cout1            ;
+; |flow|divide1:U|Add0~18  ; |flow|divide1:U|Add0~18          ; combout          ;
+; |flow|divide1:U|Add0~18  ; |flow|divide1:U|Add0~19          ; cout0            ;
+; |flow|divide1:U|Add0~18  ; |flow|divide1:U|Add0~19COUT1_104 ; cout1            ;
+; |flow|divide1:U|Add0~20  ; |flow|divide1:U|Add0~20          ; combout          ;
+; |flow|divide1:U|Add0~20  ; |flow|divide1:U|Add0~21          ; cout             ;
+; |flow|divide1:U|Add0~22  ; |flow|divide1:U|Add0~22          ; combout          ;
+; |flow|divide1:U|Add0~22  ; |flow|divide1:U|Add0~23          ; cout0            ;
+; |flow|divide1:U|Add0~22  ; |flow|divide1:U|Add0~23COUT1_106 ; cout1            ;
+; |flow|divide1:U|Add0~24  ; |flow|divide1:U|Add0~24          ; combout          ;
+; |flow|divide1:U|Add0~24  ; |flow|divide1:U|Add0~25          ; cout0            ;
+; |flow|divide1:U|Add0~24  ; |flow|divide1:U|Add0~25COUT1_108 ; cout1            ;
+; |flow|divide1:U|Add0~26  ; |flow|divide1:U|Add0~26          ; combout          ;
+; |flow|divide1:U|Add0~26  ; |flow|divide1:U|Add0~27          ; cout0            ;
+; |flow|divide1:U|Add0~26  ; |flow|divide1:U|Add0~27COUT1_110 ; cout1            ;
+; |flow|divide1:U|Add0~28  ; |flow|divide1:U|Add0~28          ; combout          ;
+; |flow|divide1:U|Add0~28  ; |flow|divide1:U|Add0~29          ; cout0            ;
+; |flow|divide1:U|Add0~28  ; |flow|divide1:U|Add0~29COUT1_112 ; cout1            ;
+; |flow|divide1:U|Add0~30  ; |flow|divide1:U|Add0~30          ; combout          ;
+; |flow|divide1:U|Add0~30  ; |flow|divide1:U|Add0~31          ; cout             ;
+; |flow|divide1:U|Add0~32  ; |flow|divide1:U|Add0~32          ; combout          ;
+; |flow|divide1:U|Add0~32  ; |flow|divide1:U|Add0~33          ; cout0            ;
+; |flow|divide1:U|Add0~32  ; |flow|divide1:U|Add0~33COUT1_114 ; cout1            ;
+; |flow|divide1:U|Add0~34  ; |flow|divide1:U|Add0~34          ; combout          ;
+; |flow|divide1:U|Add0~34  ; |flow|divide1:U|Add0~35          ; cout0            ;
+; |flow|divide1:U|Add0~34  ; |flow|divide1:U|Add0~35COUT1_118 ; cout1            ;
+; |flow|divide1:U|Add0~36  ; |flow|divide1:U|Add0~36          ; combout          ;
+; |flow|divide1:U|Add0~36  ; |flow|divide1:U|Add0~37          ; cout0            ;
+; |flow|divide1:U|Add0~36  ; |flow|divide1:U|Add0~37COUT1_116 ; cout1            ;
+; |flow|divide1:U|Add0~38  ; |flow|divide1:U|Add0~38          ; combout          ;
+; |flow|divide1:U|Add0~38  ; |flow|divide1:U|Add0~39          ; cout0            ;
+; |flow|divide1:U|Add0~38  ; |flow|divide1:U|Add0~39COUT1_120 ; cout1            ;
+; |flow|divide1:U|Add0~40  ; |flow|divide1:U|Add0~40          ; combout          ;
+; |flow|divide1:U|Add0~40  ; |flow|divide1:U|Add0~41          ; cout             ;
+; |flow|divide1:U|Add0~42  ; |flow|divide1:U|Add0~42          ; combout          ;
+; |flow|divide1:U|Add0~42  ; |flow|divide1:U|Add0~43          ; cout0            ;
+; |flow|divide1:U|Add0~42  ; |flow|divide1:U|Add0~43COUT1_122 ; cout1            ;
+; |flow|divide1:U|Add0~44  ; |flow|divide1:U|Add0~44          ; combout          ;
+; |flow|divide1:U|Add0~44  ; |flow|divide1:U|Add0~45          ; cout0            ;
+; |flow|divide1:U|Add0~44  ; |flow|divide1:U|Add0~45COUT1_124 ; cout1            ;
+; |flow|divide1:U|Add0~46  ; |flow|divide1:U|Add0~46          ; combout          ;
+; |flow|divide1:U|Add0~46  ; |flow|divide1:U|Add0~47          ; cout0            ;
+; |flow|divide1:U|Add0~46  ; |flow|divide1:U|Add0~47COUT1_126 ; cout1            ;
+; |flow|divide1:U|Add0~48  ; |flow|divide1:U|Add0~48          ; combout          ;
+; |flow|divide1:U|Add0~48  ; |flow|divide1:U|Add0~49          ; cout0            ;
+; |flow|divide1:U|Add0~48  ; |flow|divide1:U|Add0~49COUT1_128 ; cout1            ;
+; |flow|divide1:U|Add0~50  ; |flow|divide1:U|Add0~50          ; combout          ;
+; |flow|divide1:U|Add0~50  ; |flow|divide1:U|Add0~51          ; cout             ;
+; |flow|divide1:U|Add0~52  ; |flow|divide1:U|Add0~52          ; combout          ;
+; |flow|divide1:U|Add0~52  ; |flow|divide1:U|Add0~53          ; cout0            ;
+; |flow|divide1:U|Add0~52  ; |flow|divide1:U|Add0~53COUT1_130 ; cout1            ;
+; |flow|divide1:U|Add0~54  ; |flow|divide1:U|Add0~54          ; combout          ;
+; |flow|divide1:U|Add0~54  ; |flow|divide1:U|Add0~55          ; cout0            ;
+; |flow|divide1:U|Add0~54  ; |flow|divide1:U|Add0~55COUT1_132 ; cout1            ;
+; |flow|divide1:U|Add0~56  ; |flow|divide1:U|Add0~56          ; combout          ;
+; |flow|divide1:U|Add0~56  ; |flow|divide1:U|Add0~57          ; cout0            ;
+; |flow|divide1:U|Add0~56  ; |flow|divide1:U|Add0~57COUT1_134 ; cout1            ;
+; |flow|divide1:U|Add0~58  ; |flow|divide1:U|Add0~58          ; combout          ;
+; |flow|divide1:U|Add0~58  ; |flow|divide1:U|Add0~59          ; cout0            ;
+; |flow|divide1:U|Add0~58  ; |flow|divide1:U|Add0~59COUT1_136 ; cout1            ;
+; |flow|divide1:U|Add0~60  ; |flow|divide1:U|Add0~60          ; combout          ;
+; |flow|divide1:U|Add0~60  ; |flow|divide1:U|Add0~61          ; cout             ;
+; |flow|divide1:U|Add0~62  ; |flow|divide1:U|Add0~62          ; combout          ;
+; |flow|nCR                ; |flow|nCR~corein                 ; combout          ;
+; |flow|out[0]             ; |flow|out[0]                     ; padio            ;
+; |flow|out[1]             ; |flow|out[1]                     ; padio            ;
+; |flow|out[2]             ; |flow|out[2]                     ; padio            ;
+; |flow|out[3]             ; |flow|out[3]                     ; padio            ;
+; |flow|out[4]             ; |flow|out[4]                     ; padio            ;
+; |flow|out[5]             ; |flow|out[5]                     ; padio            ;
+; |flow|out[6]             ; |flow|out[6]                     ; padio            ;
+; |flow|out[7]             ; |flow|out[7]                     ; padio            ;
++--------------------------+----------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                       ;
++--------------------------+----------------------------------+------------------+
+; Node Name                ; Output Port Name                 ; Output Port Type ;
++--------------------------+----------------------------------+------------------+
+; |flow|out[0]~reg0        ; |flow|out[0]~reg0                ; regout           ;
+; |flow|out[1]~reg0        ; |flow|out[1]~reg0                ; regout           ;
+; |flow|out[2]~reg0        ; |flow|out[2]~reg0                ; regout           ;
+; |flow|out[3]~reg0        ; |flow|out[3]~reg0                ; regout           ;
+; |flow|out[4]~reg0        ; |flow|out[4]~reg0                ; regout           ;
+; |flow|out[5]~reg0        ; |flow|out[5]~reg0                ; regout           ;
+; |flow|out[6]~reg0        ; |flow|out[6]~reg0                ; regout           ;
+; |flow|out[7]~reg0        ; |flow|out[7]~reg0                ; regout           ;
+; |flow|divide1:U|out      ; |flow|divide1:U|out              ; regout           ;
+; |flow|cnt[0]             ; |flow|cnt[0]                     ; regout           ;
+; |flow|cnt[30]            ; |flow|cnt[30]                    ; regout           ;
+; |flow|cnt[29]            ; |flow|cnt[29]                    ; regout           ;
+; |flow|cnt[31]            ; |flow|Equal0~0                   ; combout          ;
+; |flow|cnt[31]            ; |flow|cnt[31]                    ; regout           ;
+; |flow|cnt[27]            ; |flow|cnt[27]                    ; regout           ;
+; |flow|cnt[26]            ; |flow|cnt[26]                    ; regout           ;
+; |flow|cnt[25]            ; |flow|cnt[25]                    ; regout           ;
+; |flow|cnt[28]            ; |flow|Equal0~1                   ; combout          ;
+; |flow|cnt[28]            ; |flow|cnt[28]                    ; regout           ;
+; |flow|cnt[23]            ; |flow|cnt[23]                    ; regout           ;
+; |flow|cnt[22]            ; |flow|cnt[22]                    ; regout           ;
+; |flow|cnt[21]            ; |flow|cnt[21]                    ; regout           ;
+; |flow|cnt[24]            ; |flow|Equal0~2                   ; combout          ;
+; |flow|cnt[24]            ; |flow|cnt[24]                    ; regout           ;
+; |flow|cnt[19]            ; |flow|cnt[19]                    ; regout           ;
+; |flow|cnt[18]            ; |flow|cnt[18]                    ; regout           ;
+; |flow|cnt[17]            ; |flow|cnt[17]                    ; regout           ;
+; |flow|cnt[20]            ; |flow|Equal0~3                   ; combout          ;
+; |flow|cnt[20]            ; |flow|cnt[20]                    ; regout           ;
+; |flow|Equal0~4           ; |flow|Equal0~4                   ; combout          ;
+; |flow|cnt[15]            ; |flow|cnt[15]                    ; regout           ;
+; |flow|cnt[16]            ; |flow|Equal0~5                   ; combout          ;
+; |flow|cnt[16]            ; |flow|cnt[16]                    ; regout           ;
+; |flow|cnt[11]            ; |flow|cnt[11]                    ; regout           ;
+; |flow|cnt[10]            ; |flow|cnt[10]                    ; regout           ;
+; |flow|cnt[9]             ; |flow|cnt[9]                     ; regout           ;
+; |flow|cnt[12]            ; |flow|Equal0~6                   ; combout          ;
+; |flow|cnt[12]            ; |flow|cnt[12]                    ; regout           ;
+; |flow|cnt[13]            ; |flow|cnt[13]                    ; regout           ;
+; |flow|cnt[14]            ; |flow|Equal0~7                   ; combout          ;
+; |flow|cnt[14]            ; |flow|cnt[14]                    ; regout           ;
+; |flow|cnt[6]             ; |flow|cnt[6]                     ; regout           ;
+; |flow|cnt[7]             ; |flow|cnt[7]                     ; regout           ;
+; |flow|cnt[5]             ; |flow|cnt[5]                     ; regout           ;
+; |flow|cnt[8]             ; |flow|Equal0~8                   ; combout          ;
+; |flow|cnt[8]             ; |flow|cnt[8]                     ; regout           ;
+; |flow|cnt[4]             ; |flow|cnt[4]                     ; regout           ;
+; |flow|cnt[2]             ; |flow|cnt[2]                     ; regout           ;
+; |flow|cnt[1]             ; |flow|cnt[1]                     ; regout           ;
+; |flow|cnt[3]             ; |flow|Equal0~9                   ; combout          ;
+; |flow|cnt[3]             ; |flow|cnt[3]                     ; regout           ;
+; |flow|Equal0~10          ; |flow|Equal0~10                  ; combout          ;
+; |flow|divide1:U|i[6]     ; |flow|divide1:U|i[6]             ; regout           ;
+; |flow|divide1:U|i[7]     ; |flow|divide1:U|i[7]             ; regout           ;
+; |flow|divide1:U|i[9]     ; |flow|divide1:U|i[9]             ; regout           ;
+; |flow|divide1:U|i[10]    ; |flow|divide1:U|i[10]            ; regout           ;
+; |flow|divide1:U|i[11]    ; |flow|divide1:U|i[11]            ; regout           ;
+; |flow|divide1:U|i[8]     ; |flow|divide1:U|Equal0~2         ; combout          ;
+; |flow|divide1:U|i[8]     ; |flow|divide1:U|i[8]             ; regout           ;
+; |flow|divide1:U|i[13]    ; |flow|divide1:U|i[13]            ; regout           ;
+; |flow|divide1:U|i[14]    ; |flow|divide1:U|i[14]            ; regout           ;
+; |flow|divide1:U|i[15]    ; |flow|divide1:U|i[15]            ; regout           ;
+; |flow|divide1:U|i[12]    ; |flow|divide1:U|Equal0~3         ; combout          ;
+; |flow|divide1:U|i[12]    ; |flow|divide1:U|i[12]            ; regout           ;
+; |flow|divide1:U|i[16]    ; |flow|divide1:U|i[16]            ; regout           ;
+; |flow|divide1:U|i[18]    ; |flow|divide1:U|i[18]            ; regout           ;
+; |flow|divide1:U|i[19]    ; |flow|divide1:U|i[19]            ; regout           ;
+; |flow|divide1:U|i[17]    ; |flow|divide1:U|Equal0~5         ; combout          ;
+; |flow|divide1:U|i[17]    ; |flow|divide1:U|i[17]            ; regout           ;
+; |flow|divide1:U|i[21]    ; |flow|divide1:U|i[21]            ; regout           ;
+; |flow|divide1:U|i[22]    ; |flow|divide1:U|i[22]            ; regout           ;
+; |flow|divide1:U|i[23]    ; |flow|divide1:U|i[23]            ; regout           ;
+; |flow|divide1:U|i[20]    ; |flow|divide1:U|Equal0~6         ; combout          ;
+; |flow|divide1:U|i[20]    ; |flow|divide1:U|i[20]            ; regout           ;
+; |flow|divide1:U|i[25]    ; |flow|divide1:U|i[25]            ; regout           ;
+; |flow|divide1:U|i[26]    ; |flow|divide1:U|i[26]            ; regout           ;
+; |flow|divide1:U|i[27]    ; |flow|divide1:U|i[27]            ; regout           ;
+; |flow|divide1:U|i[24]    ; |flow|divide1:U|Equal0~7         ; combout          ;
+; |flow|divide1:U|i[24]    ; |flow|divide1:U|i[24]            ; regout           ;
+; |flow|divide1:U|i[29]    ; |flow|divide1:U|i[29]            ; regout           ;
+; |flow|divide1:U|i[30]    ; |flow|divide1:U|i[30]            ; regout           ;
+; |flow|divide1:U|i[31]    ; |flow|divide1:U|i[31]            ; regout           ;
+; |flow|divide1:U|i[28]    ; |flow|divide1:U|Equal0~8         ; combout          ;
+; |flow|divide1:U|i[28]    ; |flow|divide1:U|i[28]            ; regout           ;
+; |flow|divide1:U|Equal0~9 ; |flow|divide1:U|Equal0~9         ; combout          ;
+; |flow|Add0~0             ; |flow|Add0~0                     ; combout          ;
+; |flow|Add0~0             ; |flow|Add0~1                     ; cout             ;
+; |flow|Add0~2             ; |flow|Add0~2                     ; combout          ;
+; |flow|Add0~4             ; |flow|Add0~4                     ; combout          ;
+; |flow|Add0~4             ; |flow|Add0~5                     ; cout             ;
+; |flow|Add0~6             ; |flow|Add0~6                     ; combout          ;
+; |flow|Add0~6             ; |flow|Add0~7                     ; cout0            ;
+; |flow|Add0~6             ; |flow|Add0~7COUT1_136            ; cout1            ;
+; |flow|Add0~8             ; |flow|Add0~8                     ; combout          ;
+; |flow|Add0~8             ; |flow|Add0~9                     ; cout0            ;
+; |flow|Add0~8             ; |flow|Add0~9COUT1_134            ; cout1            ;
+; |flow|Add0~10            ; |flow|Add0~10                    ; combout          ;
+; |flow|Add0~10            ; |flow|Add0~11                    ; cout0            ;
+; |flow|Add0~10            ; |flow|Add0~11COUT1_132           ; cout1            ;
+; |flow|Add0~12            ; |flow|Add0~12                    ; combout          ;
+; |flow|Add0~12            ; |flow|Add0~13                    ; cout0            ;
+; |flow|Add0~12            ; |flow|Add0~13COUT1_130           ; cout1            ;
+; |flow|Add0~14            ; |flow|Add0~14                    ; combout          ;
+; |flow|Add0~14            ; |flow|Add0~15                    ; cout             ;
+; |flow|Add0~16            ; |flow|Add0~16                    ; combout          ;
+; |flow|Add0~16            ; |flow|Add0~17                    ; cout0            ;
+; |flow|Add0~16            ; |flow|Add0~17COUT1_128           ; cout1            ;
+; |flow|Add0~18            ; |flow|Add0~18                    ; combout          ;
+; |flow|Add0~18            ; |flow|Add0~19                    ; cout0            ;
+; |flow|Add0~18            ; |flow|Add0~19COUT1_126           ; cout1            ;
+; |flow|Add0~20            ; |flow|Add0~20                    ; combout          ;
+; |flow|Add0~20            ; |flow|Add0~21                    ; cout0            ;
+; |flow|Add0~20            ; |flow|Add0~21COUT1_124           ; cout1            ;
+; |flow|Add0~22            ; |flow|Add0~22                    ; combout          ;
+; |flow|Add0~22            ; |flow|Add0~23                    ; cout0            ;
+; |flow|Add0~22            ; |flow|Add0~23COUT1_122           ; cout1            ;
+; |flow|Add0~24            ; |flow|Add0~24                    ; combout          ;
+; |flow|Add0~24            ; |flow|Add0~25                    ; cout             ;
+; |flow|Add0~26            ; |flow|Add0~26                    ; combout          ;
+; |flow|Add0~26            ; |flow|Add0~27                    ; cout0            ;
+; |flow|Add0~26            ; |flow|Add0~27COUT1_120           ; cout1            ;
+; |flow|Add0~28            ; |flow|Add0~28                    ; combout          ;
+; |flow|Add0~28            ; |flow|Add0~29                    ; cout0            ;
+; |flow|Add0~28            ; |flow|Add0~29COUT1_118           ; cout1            ;
+; |flow|Add0~30            ; |flow|Add0~30                    ; combout          ;
+; |flow|Add0~30            ; |flow|Add0~31                    ; cout0            ;
+; |flow|Add0~30            ; |flow|Add0~31COUT1_116           ; cout1            ;
+; |flow|Add0~32            ; |flow|Add0~32                    ; combout          ;
+; |flow|Add0~32            ; |flow|Add0~33                    ; cout0            ;
+; |flow|Add0~32            ; |flow|Add0~33COUT1_114           ; cout1            ;
+; |flow|Add0~34            ; |flow|Add0~34                    ; combout          ;
+; |flow|Add0~34            ; |flow|Add0~35                    ; cout             ;
+; |flow|Add0~36            ; |flow|Add0~36                    ; combout          ;
+; |flow|Add0~36            ; |flow|Add0~37                    ; cout0            ;
+; |flow|Add0~36            ; |flow|Add0~37COUT1_108           ; cout1            ;
+; |flow|Add0~38            ; |flow|Add0~38                    ; combout          ;
+; |flow|Add0~38            ; |flow|Add0~39                    ; cout0            ;
+; |flow|Add0~38            ; |flow|Add0~39COUT1_106           ; cout1            ;
+; |flow|Add0~40            ; |flow|Add0~40                    ; combout          ;
+; |flow|Add0~40            ; |flow|Add0~41                    ; cout             ;
+; |flow|Add0~42            ; |flow|Add0~42                    ; combout          ;
+; |flow|Add0~42            ; |flow|Add0~43                    ; cout0            ;
+; |flow|Add0~42            ; |flow|Add0~43COUT1_104           ; cout1            ;
+; |flow|Add0~44            ; |flow|Add0~44                    ; combout          ;
+; |flow|Add0~44            ; |flow|Add0~45                    ; cout0            ;
+; |flow|Add0~44            ; |flow|Add0~45COUT1_112           ; cout1            ;
+; |flow|Add0~46            ; |flow|Add0~46                    ; combout          ;
+; |flow|Add0~46            ; |flow|Add0~47                    ; cout0            ;
+; |flow|Add0~46            ; |flow|Add0~47COUT1_110           ; cout1            ;
+; |flow|Add0~48            ; |flow|Add0~48                    ; combout          ;
+; |flow|Add0~48            ; |flow|Add0~49                    ; cout0            ;
+; |flow|Add0~48            ; |flow|Add0~49COUT1_98            ; cout1            ;
+; |flow|Add0~50            ; |flow|Add0~50                    ; combout          ;
+; |flow|Add0~50            ; |flow|Add0~51                    ; cout0            ;
+; |flow|Add0~50            ; |flow|Add0~51COUT1_102           ; cout1            ;
+; |flow|Add0~52            ; |flow|Add0~52                    ; combout          ;
+; |flow|Add0~52            ; |flow|Add0~53                    ; cout0            ;
+; |flow|Add0~52            ; |flow|Add0~53COUT1_100           ; cout1            ;
+; |flow|Add0~54            ; |flow|Add0~54                    ; combout          ;
+; |flow|Add0~54            ; |flow|Add0~55                    ; cout             ;
+; |flow|Add0~56            ; |flow|Add0~56                    ; combout          ;
+; |flow|Add0~56            ; |flow|Add0~57                    ; cout0            ;
+; |flow|Add0~56            ; |flow|Add0~57COUT1_96            ; cout1            ;
+; |flow|Add0~58            ; |flow|Add0~58                    ; combout          ;
+; |flow|Add0~58            ; |flow|Add0~59                    ; cout0            ;
+; |flow|Add0~58            ; |flow|Add0~59COUT1_94            ; cout1            ;
+; |flow|Add0~60            ; |flow|Add0~60                    ; combout          ;
+; |flow|Add0~60            ; |flow|Add0~61                    ; cout0            ;
+; |flow|Add0~60            ; |flow|Add0~61COUT1_92            ; cout1            ;
+; |flow|Add0~62            ; |flow|Add0~62                    ; combout          ;
+; |flow|Add0~62            ; |flow|Add0~63                    ; cout0            ;
+; |flow|Add0~62            ; |flow|Add0~63COUT1_90            ; cout1            ;
+; |flow|divide1:U|Add0~2   ; |flow|divide1:U|Add0~3           ; cout0            ;
+; |flow|divide1:U|Add0~4   ; |flow|divide1:U|Add0~5           ; cout0            ;
+; |flow|divide1:U|Add0~6   ; |flow|divide1:U|Add0~7           ; cout0            ;
+; |flow|divide1:U|Add0~8   ; |flow|divide1:U|Add0~9           ; cout0            ;
+; |flow|divide1:U|Add0~12  ; |flow|divide1:U|Add0~13          ; cout0            ;
+; |flow|divide1:U|Add0~12  ; |flow|divide1:U|Add0~13COUT1_98  ; cout1            ;
+; |flow|divide1:U|Add0~14  ; |flow|divide1:U|Add0~15          ; cout0            ;
+; |flow|divide1:U|Add0~14  ; |flow|divide1:U|Add0~15COUT1_100 ; cout1            ;
+; |flow|divide1:U|Add0~16  ; |flow|divide1:U|Add0~16          ; combout          ;
+; |flow|divide1:U|Add0~16  ; |flow|divide1:U|Add0~17          ; cout0            ;
+; |flow|divide1:U|Add0~16  ; |flow|divide1:U|Add0~17COUT1_102 ; cout1            ;
+; |flow|divide1:U|Add0~18  ; |flow|divide1:U|Add0~18          ; combout          ;
+; |flow|divide1:U|Add0~18  ; |flow|divide1:U|Add0~19          ; cout0            ;
+; |flow|divide1:U|Add0~18  ; |flow|divide1:U|Add0~19COUT1_104 ; cout1            ;
+; |flow|divide1:U|Add0~20  ; |flow|divide1:U|Add0~20          ; combout          ;
+; |flow|divide1:U|Add0~20  ; |flow|divide1:U|Add0~21          ; cout             ;
+; |flow|divide1:U|Add0~22  ; |flow|divide1:U|Add0~22          ; combout          ;
+; |flow|divide1:U|Add0~22  ; |flow|divide1:U|Add0~23          ; cout0            ;
+; |flow|divide1:U|Add0~22  ; |flow|divide1:U|Add0~23COUT1_106 ; cout1            ;
+; |flow|divide1:U|Add0~24  ; |flow|divide1:U|Add0~24          ; combout          ;
+; |flow|divide1:U|Add0~24  ; |flow|divide1:U|Add0~25          ; cout0            ;
+; |flow|divide1:U|Add0~24  ; |flow|divide1:U|Add0~25COUT1_108 ; cout1            ;
+; |flow|divide1:U|Add0~26  ; |flow|divide1:U|Add0~26          ; combout          ;
+; |flow|divide1:U|Add0~26  ; |flow|divide1:U|Add0~27          ; cout0            ;
+; |flow|divide1:U|Add0~26  ; |flow|divide1:U|Add0~27COUT1_110 ; cout1            ;
+; |flow|divide1:U|Add0~28  ; |flow|divide1:U|Add0~28          ; combout          ;
+; |flow|divide1:U|Add0~28  ; |flow|divide1:U|Add0~29          ; cout0            ;
+; |flow|divide1:U|Add0~28  ; |flow|divide1:U|Add0~29COUT1_112 ; cout1            ;
+; |flow|divide1:U|Add0~30  ; |flow|divide1:U|Add0~30          ; combout          ;
+; |flow|divide1:U|Add0~30  ; |flow|divide1:U|Add0~31          ; cout             ;
+; |flow|divide1:U|Add0~32  ; |flow|divide1:U|Add0~32          ; combout          ;
+; |flow|divide1:U|Add0~32  ; |flow|divide1:U|Add0~33          ; cout0            ;
+; |flow|divide1:U|Add0~32  ; |flow|divide1:U|Add0~33COUT1_114 ; cout1            ;
+; |flow|divide1:U|Add0~34  ; |flow|divide1:U|Add0~34          ; combout          ;
+; |flow|divide1:U|Add0~34  ; |flow|divide1:U|Add0~35          ; cout0            ;
+; |flow|divide1:U|Add0~34  ; |flow|divide1:U|Add0~35COUT1_118 ; cout1            ;
+; |flow|divide1:U|Add0~36  ; |flow|divide1:U|Add0~36          ; combout          ;
+; |flow|divide1:U|Add0~36  ; |flow|divide1:U|Add0~37          ; cout0            ;
+; |flow|divide1:U|Add0~36  ; |flow|divide1:U|Add0~37COUT1_116 ; cout1            ;
+; |flow|divide1:U|Add0~38  ; |flow|divide1:U|Add0~38          ; combout          ;
+; |flow|divide1:U|Add0~38  ; |flow|divide1:U|Add0~39          ; cout0            ;
+; |flow|divide1:U|Add0~38  ; |flow|divide1:U|Add0~39COUT1_120 ; cout1            ;
+; |flow|divide1:U|Add0~40  ; |flow|divide1:U|Add0~40          ; combout          ;
+; |flow|divide1:U|Add0~40  ; |flow|divide1:U|Add0~41          ; cout             ;
+; |flow|divide1:U|Add0~42  ; |flow|divide1:U|Add0~42          ; combout          ;
+; |flow|divide1:U|Add0~42  ; |flow|divide1:U|Add0~43          ; cout0            ;
+; |flow|divide1:U|Add0~42  ; |flow|divide1:U|Add0~43COUT1_122 ; cout1            ;
+; |flow|divide1:U|Add0~44  ; |flow|divide1:U|Add0~44          ; combout          ;
+; |flow|divide1:U|Add0~44  ; |flow|divide1:U|Add0~45          ; cout0            ;
+; |flow|divide1:U|Add0~44  ; |flow|divide1:U|Add0~45COUT1_124 ; cout1            ;
+; |flow|divide1:U|Add0~46  ; |flow|divide1:U|Add0~46          ; combout          ;
+; |flow|divide1:U|Add0~46  ; |flow|divide1:U|Add0~47          ; cout0            ;
+; |flow|divide1:U|Add0~46  ; |flow|divide1:U|Add0~47COUT1_126 ; cout1            ;
+; |flow|divide1:U|Add0~48  ; |flow|divide1:U|Add0~48          ; combout          ;
+; |flow|divide1:U|Add0~48  ; |flow|divide1:U|Add0~49          ; cout0            ;
+; |flow|divide1:U|Add0~48  ; |flow|divide1:U|Add0~49COUT1_128 ; cout1            ;
+; |flow|divide1:U|Add0~50  ; |flow|divide1:U|Add0~50          ; combout          ;
+; |flow|divide1:U|Add0~50  ; |flow|divide1:U|Add0~51          ; cout             ;
+; |flow|divide1:U|Add0~52  ; |flow|divide1:U|Add0~52          ; combout          ;
+; |flow|divide1:U|Add0~52  ; |flow|divide1:U|Add0~53          ; cout0            ;
+; |flow|divide1:U|Add0~52  ; |flow|divide1:U|Add0~53COUT1_130 ; cout1            ;
+; |flow|divide1:U|Add0~54  ; |flow|divide1:U|Add0~54          ; combout          ;
+; |flow|divide1:U|Add0~54  ; |flow|divide1:U|Add0~55          ; cout0            ;
+; |flow|divide1:U|Add0~54  ; |flow|divide1:U|Add0~55COUT1_132 ; cout1            ;
+; |flow|divide1:U|Add0~56  ; |flow|divide1:U|Add0~56          ; combout          ;
+; |flow|divide1:U|Add0~56  ; |flow|divide1:U|Add0~57          ; cout0            ;
+; |flow|divide1:U|Add0~56  ; |flow|divide1:U|Add0~57COUT1_134 ; cout1            ;
+; |flow|divide1:U|Add0~58  ; |flow|divide1:U|Add0~58          ; combout          ;
+; |flow|divide1:U|Add0~58  ; |flow|divide1:U|Add0~59          ; cout0            ;
+; |flow|divide1:U|Add0~58  ; |flow|divide1:U|Add0~59COUT1_136 ; cout1            ;
+; |flow|divide1:U|Add0~60  ; |flow|divide1:U|Add0~60          ; combout          ;
+; |flow|divide1:U|Add0~60  ; |flow|divide1:U|Add0~61          ; cout             ;
+; |flow|divide1:U|Add0~62  ; |flow|divide1:U|Add0~62          ; combout          ;
+; |flow|nCR                ; |flow|nCR~corein                 ; combout          ;
+; |flow|out[0]             ; |flow|out[0]                     ; padio            ;
+; |flow|out[1]             ; |flow|out[1]                     ; padio            ;
+; |flow|out[2]             ; |flow|out[2]                     ; padio            ;
+; |flow|out[3]             ; |flow|out[3]                     ; padio            ;
+; |flow|out[4]             ; |flow|out[4]                     ; padio            ;
+; |flow|out[5]             ; |flow|out[5]                     ; padio            ;
+; |flow|out[6]             ; |flow|out[6]                     ; padio            ;
+; |flow|out[7]             ; |flow|out[7]                     ; padio            ;
++--------------------------+----------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sat Jun 01 20:54:27 2013
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off flow -c flow
+Info: Using vector source file "D:/WORKPLACE/VerilogPRJ/flow/flow.vwf"
+Info: Inverted registers were found during simulation
+    Info: Register: |flow|out[0]~reg0
+    Info: Register: |flow|out[1]~reg0
+    Info: Register: |flow|out[2]~reg0
+    Info: Register: |flow|out[3]~reg0
+    Info: Register: |flow|out[4]~reg0
+    Info: Register: |flow|out[5]~reg0
+    Info: Register: |flow|out[6]~reg0
+    Info: Register: |flow|out[7]~reg0
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is       8.63 %
+Info: Number of transitions in simulation is 1150
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 147 megabytes
+    Info: Processing ended: Sat Jun 01 20:54:28 2013
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

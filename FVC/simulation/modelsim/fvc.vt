@@ -1,0 +1,89 @@
+// Copyright (C) 1991-2009 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "08/22/2013 00:42:33"
+                                                                                
+// Verilog Test Bench template for design : fvc
+// 
+// Simulation tool : ModelSim (Verilog)
+// 
+
+`timescale 1 ps/ 1 ps
+module fvc_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg clk;
+reg nCR;
+reg signal;
+// wires                                               
+wire [11:0] dac;
+wire dac_CP;
+
+initial 
+  begin
+    while(1)
+    #10 clk=~clk;
+  end
+
+initial 
+  begin
+    nCR=0;
+    signal=0;
+  #1000 nCR=1;
+  #10 nCR=0;
+  end
+
+always
+begin
+  #1000 signal=~signal;
+end
+
+
+
+// assign statements (if any)                          
+fvc i1 (
+// port map - connection between master ports and signals/registers   
+	.clk(clk),
+	.dac(dac),
+	.dac_CP(dac_CP),
+	.nCR(nCR),
+	.signal(signal)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+                                                       
+// --> end                                             
+$display("Running testbench");                       
+end                                                    
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin                          
+                                                       
+@eachvec;                                              
+// --> end                                             
+end                                                    
+endmodule
+

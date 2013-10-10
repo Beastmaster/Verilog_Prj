@@ -1,0 +1,99 @@
+|bcd_1
+CP => CP~0.IN1
+BCD1[0] <= cnt1[0].DB_MAX_OUTPUT_PORT_TYPE
+BCD1[1] <= cnt1[1].DB_MAX_OUTPUT_PORT_TYPE
+BCD1[2] <= cnt1[2].DB_MAX_OUTPUT_PORT_TYPE
+BCD2[0] <= bcd:U1.port1
+BCD2[1] <= bcd:U1.port1
+BCD2[2] <= bcd:U1.port1
+BCD2[3] <= bcd:U1.port1
+BCD2[4] <= bcd:U1.port1
+BCD2[5] <= bcd:U1.port1
+BCD2[6] <= bcd:U1.port1
+nCR => nCR~0.IN1
+
+
+|bcd_1|divide1:U2
+CP => cnt[31].CLK
+CP => cnt[30].CLK
+CP => cnt[29].CLK
+CP => cnt[28].CLK
+CP => cnt[27].CLK
+CP => cnt[26].CLK
+CP => cnt[25].CLK
+CP => cnt[24].CLK
+CP => cnt[23].CLK
+CP => cnt[22].CLK
+CP => cnt[21].CLK
+CP => cnt[20].CLK
+CP => cnt[19].CLK
+CP => cnt[18].CLK
+CP => cnt[17].CLK
+CP => cnt[16].CLK
+CP => cnt[15].CLK
+CP => cnt[14].CLK
+CP => cnt[13].CLK
+CP => cnt[12].CLK
+CP => cnt[11].CLK
+CP => cnt[10].CLK
+CP => cnt[9].CLK
+CP => cnt[8].CLK
+CP => cnt[7].CLK
+CP => cnt[6].CLK
+CP => cnt[5].CLK
+CP => cnt[4].CLK
+CP => cnt[3].CLK
+CP => cnt[2].CLK
+CP => cnt[1].CLK
+CP => cnt[0].CLK
+CP => OUT~reg0.CLK
+OUT <= OUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nCR => cnt[31].ACLR
+nCR => cnt[30].ACLR
+nCR => cnt[29].ACLR
+nCR => cnt[28].ACLR
+nCR => cnt[27].ACLR
+nCR => cnt[26].ACLR
+nCR => cnt[25].ACLR
+nCR => cnt[24].ACLR
+nCR => cnt[23].ACLR
+nCR => cnt[22].ACLR
+nCR => cnt[21].ACLR
+nCR => cnt[20].ACLR
+nCR => cnt[19].ACLR
+nCR => cnt[18].ACLR
+nCR => cnt[17].ACLR
+nCR => cnt[16].ACLR
+nCR => cnt[15].ACLR
+nCR => cnt[14].ACLR
+nCR => cnt[13].ACLR
+nCR => cnt[12].ACLR
+nCR => cnt[11].ACLR
+nCR => cnt[10].ACLR
+nCR => cnt[9].ACLR
+nCR => cnt[8].ACLR
+nCR => cnt[7].ACLR
+nCR => cnt[6].ACLR
+nCR => cnt[5].ACLR
+nCR => cnt[4].ACLR
+nCR => cnt[3].ACLR
+nCR => cnt[2].ACLR
+nCR => cnt[1].ACLR
+nCR => cnt[0].ACLR
+nCR => OUT~reg0.ACLR
+
+
+|bcd_1|bcd:U1
+bcd2[0] => Decoder0.IN3
+bcd2[1] => Decoder0.IN2
+bcd2[2] => Decoder0.IN1
+bcd2[3] => Decoder0.IN0
+BCD2[0] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+BCD2[1] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+BCD2[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+BCD2[3] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+BCD2[4] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+BCD2[5] <= BCD2~1.DB_MAX_OUTPUT_PORT_TYPE
+BCD2[6] <= BCD2~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

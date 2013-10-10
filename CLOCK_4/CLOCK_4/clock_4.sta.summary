@@ -1,0 +1,221 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -3.916
+TNS   : -274.673
+
+Type  : Slow 1200mV 85C Model Setup 'Freq_div10:F3|_10Hz'
+Slack : -1.350
+TNS   : -25.937
+
+Type  : Slow 1200mV 85C Model Setup 'Mode[0]'
+Slack : -1.125
+TNS   : -1.785
+
+Type  : Slow 1200mV 85C Model Setup 'stopwatch:S0|counter10:C1|Q[0]'
+Slack : -0.581
+TNS   : -1.321
+
+Type  : Slow 1200mV 85C Model Setup 'Freq_div1:F1|_1Hz'
+Slack : -0.579
+TNS   : -0.990
+
+Type  : Slow 1200mV 85C Model Setup 'STOP_EN'
+Slack : -0.507
+TNS   : -1.362
+
+Type  : Slow 1200mV 85C Model Hold 'STOP_EN'
+Slack : -0.039
+TNS   : -0.039
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.031
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Freq_div10:F3|_10Hz'
+Slack : 0.357
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Freq_div1:F1|_1Hz'
+Slack : 0.358
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'stopwatch:S0|counter10:C1|Q[0]'
+Slack : 0.359
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Mode[0]'
+Slack : 0.690
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'stopwatch:S0|counter10:C1|Q[0]'
+Slack : -2.826
+TNS   : -21.208
+
+Type  : Slow 1200mV 85C Model Recovery 'STOP_EN'
+Slack : -0.711
+TNS   : -2.844
+
+Type  : Slow 1200mV 85C Model Recovery 'Freq_div1:F1|_1Hz'
+Slack : -0.215
+TNS   : -0.860
+
+Type  : Slow 1200mV 85C Model Removal 'Freq_div1:F1|_1Hz'
+Slack : 0.202
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'stopwatch:S0|counter10:C1|Q[0]'
+Slack : 0.237
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'STOP_EN'
+Slack : 1.215
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -3.472
+TNS   : -220.774
+
+Type  : Slow 1200mV 0C Model Setup 'Freq_div10:F3|_10Hz'
+Slack : -1.098
+TNS   : -19.536
+
+Type  : Slow 1200mV 0C Model Setup 'Mode[0]'
+Slack : -0.962
+TNS   : -1.482
+
+Type  : Slow 1200mV 0C Model Setup 'Freq_div1:F1|_1Hz'
+Slack : -0.411
+TNS   : -0.422
+
+Type  : Slow 1200mV 0C Model Setup 'stopwatch:S0|counter10:C1|Q[0]'
+Slack : -0.410
+TNS   : -0.665
+
+Type  : Slow 1200mV 0C Model Setup 'STOP_EN'
+Slack : -0.347
+TNS   : -0.903
+
+Type  : Slow 1200mV 0C Model Hold 'STOP_EN'
+Slack : -0.099
+TNS   : -0.227
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : -0.065
+TNS   : -0.065
+
+Type  : Slow 1200mV 0C Model Hold 'Freq_div10:F3|_10Hz'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Freq_div1:F1|_1Hz'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'stopwatch:S0|counter10:C1|Q[0]'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Mode[0]'
+Slack : 0.682
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'stopwatch:S0|counter10:C1|Q[0]'
+Slack : -2.554
+TNS   : -19.152
+
+Type  : Slow 1200mV 0C Model Recovery 'STOP_EN'
+Slack : -0.571
+TNS   : -2.284
+
+Type  : Slow 1200mV 0C Model Recovery 'Freq_div1:F1|_1Hz'
+Slack : -0.108
+TNS   : -0.432
+
+Type  : Slow 1200mV 0C Model Removal 'Freq_div1:F1|_1Hz'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'stopwatch:S0|counter10:C1|Q[0]'
+Slack : 0.306
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'STOP_EN'
+Slack : 1.145
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.855
+TNS   : -75.524
+
+Type  : Fast 1200mV 0C Model Setup 'Freq_div10:F3|_10Hz'
+Slack : -0.298
+TNS   : -3.470
+
+Type  : Fast 1200mV 0C Model Setup 'Mode[0]'
+Slack : -0.172
+TNS   : -0.172
+
+Type  : Fast 1200mV 0C Model Setup 'Freq_div1:F1|_1Hz'
+Slack : 0.102
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'stopwatch:S0|counter10:C1|Q[0]'
+Slack : 0.114
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'STOP_EN'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'STOP_EN'
+Slack : -0.322
+TNS   : -0.642
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.291
+TNS   : -0.564
+
+Type  : Fast 1200mV 0C Model Hold 'Freq_div1:F1|_1Hz'
+Slack : 0.184
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Freq_div10:F3|_10Hz'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'stopwatch:S0|counter10:C1|Q[0]'
+Slack : 0.188
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Mode[0]'
+Slack : 0.344
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'stopwatch:S0|counter10:C1|Q[0]'
+Slack : -1.488
+TNS   : -11.260
+
+Type  : Fast 1200mV 0C Model Recovery 'STOP_EN'
+Slack : 0.019
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'Freq_div1:F1|_1Hz'
+Slack : 0.418
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Freq_div1:F1|_1Hz'
+Slack : -0.014
+TNS   : -0.056
+
+Type  : Fast 1200mV 0C Model Removal 'stopwatch:S0|counter10:C1|Q[0]'
+Slack : 0.395
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'STOP_EN'
+Slack : 0.644
+TNS   : 0.000
+
+------------------------------------------------------------

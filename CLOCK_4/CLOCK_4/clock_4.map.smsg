@@ -1,0 +1,4 @@
+Info (10281): Verilog HDL Declaration information at clock_4.v(4): object "seg1" differs only in case from object "SEG1" in the same scope
+Info (10281): Verilog HDL Declaration information at clock_4.v(4): object "seg2" differs only in case from object "SEG2" in the same scope
+Info (10281): Verilog HDL Declaration information at clock_4.v(4): object "seg3" differs only in case from object "SEG3" in the same scope
+Info (10281): Verilog HDL Declaration information at clock_4.v(4): object "seg4" differs only in case from object "SEG4" in the same scope

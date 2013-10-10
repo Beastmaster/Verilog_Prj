@@ -1,0 +1,245 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Clk'
+Slack : -2.665
+TNS   : -83.716
+
+Type  : Slow 1200mV 85C Model Setup 'Divided_Frequency:U0|counter10:DU0|Q[0]'
+Slack : -1.886
+TNS   : -50.746
+
+Type  : Slow 1200mV 85C Model Setup 'Divided_Frequency:U0|counter10:DU2|Q[3]'
+Slack : -1.113
+TNS   : -4.816
+
+Type  : Slow 1200mV 85C Model Setup 'AddLKey'
+Slack : -1.014
+TNS   : -6.104
+
+Type  : Slow 1200mV 85C Model Setup 'watchst'
+Slack : -0.976
+TNS   : -5.402
+
+Type  : Slow 1200mV 85C Model Setup 'FreqcDiv:U5|_1kHzIn'
+Slack : -0.966
+TNS   : -9.100
+
+Type  : Slow 1200mV 85C Model Setup 'stopwatch:U1|counter100:UU1|counter10:UD0|Q[0]'
+Slack : -0.822
+TNS   : -3.600
+
+Type  : Slow 1200mV 85C Model Hold 'watchst'
+Slack : -1.751
+TNS   : -9.655
+
+Type  : Slow 1200mV 85C Model Hold 'Divided_Frequency:U0|counter10:DU0|Q[0]'
+Slack : -1.477
+TNS   : -8.061
+
+Type  : Slow 1200mV 85C Model Hold 'FreqcDiv:U5|_1kHzIn'
+Slack : -0.804
+TNS   : -4.975
+
+Type  : Slow 1200mV 85C Model Hold 'AddLKey'
+Slack : -0.314
+TNS   : -2.500
+
+Type  : Slow 1200mV 85C Model Hold 'Clk'
+Slack : 0.029
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'stopwatch:U1|counter100:UU1|counter10:UD0|Q[0]'
+Slack : 0.359
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Divided_Frequency:U0|counter10:DU2|Q[3]'
+Slack : 0.377
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'Divided_Frequency:U0|counter10:DU0|Q[0]'
+Slack : -0.329
+TNS   : -1.827
+
+Type  : Slow 1200mV 85C Model Recovery 'watchst'
+Slack : -0.028
+TNS   : -0.084
+
+Type  : Slow 1200mV 85C Model Recovery 'stopwatch:U1|counter100:UU1|counter10:UD0|Q[0]'
+Slack : 0.846
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'stopwatch:U1|counter100:UU1|counter10:UD0|Q[0]'
+Slack : -0.639
+TNS   : -5.112
+
+Type  : Slow 1200mV 85C Model Removal 'watchst'
+Slack : -0.157
+TNS   : -0.785
+
+Type  : Slow 1200mV 85C Model Removal 'Divided_Frequency:U0|counter10:DU0|Q[0]'
+Slack : 0.117
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'Clk'
+Slack : -2.309
+TNS   : -72.268
+
+Type  : Slow 1200mV 0C Model Setup 'Divided_Frequency:U0|counter10:DU0|Q[0]'
+Slack : -1.601
+TNS   : -43.049
+
+Type  : Slow 1200mV 0C Model Setup 'Divided_Frequency:U0|counter10:DU2|Q[3]'
+Slack : -0.917
+TNS   : -3.660
+
+Type  : Slow 1200mV 0C Model Setup 'AddLKey'
+Slack : -0.805
+TNS   : -4.697
+
+Type  : Slow 1200mV 0C Model Setup 'watchst'
+Slack : -0.793
+TNS   : -4.168
+
+Type  : Slow 1200mV 0C Model Setup 'FreqcDiv:U5|_1kHzIn'
+Slack : -0.768
+TNS   : -7.200
+
+Type  : Slow 1200mV 0C Model Setup 'stopwatch:U1|counter100:UU1|counter10:UD0|Q[0]'
+Slack : -0.641
+TNS   : -2.597
+
+Type  : Slow 1200mV 0C Model Hold 'watchst'
+Slack : -1.686
+TNS   : -9.480
+
+Type  : Slow 1200mV 0C Model Hold 'Divided_Frequency:U0|counter10:DU0|Q[0]'
+Slack : -1.375
+TNS   : -7.425
+
+Type  : Slow 1200mV 0C Model Hold 'FreqcDiv:U5|_1kHzIn'
+Slack : -0.690
+TNS   : -4.442
+
+Type  : Slow 1200mV 0C Model Hold 'AddLKey'
+Slack : -0.394
+TNS   : -3.130
+
+Type  : Slow 1200mV 0C Model Hold 'Clk'
+Slack : -0.010
+TNS   : -0.010
+
+Type  : Slow 1200mV 0C Model Hold 'stopwatch:U1|counter100:UU1|counter10:UD0|Q[0]'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Divided_Frequency:U0|counter10:DU2|Q[3]'
+Slack : 0.328
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'Divided_Frequency:U0|counter10:DU0|Q[0]'
+Slack : -0.309
+TNS   : -1.672
+
+Type  : Slow 1200mV 0C Model Recovery 'watchst'
+Slack : 0.031
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'stopwatch:U1|counter100:UU1|counter10:UD0|Q[0]'
+Slack : 0.711
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'stopwatch:U1|counter100:UU1|counter10:UD0|Q[0]'
+Slack : -0.454
+TNS   : -3.632
+
+Type  : Slow 1200mV 0C Model Removal 'watchst'
+Slack : -0.167
+TNS   : -0.838
+
+Type  : Slow 1200mV 0C Model Removal 'Divided_Frequency:U0|counter10:DU0|Q[0]'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Clk'
+Slack : -1.046
+TNS   : -31.949
+
+Type  : Fast 1200mV 0C Model Setup 'Divided_Frequency:U0|counter10:DU0|Q[0]'
+Slack : -0.811
+TNS   : -14.945
+
+Type  : Fast 1200mV 0C Model Setup 'Divided_Frequency:U0|counter10:DU2|Q[3]'
+Slack : -0.182
+TNS   : -0.674
+
+Type  : Fast 1200mV 0C Model Setup 'AddLKey'
+Slack : -0.127
+TNS   : -0.554
+
+Type  : Fast 1200mV 0C Model Setup 'watchst'
+Slack : -0.082
+TNS   : -0.246
+
+Type  : Fast 1200mV 0C Model Setup 'FreqcDiv:U5|_1kHzIn'
+Slack : -0.063
+TNS   : -0.171
+
+Type  : Fast 1200mV 0C Model Setup 'stopwatch:U1|counter100:UU1|counter10:UD0|Q[0]'
+Slack : -0.004
+TNS   : -0.012
+
+Type  : Fast 1200mV 0C Model Hold 'watchst'
+Slack : -0.971
+TNS   : -5.199
+
+Type  : Fast 1200mV 0C Model Hold 'Divided_Frequency:U0|counter10:DU0|Q[0]'
+Slack : -0.816
+TNS   : -4.358
+
+Type  : Fast 1200mV 0C Model Hold 'FreqcDiv:U5|_1kHzIn'
+Slack : -0.575
+TNS   : -3.545
+
+Type  : Fast 1200mV 0C Model Hold 'AddLKey'
+Slack : -0.496
+TNS   : -3.948
+
+Type  : Fast 1200mV 0C Model Hold 'Clk'
+Slack : -0.100
+TNS   : -0.100
+
+Type  : Fast 1200mV 0C Model Hold 'stopwatch:U1|counter100:UU1|counter10:UD0|Q[0]'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Divided_Frequency:U0|counter10:DU2|Q[3]'
+Slack : 0.199
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'Divided_Frequency:U0|counter10:DU0|Q[0]'
+Slack : -0.351
+TNS   : -2.398
+
+Type  : Fast 1200mV 0C Model Recovery 'watchst'
+Slack : -0.184
+TNS   : -1.062
+
+Type  : Fast 1200mV 0C Model Recovery 'stopwatch:U1|counter100:UU1|counter10:UD0|Q[0]'
+Slack : 0.735
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'watchst'
+Slack : -0.065
+TNS   : -0.325
+
+Type  : Fast 1200mV 0C Model Removal 'stopwatch:U1|counter100:UU1|counter10:UD0|Q[0]'
+Slack : -0.052
+TNS   : -0.416
+
+Type  : Fast 1200mV 0C Model Removal 'Divided_Frequency:U0|counter10:DU0|Q[0]'
+Slack : 0.090
+TNS   : 0.000
+
+------------------------------------------------------------

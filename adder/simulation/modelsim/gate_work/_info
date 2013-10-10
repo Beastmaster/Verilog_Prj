@@ -1,0 +1,20 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\WORKPLACE\VerilogPRJ\adder\simulation\modelsim
+vadder
+!s100 B<5X:ZHWTH^j3ldjOfWE60
+IXWN>kZh1;b:i8h4k?DIJ32
+VboazEkI_2mMW[P@VkQC>D1
+w1375497092
+8adder.vo
+Fadder.vo
+L0 31
+OV;L;6.5b;42
+r1
+!s85 0
+31
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+. -O0

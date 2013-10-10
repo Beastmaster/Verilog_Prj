@@ -1,0 +1,53 @@
+|m_group
+clk => clk~0.IN1
+nCR => nCR~0.IN1
+m <= lfsr:data_lfsr1.port3
+out <= en.DB_MAX_OUTPUT_PORT_TYPE
+dir <= <GND>
+sreg[0] <= lfsr:data_lfsr1.port4
+sreg[1] <= lfsr:data_lfsr1.port4
+sreg[2] <= lfsr:data_lfsr1.port4
+sreg[3] <= lfsr:data_lfsr1.port4
+sreg[4] <= lfsr:data_lfsr1.port4
+sreg[5] <= lfsr:data_lfsr1.port4
+sreg[6] <= lfsr:data_lfsr1.port4
+sreg[7] <= lfsr:data_lfsr1.port4
+out_clk <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|m_group|lfsr:data_lfsr1
+clk => sreg[7].CLK
+clk => sreg[6].CLK
+clk => sreg[5].CLK
+clk => sreg[4].CLK
+clk => sreg[3].CLK
+clk => sreg[2].CLK
+clk => sreg[1].CLK
+clk => sreg[0].CLK
+arst => sreg[7].ACLR
+arst => sreg[6].ACLR
+arst => sreg[5].ACLR
+arst => sreg[4].ACLR
+arst => sreg[3].ACLR
+arst => sreg[2].ACLR
+arst => sreg[1].ACLR
+arst => sreg[0].PRESET
+en => sreg[0].ENA
+en => sreg[7].ENA
+en => sreg[6].ENA
+en => sreg[5].ENA
+en => sreg[4].ENA
+en => sreg[3].ENA
+en => sreg[2].ENA
+en => sreg[1].ENA
+out <= sreg[0].DB_MAX_OUTPUT_PORT_TYPE
+sreg1[0] <= sreg[0].DB_MAX_OUTPUT_PORT_TYPE
+sreg1[1] <= sreg[1].DB_MAX_OUTPUT_PORT_TYPE
+sreg1[2] <= sreg[2].DB_MAX_OUTPUT_PORT_TYPE
+sreg1[3] <= sreg[3].DB_MAX_OUTPUT_PORT_TYPE
+sreg1[4] <= sreg[4].DB_MAX_OUTPUT_PORT_TYPE
+sreg1[5] <= sreg[5].DB_MAX_OUTPUT_PORT_TYPE
+sreg1[6] <= sreg[6].DB_MAX_OUTPUT_PORT_TYPE
+sreg1[7] <= sreg[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
